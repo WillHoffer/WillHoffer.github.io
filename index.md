@@ -2,7 +2,6 @@
 layout: default
 title: Will Hoffer
 ---
-# The Main Site
-## Now converted to markdown
+# Please pardon the mess!
+The website is currently under construction. For now, there's nothing to see here.
 
-Will this work? I don't think so.
