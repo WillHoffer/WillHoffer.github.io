@@ -1,3 +1,4 @@
 name: Will Hoffer
 theme: jekyll-theme-cayman
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
