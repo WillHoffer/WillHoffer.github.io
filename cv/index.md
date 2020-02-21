@@ -1,8 +1,9 @@
 ---
 layout: default
-description: "Curriculum Vitae"
+title: Will Hoffer
+description: Curriculum Vitae
 ---
 
-# CV
+# Where can I find your CV?
 
 While the website is in construction, my CV is available via email.
