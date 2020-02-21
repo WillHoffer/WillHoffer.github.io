@@ -3,7 +3,7 @@ layout: default
 title: Will Hoffer
 description: Aspiring Mathematician & Physics Enthusiast
 ---
-# Welcome to my Personal Piece Website! 
+# Welcome to my Personal Website! 
 Here, you can find information about me as well as my ever-in-progress blog. 
 
 # What is Quidditas?
