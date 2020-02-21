@@ -1,12 +1,8 @@
 ---
 layout: default
 title: Will Hoffer
-description: Site Contents
+description: About the Author
 ---
 
-# Overview
-Currently, this website is brand new. I am still organizing, formatting, and otherwise setting up. In the future, I intend to include academic write ups, teaching materials, visualizations, and other musings worth digitizing. 
-
-# Upcoming Plans
-Once some of the more technical aspects are handled, I intend to begin a series called "Ab Ovo" focused on presenting important topics from first principles or otherwise in an accessible fashion. Stay tuned! 
-
+# My Own Quidditas
+I am an aspiring mathematician and physics enthusiast, which is the fancy way to say I'm a mathematics graduate student. Dynamics, geometry, and analysis &emdash to pick three words &emdash broadly summarize the topics I research. I find myself humbled by the historical legacy I've stumbled into and the great kindness and support given to me along the way. To pay these forward, I strive to leave the world better than I found it, bit by bit.
