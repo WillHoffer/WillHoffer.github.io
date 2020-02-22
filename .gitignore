@@ -1,4 +1,5 @@
-_site/
 .Rproj.user
 .Rhistory
-.Rprofile
+.RData
+_site/
+.sass-cache/
