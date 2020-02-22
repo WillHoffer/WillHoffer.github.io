@@ -1,7 +1,8 @@
 ---
+layout: post
 title: "Sample Page"
 author: "Will Hoffer"
-date: "2/22/2020"
+date: 2020-02-20
 output:
   html_document:
     toc: yes
