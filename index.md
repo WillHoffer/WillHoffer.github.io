@@ -1,6 +1,6 @@
 ---
+title: "Will Hoffer"
 layout: default
-title: Will Hoffer
 description: Aspiring Mathematician & Physics Enthusiast
 ---
 # Welcome to my Personal Website! 
