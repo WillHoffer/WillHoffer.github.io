@@ -3,3 +3,5 @@ description: My Personal Website in Construction
 theme: jekyll-theme-cayman
 markdown: kramdown
 permalink: /:year/:month/:day/:title
+
+gems: [ 'jekyll-pandoc-multiple-formats' ]
