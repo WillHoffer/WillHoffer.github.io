@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Sample Page"
+author: "Will Hoffer"
+date: 2020-02-20
+output:
+  html_document:
+    toc: yes
+  pdf_document:
+    toc: yes
+header-includes:
+- \usepackage{instrumenta}
+---
+
+
+
+## R Markdown
+
+These webpages are created using R Markdown documents. In particular, the version of Markdown used-- [Pandoc](https://pandoc.org/)-- supports $\LaTeX$ quite nicely. The R programming language is supported out of the box, and more functionality can be implemented as needed. 
+
+The website for RStudio and its discussion of R markdown may be found <http://rmarkdown.rstudio.com>. I highly recommend viewing the instructional tools of [Boyan Kostadinov](https://citytech-cuny.academia.edu/BoyanKostadinov/Teaching-Documents) on the topic; I myself learned about R Markdown through his presentation given at UCR on 11/08/2019.
+
