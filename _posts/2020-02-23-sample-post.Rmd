@@ -3,10 +3,11 @@ title: "Sample Page"
 author: "Will Hoffer"
 date: "2/22/2020"
 output:
+  md_document:
+  pdf_document:
+    toc: yes
   html_document: 
     theme: null
-    toc: yes
-  pdf_document:
     toc: yes
 header-includes:
 - \usepackage{instrumenta}
