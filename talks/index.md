@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Talks Given"
+description: Will Hoffer
 author: "Will Hoffer"
 output:
   html_document:
