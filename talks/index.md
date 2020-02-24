@@ -11,7 +11,7 @@ header-includes:
 - \usepackage{instrumenta}
 ---
 
-# Research & Expository Presentations
+## Research & Expository Presentations
 
 Here I provide a list of talks I've given together with links to more information, when available. Feel free to contact me for more information from any of the talks below.
 
