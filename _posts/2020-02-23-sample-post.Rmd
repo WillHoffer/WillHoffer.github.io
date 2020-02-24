@@ -3,7 +3,8 @@ title: "Sample Page"
 author: "Will Hoffer"
 date: "2/22/2020"
 output:
-  html_document:
+  html_document: 
+    theme: null
     toc: yes
   pdf_document:
     toc: yes
