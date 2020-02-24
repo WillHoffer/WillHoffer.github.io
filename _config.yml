@@ -3,3 +3,6 @@ description: My Personal Website in Construction
 theme: jekyll-theme-cayman
 markdown: kramdown
 permalink: /:year/:month/:title
+
+# Build Settings
+exclude: ['*.Rmd']
