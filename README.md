@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
+## About the Website
 
-You can use the [editor on GitHub](https://github.com/WillHoffer/WillHoffer.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This website is hosted by Github and the personal website of Will Hoffer.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### How to Edit the Site
 
-### Markdown
+The website should be editted in the following fashion. Clone the repository to the local computer and open the project in RStudio. The website is built using Jekyll; RStudio adds support for R Markdown files.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Once changes have been made, the website can be viewed locally before changes are pushed to the master branch at the origin. Doing so requires running the following Ruby command in the regular command line (on Windows, cmd.) Don't forget to navigate to the correct directory of the locally cloned repository using `cd` followed by the directory.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/WillHoffer/WillHoffer.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+bundle exec jekyll serve 
+```
+This will run a local version of the website for preview; by default it will may be found on http://127.0.0.1:4000/. This preview is updated live with changes; no need to commit the files prior to viewing.
