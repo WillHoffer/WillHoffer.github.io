@@ -2,4 +2,4 @@ name: Will Hoffer
 description: My Personal Website in Construction
 theme: jekyll-theme-cayman
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+permalink: /:year/:month/:title
