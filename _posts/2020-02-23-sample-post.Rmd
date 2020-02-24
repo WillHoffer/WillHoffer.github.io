@@ -1,16 +1,14 @@
 ---
 title: "Sample Page"
 author: "Will Hoffer"
-date: "2/22/2020"
+date: "none"
 output:
-  md_document:
+  prettydoc::html_pretty:
+    highlight: github
+    theme: cayman
   pdf_document:
     toc: yes
-  html_document: 
-    theme: null
-    toc: yes
-header-includes:
-- \usepackage{instrumenta}
+header-includes: \usepackage{instrumenta}
 ---
 
 ```{r setup, include=FALSE}
