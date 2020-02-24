@@ -1,7 +1,9 @@
 ---
-title: "Sample Page"
+layout: post
+title: "How Posts are Made"
+description: Will Hoffer
 author: "Will Hoffer"
-date: "none"
+date: "February 23, 2020"
 output:
   prettydoc::html_pretty:
     highlight: github
@@ -20,4 +22,7 @@ knitr::opts_chunk$set(echo = TRUE)
 These webpages are created using R Markdown documents. In particular, the version of Markdown used-- [Pandoc](https://pandoc.org/)-- supports $\LaTeX$ quite nicely. The R programming language is supported out of the box, and more functionality can be implemented as needed. 
 
 The website for RStudio and its discussion of R markdown may be found <http://rmarkdown.rstudio.com>. I highly recommend viewing the instructional tools of [Boyan Kostadinov](https://citytech-cuny.academia.edu/BoyanKostadinov/Teaching-Documents) on the topic; I myself learned about R Markdown through his presentation given at UCR on 11/08/2019.
+
+One important tip: files "knit" by RStudio are built with their css formatting included. You may change the theme in the settings, but one must use additional pacakages to support any GitHub Jekyll themes. The following have been employed: [prettydoc](https://github.com/yixuan/prettydoc/) adds support for this knitting process, and [prettyjekyll](https://github.com/privefl/jekyll-now-r-template) is used to apply tweaks to the formatted document.
+
 

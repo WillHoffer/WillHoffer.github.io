@@ -1,5 +1,5 @@
 name: Will Hoffer
-description: My Personal Website in Construction
+description: Will Hoffer
 theme: jekyll-theme-cayman
 markdown: kramdown
 permalink: /:year/:month/:title
