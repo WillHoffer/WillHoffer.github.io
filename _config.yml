@@ -4,5 +4,11 @@ theme: jekyll-theme-cayman
 markdown: kramdown
 permalink: /:year/:month/:title
 
+footer-links:
+  email: whoff003@gmail.com
+  github: willhoffer
+  rss: 
+  #stackoverflow: "users/11308570/wyvellum
+
 # Build Settings
 exclude: ['*.Rmd']
