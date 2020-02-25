@@ -6,7 +6,6 @@ date: "February 23, 2020"
 layout: post
 ---
 
-<script src="{{ site.url }}{{ site.baseurl }}/knitr_files/2020-02-23-how-posts-are-made_files/header-attrs-2.1/header-attrs.js"></script>
 
 <section class="main-content">
 <div id="r-markdown" class="section level2">
