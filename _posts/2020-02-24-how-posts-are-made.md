@@ -1,46 +1,10 @@
-<!DOCTYPE html>
+---
+title: "How Posts Are Made"
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-
-<meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<meta name="author" content="Will Hoffer" />
-
-<meta name="date" content="2020-02-24" />
-
-<title>How Posts Are Made</title>
-
-
-
-
-
-
-<link rel="stylesheet" href="2020-02-23-how-posts-are-made_files/style.css" type="text/css" />
-
-
-
-
-
-</head>
-
-<body>
-
-
-
-
-<section class="page-header">
-<h1 class="title toc-ignore project-name">How Posts Are Made</h1>
-<h4 class="author project-author">Will Hoffer</h4>
-<h4 class="date project-date">February 24, 2020</h4>
-</section>
-
+author: "Will Hoffer"
+date: "February 24, 2020"
+layout: post
+---
 
 
 <section class="main-content">
@@ -61,18 +25,3 @@
 </ul>
 </div>
 </section>
-
-
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
-</body>
-</html>
