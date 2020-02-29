@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "How Posts are Made"
+title: "How Posts Are Made"
 description: Will Hoffer
 author: "Will Hoffer"
-date: "February 23, 2020"
+date: "February 24, 2020"
 output:
   prettydoc::html_pretty:
     highlight: github
@@ -17,12 +17,24 @@ header-includes: \usepackage{instrumenta}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## Overview
 
-These webpages are created using R Markdown documents. In particular, the version of Markdown used-- [Pandoc](https://pandoc.org/)-- supports $\LaTeX$ quite nicely. The R programming language is supported out of the box, and more functionality can be implemented as needed. 
+Posts are created as R Markdown documents and then appropriately converted into standard markdown files to be formatted and displayed on the internet. I use RStudio to create these files, which has built in support for Git. [Boyan Kostadinov](https://citytech-cuny.academia.edu/BoyanKostadinov/Teaching-Documents) originally brought using R Markdown documents to my attention at a presentation given at UCR on November 8, 2019. I highly recommend viewing the instructional information on the provided link for a beginning introduction. 
 
-The website for RStudio and its discussion of R markdown may be found <http://rmarkdown.rstudio.com>. I highly recommend viewing the instructional tools of [Boyan Kostadinov](https://citytech-cuny.academia.edu/BoyanKostadinov/Teaching-Documents) on the topic; I myself learned about R Markdown through his presentation given at UCR on 11/08/2019.
+R Markdown is superior to a standard markdown document due to supporting much more functionality. [Pandoc](https://pandoc.org/), its version of markdown, supports standard $\LaTeX$ and the header can be made to include custom content. As the name would suggest, the R programming language is supported out of the box; Python may also be implemented if so desired. The website for RStudio and its discussion of R markdown may be found <http://rmarkdown.rstudio.com>. 
 
-One important tip: files "knit" by RStudio are built with their css formatting included. You may change the theme in the settings, but one must use additional pacakages to support any GitHub Jekyll themes. The following have been employed: [prettydoc](https://github.com/yixuan/prettydoc/) adds support for this knitting process, and [prettyjekyll](https://github.com/privefl/jekyll-now-r-template) is used to apply tweaks to the formatted document.
+## How to Create a New Post
+
+In order to make R Markdown files work with Jekyll (the Ruby engine behind much of the website formatting,) some auxillary packages are needed. RStudio can knits Rmd files into various formats, but it does not build html files in the same format as Jekyll would; this leads to a lack of proper formatting. Firstly, the package [prettydoc](https://github.com/yixuan/prettydoc/) enables much of the thematic styling from standard Jekyll themes. In lieu of the standard knitting process, as second package [prettyjekyll](https://github.com/privefl/jekyll-now-r-template) gives the following command:
+```
+prettyjekyll.FormatPost(choose.dir())
+```
+Which acts as a replacement for the knitting process to create a standard .md file in the appropriate directory. The .Rmd files are stored in the _knitr directory.
+
+Some tips:
+
+- MathJax is needed to properly display $\LaTeX$, so be sure the default layout includes an appropriate script.
+
+- The website may be locally viewed using Jekyll commands. The ReadMe file on the GitHub repository contains more info on how to do so.
 
 

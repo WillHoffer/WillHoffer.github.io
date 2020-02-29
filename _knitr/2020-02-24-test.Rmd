@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Test"
+description: Will Hoffer
+author: "Will Hoffer"
+date: "February 24, 2020"
+output:
+  md_document:
+  pdf_document:
+    toc: yes
+  prettydoc::html_pretty:
+    highlight: github
+    theme: cayman
+header-includes: \usepackage{instrumenta}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Test Text
+
+$$\sum_{i=1}^n \frac{1}{n}=\infty$$
