@@ -10,10 +10,8 @@ Here, you can find information about me as well as my ever-in-progress blog.
 Here is where to find specific information:
 
 - [About](https://willhoffer.com/about/): a personal description of myself and links to my other online content.
-
 - [CV](https://willhoffer.com/cv/): curriculum vitae/resume.
 - [Talks](https://willhoffer.com/talks/): a record of presentations I've given along with available content.
-
 - [Quidditas](https://willhoffer.com/quidditas/): the list of posts for my personal blog.
 
 
