@@ -1,0 +1,46 @@
+---
+title: "The Feynman Integral - I"
+author: "Will Hoffer"
+date: "February 24, 2020" # DO NOT USE Sys.Date()
+output:                    # DO NOT CHANGE
+  prettydoc::html_pretty:  # DO NOT CHANGE
+    theme: cayman          # DO NOT CHANGE
+    highlight: github      # DO NOT CHANGE
+header-includes: \usepackage{instrumenta}
+---
+
+## Two Takes on the Two Slit Experiment
+
+The two slit experiment is simple, yet profound. When particles are sent toward a screen with only two tiny openings and barriers elsewhere, a detector listens on the other side to record when particles pass through the twice-punctured screen. A natural question arises: if a particle makes it through to the other side, then which of the two doors did it pass through? Yet the results are not intuitive, in the classical view of things. In fact, the classical attempt at a solution turns out to be wrong-- how then, do we make sense of the experiment?
+
+Richard Feynman proposed the following answer: when one asks, "Which path did the particle take?" the answer is *both*. However, these paths do not add together in quite the usual way.
+
+### The Classical Take
+
+Classical probability theory would stipulate that there are two distinct possibilities: the particle passes through gate one, with probability $P_1$ and through the second with probability $P_2$. In the classical world these are independent events, and hence the total probability should be the sum:
+
+$$ P_{\text{Total}}=P_1+P_2$$
+But this answer is wrong: the observed pattern is not, in fact, the sum of distributions. The observed pattern is instead an interference pattern, as in the lower of the two photos below.
+
+<center>
+<a title="Jordgette / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)" href="https://commons.wikimedia.org/wiki/File:Single_slit_and_double_slit2.jpg"><img width="512" alt="Single slit and double slit2" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Single_slit_and_double_slit2.jpg"></a>
+</center>
+
+Were the classical picture to be true, the distribution should be a bimodal Gaussian coming from the addition of two shifted replications of the upper pattern as the test is repeated over and over. Why, then, are there oscillations?
+
+### Feynman's Sum 
+
+Instead of the probabilities adding, Feynman proposed instead the following. For each spot where a particle is detected, we suppose there were two paths the particle could have taken: through the top slit, or through the bottom one. We shall associate to each path not a probability, but a complex number called a *phase*. We shall denote this quantity by $\phi_1$ and $\phi_2$ for the upper and lower apertures, respectively. The phase is related to the corresponding probability by the relation $P_j=|\phi_j|^2$; its amplitude squared is the probability of taking the corresponding path. For the experiment as a whole, looking at the probability that a particle would land in that spot, we shall have that its phase is simple of sum of these two paths:
+
+$$ \phi_{\text{Total}}=\phi_1+\phi_2 $$
+
+As it turns out, this proposition shall yield the correct prediction. The total probability we expect to detect a particle (that passed through the screen) at a certain spot is not a sum of two probabilities, but instead gains a cross term:
+
+$$ P_{\text{Total}} = |\phi_{\text{Total}}|^2=|\phi_1+\phi_2|^2 = |\phi_1|^2+2\text{Re}(\phi_1\bar{\phi_2}) +|\phi_2|^2=P_1+2\text{Re}(\phi_1\bar{\phi_2}) + P_2$$
+This expression contains still the sum of the probabilities, but also a possibly negative contribution from the cross term.
+
+## The Next Step
+
+After we show how this interpretation yields an interference pattern, we are led to ask the next natural question. What happens when there are three slits? Infinitely many? What about none at all?
+
+
