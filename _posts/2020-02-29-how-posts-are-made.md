@@ -2,7 +2,7 @@
 title: "How Posts Are Made"
 
 author: "Will Hoffer"
-date: "February 24, 2020"
+date: "February 29, 2020"
 layout: post
 ---
 
