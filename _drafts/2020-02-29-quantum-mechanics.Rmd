@@ -1,0 +1,26 @@
+---
+title: "Notes on Quantum Mechanics"
+author: "Will Hoffer"
+date: "February 29, 2020"  # DO NOT USE Sys.Date()
+output:                    # DO NOT CHANGE
+  prettydoc::html_pretty:  # DO NOT CHANGE
+    theme: cayman          # DO NOT CHANGE
+    highlight: github      # DO NOT CHANGE
+#header-includes: 
+#  - \usepackage{instrumenta}
+---
+\(\newcommand{\M}{\mathscr{M}}\)
+
+# Overview
+Here, I provide a digital copy of my notes from the Mathematics of Quantum Mechanics Math 242 course of Winter 2020 at UCR, taught by Dr. Lapidus.
+
+The course began by developing classical mechanics through the Hamiltonian formulation, which then provides the essential framework to formulate the Heisenberg picture of quantum mechanics. 
+
+
+## Hamiltonian Mechanics
+We shall consider the motion of a particle on a manifold $\M$
+
+
+
+
+
