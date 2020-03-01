@@ -1,0 +1,61 @@
+---
+title:  "Converting Latex into Markdown"
+author: "Will Hoffer"
+date:   "March 1, 2020"    # DO NOT USE Sys.Date()
+output:                    # DO NOT CHANGE
+  prettydoc::html_pretty:  # DO NOT CHANGE
+    theme: cayman          # DO NOT CHANGE
+    highlight: github      # DO NOT CHANGE
+---
+
+## Overview
+In the [previous tutorial](https://willhoffer.com/2020/02/how-posts-are-made), I covered how to make a post to the website under the current build. However, RStudio is not the optimal place to write a `.tex` file; naturally, Latex power-users will have their preferred setup for writing and compiling these `.tex` files into `.pdf`'s. Out of the box, writing in RStudio supports standard Latex along with the ability to specify other packages. However, I have a custom `.sty` package of frequently used commands and shortcuts. Writing longer posts or converting previously made `.tex` files requires a new step.
+
+In this post, I propose two solutions to augment the post drafting process. Firstly, one can directly convert a `.tex` file into a `.md` file, and then adjust the markdown. The alternative solution is to define commands in the post itself or in an included file. The first solution is the more preferable of the two, but the latter will work well enough in simpler situations and requires less work.
+
+------
+## Writing in Latex and Converting with Pandoc
+This method is my preferred solution for writing longer posts that rely heavily on Latex commands. As a side benefit, any previously made `.tex` files can be adapted into posts with only a line or two of extra code.
+
+### Conversion with Pandoc
+
+Pandoc is named for its ability to convert between many different file formats. In particular, we may convert a `.tex` file into a `.md` file. Once created, the markdown file can be tweaked into a `.Rmd` file fitting the necessary format for posts. One must install Pandoc and be able to run its commands through the usual OS terminal. [Here](https://pandoc.org/getting-started.html) you will find a write up on Pandoc's website about how to do so. The important command to convert the file `example.tex` into a markdown file `example.md` is given by:
+```
+pandoc example.tex -s -o example.md
+```
+Note that one must first navigate to the appropriate directory. To rerun the command easily, simply use the up arrow to cycle through previous commands. The name of the first file should be exactly what you wish to convert, and the second file name is what will be created.
+
+### Implementing Custom Commands
+Note that Pandoc is not able to recognize a custom `.sty` package implemented through `\usepackage{}`. However, it will read any latex code which is added through the `\include{}` command. Thus, by sepcifying the file location of a custom style file, say `commands.sty`, one can have all of these added into a file and used by the Pandoc conversion process. For example consider the following:
+```
+$\include{commands.sty}$
+```
+This command will add in the text of the file `commands.sty` which is located in the same directory as the `.tex` file.
+
+There are some limitations to this process to be aware of. Be mindful not to twice-define a command via a regular setup and the included file; one possibility to prevent double-definition conflicts is by using `\providecommand{}[]{}` instead of `\newcommand{}[]{}`.
+
+Also, the Latex as it appears in the markdown document is not parsed in exactly the same way. Consequently, some syntax which works in Latex may not work in the markdown file as read by MathJax. For instance, I had defined a custom command with an optional input that would be considered empty by default:
+```
+\providecommand{\to}[1][]{\underset{#1}{\rightarrow}}
+```
+However, this would not render correctly in markdown when I used the command without an input (though in Latex such a command is processed properly.) The error disappeared when the default for no input contained text and when the optional argument was removed entirely. Thus, some syntax may need to be adjusted slightly if it does not display properly.
+
+The takeaway is to always check the knitted file to see if the content is rendering properly. Any commands that are seen as undefined will show up emphasized in red; these should be included in the `.sty` commands.
+
+------
+## Including Commands in the Markdown File
+I have not fully explored this solution, but in theory it can be implemented and refined. MathJax supports defining commands, so one can in practice define all of the necessary shortcuts in each file. For example, the following code can be used to make a shortcut. I provide the exact code and a block quote that contains how it will render.
+```
+$\newcommand{\exampleFormula}{\sum_{n=1}^\infty\frac{1}{n}=\infty}$
+
+$$\exampleFormula$$
+```
+>$\newcommand{\exampleFormula}{\sum_{n=1}^\infty\frac{1}{n}=\infty}$
+>
+>$$\exampleFormula$$
+
+In this way, then, one may write any number of custom commands. One could collect common shortcuts into a separate file and include them automatically in each post in the same way that headers, footers, etc. are generated. However, this process has drawbacks. While MathJax renders, the commands may flash breifly on the page in my limited testing. It also requires more tinkering to automatically include such text in every post file from a single source. 
+
+I believe this approach will work, but the alternative is to use the standard Latex workflow and then augment it with any markdown content after the bulk of the post is written. The latter produces a `.pdf` as normal composing in Latex, output with the formatting of any desired class file or template. Further, the generated markdown document will be stand-alone, as it contains no reference to any custom commands. (Namely, the `.sty` commands package is no longer necessary after the conversion process.)
+
+
