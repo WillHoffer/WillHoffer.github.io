@@ -4,7 +4,7 @@ theme: jekyll-theme-cayman
 markdown: kramdown
 permalink: /:year/:month/:title
 
-google-analytics: UA-159371398-1
+google_analytics: UA-159371398-1
 
 footer-links:
   email: whoff003@gmail.com
