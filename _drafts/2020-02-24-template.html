@@ -13,10 +13,23 @@
 
 <meta name="author" content="Will Hoffer" />
 
-<meta name="date" content="2020-02-24" />
+<meta name="date" content="2020-02-29" />
 
 <title>Post Template</title>
 
+<script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
+// be compatible with the behavior of Pandoc < 2.8).
+document.addEventListener('DOMContentLoaded', function(e) {
+  var hs = document.querySelectorAll("div.section[class*='level'] > :first-child");
+  var i, h, a;
+  for (i = 0; i < hs.length; i++) {
+    h = hs[i];
+    if (!/^h[1-6]$/i.test(h.tagName)) continue;  // it should be a header h1-h6
+    a = h.attributes;
+    while (a.length > 0) h.removeAttribute(a[0].name);
+  }
+});
+</script>
 
 
 
@@ -48,23 +61,91 @@ code span.ot { color: #007020; }
 <section class="page-header">
 <h1 class="title toc-ignore project-name">Post Template</h1>
 <h4 class="author project-author">Will Hoffer</h4>
-<h4 class="date project-date">February 24, 2020</h4>
+<h4 class="date project-date">February 29, 2020</h4>
 </section>
 
 
 
 <section class="main-content">
-<div id="a-new-output-format" class="section level2">
-<h2>A New Output Format</h2>
-<p><code>html_pretty</code> in the <a href="http://github.com/yixuan/prettydoc/"><strong>prettydoc</strong></a> package is a new output format for creating HTML document from R Markdown files. <code>html_pretty</code> is more lightweight compared to <code>html_document</code>, and is more stylish than <code>html_vignette</code> when creating package vignettes.</p>
+<div id="a-template-for-posts" class="section level2">
+<h2>A Template for Posts</h2>
+<p>Here, I have created a document to be copied for future posts. In it, I include some helpful syntax tricks as well.</p>
 </div>
-<div id="preview-your-post" class="section level2">
-<h2>Preview your post</h2>
-<p>Use the Knit button of RStudio to preview your post in HTML format. You should have a very similar rendering for the main content of your post when it will be on your blog.</p>
+<div id="common-syntax" class="section level2">
+<h2>Common Syntax</h2>
+<p>I refer the reader to the following links for some examples of sytax: <a href="https://www.markdownguide.org/basic-syntax">some basics</a> and <a href="https://www.markdownguide.org/extended-syntax">more features</a>. I provide a few examples.</p>
+<div id="tables" class="section level4">
+<h4>Tables</h4>
+<p>The following code produces the table depicted.</p>
+<pre><code>| A | B | C |
+|---|---|---|
+| D | E | F |
+| G | H | I |</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th>A</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>D</td>
+<td>E</td>
+<td>F</td>
+</tr>
+<tr class="even">
+<td>G</td>
+<td>H</td>
+<td>I</td>
+</tr>
+</tbody>
+</table>
+<p>There are additional options available, such as changing relative width of columns.</p>
 </div>
-<div id="convert-your-post" class="section level2">
-<h2>Convert your post</h2>
-<p>Use <code>prettyjekyll::FormatPost</code> to convert your post.</p>
+<div id="footnotes" class="section level3">
+<h3>Footnotes</h3>
+<p>Footnotes can be created using a reference of the form <code>[^n]</code> placed exactly where the footnote should appear, together with a definition somewhere in the document of what text should appear in the footnote in the syntax:</p>
+<pre><code>[^1]: The text the shows at the bottom of the page.</code></pre>
+<p>The footnote does not need to be placed at the end of the markdown document. Also, <code>n</code> may be replaced by any number or a word without any spaces; it is just a label for the footnote to be repeated in the later definition. Footnotes are numbered sequentially as they appear in the document.</p>
+</div>
+</div>
+<div id="using-latex" class="section level2">
+<h2>Using <span class="math inline">\(\LaTeX\)</span></h2>
+<p>Firstly, note that as above, it is possible to include <span class="math inline">\(\LaTeX\)</span> in a header. Inline <span class="math inline">\(\LaTeX\)</span> is acheived by using a single pair of <code>$ $</code> with relevant code in between. Note that markdown immediately assumes the code is in math mode. Full equations which appear on their own centered line can be acheived using either the <code>$$ $$</code> or <code>\[   \]</code> syntax.</p>
+<div id="divergence-of-the-harmonic-series" class="section level4">
+<h4>Divergence of the Harmonic Series</h4>
+<p><span class="math display">\[ \sum_{n=1}^\infty \frac{1}{n}=\infty \]</span></p>
+</div>
+<div id="solution-of-the-basel-problem" class="section level4">
+<h4>Solution of the Basel Problem</h4>
+<p><span class="math display">\[ \sum_{n=1}^\infty \frac{1}{n^2}=\frac{\pi^2}{6}\]</span></p>
+</div>
+</div>
+<div id="collapsable-proofs" class="section level2">
+<h2>Collapsable Proofs</h2>
+<p>The <code>&lt;details&gt;</code> tag enables text to be made collapsable. Adding a <code>&lt;summary&gt;</code> tag enables one to specify text to be displayed for showing/hiding the block of text.</p>
+<p>I provide an elementary theorem with its proof as a nice example.</p>
+<div id="infinitude-of-primes" class="section level4">
+<h4>Infinitude of Primes</h4>
+<p><strong>Theorem:</strong> There are infinitely many prime numbers.</p>
+<details>
+<p><summary>Euclid’s Proof</summary> Consider any finite list of primes, be given by <span class="math inline">\(p_1,p_2,...,p_n\)</span>. Define a new number as follows: <span class="math display">\[q=1+\prod_{i=1}^n p_i\]</span> Clearly <span class="math inline">\(q\)</span> is distinct from all of the <span class="math inline">\(p_i\)</span>’s we have listed. Moreover, <span class="math inline">\(q\)</span> has the following property: if <span class="math inline">\(x|q\)</span> and <span class="math inline">\(x|\prod p_i\)</span>, then <span class="math inline">\(x=1\)</span>. Indeed, if <span class="math inline">\(x\)</span> divides two numbers, it must also divide their difference given by <span class="math inline">\(q-\prod p_i=1\)</span>, and the only (positive) divisor of <span class="math inline">\(1\)</span> is itself.</p>
+<p>Observe the dichotomy of cases:</p>
+<ul>
+<li>If <span class="math inline">\(q\)</span> is prime, we have found a new, unlisted prime.</li>
+<li>If <span class="math inline">\(q\)</span> is not prime, then it must have a prime factor <span class="math inline">\(p\)</span> for which <span class="math inline">\(p|q\)</span>. Note that <span class="math inline">\(p\neq 1\)</span> cannot divide the product of listed primes by the lemma. Hence <span class="math inline">\(p\)</span> is distinct from all of the listed primes appearing in the product; <span class="math inline">\(p\)</span> is a new, unlisted prime.</li>
+</ul>
+Therefore, given any list of primes, we may always find another prime not on the list. <span class="math inline">\(\square\)</span><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>
+</details>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Note that Euclid’s proof is in fact constructive, so I use <span class="math inline">\(\square\)</span> over ⚔. Often, authors use a proof by contradiction variant of this argument by assuming the list contains <em>all</em> prime numbers.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
 </section>
 
