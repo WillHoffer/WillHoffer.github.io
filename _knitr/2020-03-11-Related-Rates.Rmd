@@ -1,0 +1,70 @@
+---
+title: "Related Rates"
+author: "Will Hoffer"
+date: "March 11, 2020"  # DO NOT USE Sys.Date()
+output:                    # DO NOT CHANGE
+  prettydoc::html_pretty:  # DO NOT CHANGE
+    theme: cayman          # DO NOT CHANGE
+    highlight: github      # DO NOT CHANGE
+  pdf_document:
+header-includes: \usepackage{instrumenta}
+---
+
+## Overview
+
+The idea behind related rates problems is that given an equation with two variables, we also can find an equation that involves their two derivatives. Hence, their rates are related to each other. 
+
+### A Simple Example: Circumference & Radius
+
+Let's disect a very simple example to create a recipie to solve these problems. 
+
+<center>
+```{r,eval=TRUE,echo=FALSE}
+library(plotrix)
+plot(-2:2,-2:2,type="n",xlab="",ylab="",main="A Unit Circle",asp=1)
+draw.circle(0,0,1,border="blue",lty=1,lwd=1)
+```
+</center>
+
+We have the following equation:
+$$ C=2\pi r$$
+Where $r$ is the radius and $C$ the circumference. For rates involving time, we will take a time derivative on both sides. (This step is implicit differentiation, but now we have two functions of time, $C(t)$ and $r(t)$.)
+$$
+\begin{aligned}
+\frac{d}{dt}C &= \frac{d}{dt}(2\pi r)\\
+\frac{dC}{dt} &= 2\pi\frac{dr}{dt}
+\end{aligned}
+$$
+We now have an equation that involves their two rates.
+
+The problem will give us information about one of the rates, and we use the two equations (the starting one, and the one we obtained through implicit differentiation) to solve it.
+
+> **E.G:** Suppose a rock is dropped into a pond, creating a ripple with circumference $4cm$. If the edge of the ripple moves at a speed of $3cm/s$ away from where the rock hit the water, then how fast is the circumference of the first ripple growing?
+
+<details>
+<summary> Solution</summary>
+We are asked to find the rate of growth of the circumference-- i.e. $\frac{dC}{dt}$. We are given two quantities: $C_0=4cm$ and $\frac{dr}{dt}=3cm/s$. As we saw above:
+$$
+\frac{dC}{dt}=2\pi\frac{dr}{dt}
+$$
+In this case, we don't actually need the value of $C_0$. Instead, we need only plug in $3cm/s$ to the equation and find that $\frac{dC}{dt}=6\pi\, cm/s\approx 18.85\,cm/s$.
+</details>
+
+#### Step-by-Step
+1. Write the main equation relating quantities.
+2. Implicitly differentiate the equation, usually with respect to time, $\frac{d}{dt}$.
+3. Solve the equation for the rate needed in the problem.
+4. Plug in the values given. These will include the given rate, as well as possibly values of the quantities themselves if they show up from the chain rule.
+
+### A Classic Example: The Falling Ladder Problem
+This problem is a very common one.
+
+> **E.G:** Suppose a ladder of length $8m$ leans against a wall at an angle of $60^\circ$. If the top of the ladder, touching the wall, falls at a constant speed of $2m/s$, how fast does the bottom of the ladder slide along the ground when the top of the ladder is four meters above the ground? (You may use the fact that when this happens, $\frac{d\theta}{dt}=-\frac{3}{4}$.)
+
+<details><summary>Solution</summary>
+I have a scanned copy of a written solution which includes pictures. You may view or download the file [here](https://willhoffer.com/uploads/media/default/related_rates_ladder_problem.pdf).
+</details>
+
+
+
+
