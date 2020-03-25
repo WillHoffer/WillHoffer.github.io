@@ -1,26 +1,417 @@
 ---
 title: "Notes on Quantum Mechanics"
 author: "Will Hoffer"
-date: "February 29, 2020"  # DO NOT USE Sys.Date()
+date: "March 24, 2020"  # DO NOT USE Sys.Date()
 output:                    # DO NOT CHANGE
   prettydoc::html_pretty:  # DO NOT CHANGE
     theme: cayman          # DO NOT CHANGE
     highlight: github      # DO NOT CHANGE
+    toc: yes
+    toc_depth: 4
 #header-includes: 
 #  - \usepackage{instrumenta}
 ---
-\(\newcommand{\M}{\mathscr{M}}\)
 
-# Overview
-Here, I provide a digital copy of my notes from the Mathematics of Quantum Mechanics Math 242 course of Winter 2020 at UCR, taught by Dr. Lapidus.
+Introduction
+============
+
+### Preface {#preface .unnumbered}
+
+The following are course notes from Math 242 - Mathematics of Quantum
+Mechanics, taught by Dr. Lapidus at University of California, Riverside
+during the Winter 2019 quarter. The course did not have a dedicated
+textbook, though the book *An Introduction to Quantum Theory* by Keith
+Hannabuss was recommended as a supplemental textbook.
 
 The course began by developing classical mechanics through the Hamiltonian formulation, which then provides the essential framework to formulate the Heisenberg picture of quantum mechanics. 
 
+### Work in Progress
+Note that these notes are a currently a work in progress. If you would like to see photographic copies of my notes from the course, they are available via [Google drive](https://drive.google.com/a/ucr.edu/file/d/1BeuZUcFhi0ZFFucY6-AuIPmEnJ_Jmnjk/view?usp=drivesdk).
 
-## Hamiltonian Mechanics
-We shall consider the motion of a particle on a manifold $\M$
+Classical Mechanics
+===================
 
+### Classical Observables
 
+#### The Hamiltonian
 
+Consider a particle of mass $m$ in a conservative force field
+$F=-\nabla V$ in ambient space $\mathbb{R}^3$. Let $q$ denote its
+position and $p$ its momentum. The Hamiltonian $H$ is the sum of kinetic
+and potential energy. For this single particle, $H$ is of the form:[^1]
+$$H = \frac{p^2}{2m}+V(q)$$ For a conservative system, where energy is
+conserved, the Hamiltonian formulation of classical mechanics yields the
+following equations of motion:[^2] $$\begin{aligned}
+\frac{\partial H}{\partial p} &= \frac{dq}{dt} \\
+\frac{\partial H}{\partial q} &= -\frac{dp}{dt}\end{aligned}$$ Note that
+the first term is exactly the velocity of the particle $\frac{p}{m}$,
+and the second the force $F$. We may recast these equations as a vector
+field equation: $$\begin{aligned}
+\frac{d}{dt}\begin{pmatrix}
+q\\ p
+\end{pmatrix} = 
+\begin{pmatrix}
+\frac{\partial H}{\partial p} \\ -\frac{\partial H}{\partial q}
+\end{pmatrix}\end{aligned}$$ Therefore, the Hamiltonian equations of
+motion describe the time derivative of a point $(q,p)$ in *phase space*.
+For an $n$ dimensional setting, phase space is simply $\mathbb{R}^{2n}$.
+More generally, when the configuration space is a manifold $M$ instead
+of $\mathbb{R}^n$, phase space is the contangent bundle $T^*M$. The
+Hamiltonian, then, is a map from phase space into $\mathbb{R}$.
+
+We suppose the physical system under consideration has the following
+Hamiltonian:
+$$H = \sum_{j=1}^{k}\frac{p_j^2}{2m_j} + \sum_{j=1}^{k} V(q_j) + \sum_{1\leq i< j\leq n}^{} V_{ij}(q_i-q_j)$$
+The new term $V_{ij}$ is the symmetric interaction potential between the
+indicated particles. For this system, there are $kn$ degrees of freedom,
+and therefore phase space is given by $\mathbb{R}^{2kn}$.
+
+#### The Algebra of Classical Observables
+
+The Hamiltonian is the first and foremost example of a physical
+observable. Other classical observables are defined in the same fashion:
+they are functions from phase space into $\mathbb{R}$. We shall
+hereforth assume that all classical observables (inculding the
+Hamiltonian) are smooth. Therefore, we define the algebra of classical
+observables:
+
+If we denote by $M$ the phase space under consideration, then we define
+the classical observables to be: $$\mathscr{A}_{cl}= C^\infty(M)$$ Such
+smooth functions form an algebra.
+
+More generally, one may define the algebra differently; for instance,
+one may take classical observables to be differentiable or perhaps
+measurable functions on phase space.
+
+#### Time Evolution
+
+We consider the following Cauchy problem: $$\left\{\begin{aligned} 
+\left(\frac{dq}{dt},\frac{dp}{dt}\right) &= \left(\frac{\partial H}{\partial p},-\frac{\partial H}{\partial q}\right) \\
+(q,p)\Big\vert_{t=0}&=(q_0,p_0)
+ \end{aligned} \right.$$ We shall assume the problem is well-posed and
+in particular that there is a unique global solution. Let us denote
+$\mu=(q,p)$ for a point in phase space $\mathscr{M}=\mathbb{R}^{2n}$. We
+denote by $\mu(t)$ to be the corresponding point in phase space at a
+later time $t$ for this time evolution, subject to the initial condition
+that $\mu_0=\mu(0)$.
+
+Hamilton's equations of motions generate a one-parameter group of
+automorphisms $\left\{ G_t \right\}_{t\in\mathbb{R}}$ on $\mathscr{M}$
+with the operation of composition, $G_{t+s}=G_t\circ G_s$. These
+automorphism, in turn, generate a family
+$\left\{ U_t \right\}_{t\in\mathbb{R}}$ of transformations of
+$\mathscr{A}_{cl}$. Namely, for $f\in C^\infty(\mathscr{M})$ and
+$\mu\in\mathscr{M}$, $$(U_tf)(\mu) = f(G_t\mu) =: f_t(\mu)$$ Here we
+define $f_t := f\circ G_t$.
+
+We can in fact find a very nice description of time evolution of
+observables with this formalism.
+
+First, we start with
+$G_t:\mathscr{M}{\rightarrow}\mathscr{M}$, given by
+$\mu{\rightarrow}G_t\mu$, the group of transformations. Note
+that this family satisfies $G_{s+t}=G_s\circ G_t$; in general the
+indices behave as would an additive group. We defined $U_t$ to be the
+operator that precomposes $f$ with the map $G_t$ and denoted by $f_t$
+the image of $f$ under this map. In summary: $$f_t= U_t f = f\circ G_t$$
+Let $\mu_0=\mu(0)\in\mathscr{M}$, and write $\mu(t)=G_t(\mu)$. Let us
+compute $\frac{df_t}{dt}$ in the following fashion: $$\begin{aligned}
+\frac{\partial }{\partial s} f_{s+t}(\mu_0)     &= \frac{\partial }{\partial s}\left( f_t \circ G_s \right)(\mu_0) \\
+                    &= \frac{\partial }{\partial s} f_t(\mu(s)) \\
+                    &= \sum_{i=1}^{2n} \left(\frac{\partial }{\partial x_i} f_t(\mu(s))\right) \frac{d}{ds}\mu(s) \\
+                    &= \nabla f_t(\mu(s))\cdot \left(\frac{\partial H}{\partial p},-\frac{\partial H}{\partial q}\right)\\
+                    &= \nabla f_{t+s}(\mu_0)\cdot \left(\frac{\partial H}{\partial p},-\frac{\partial H}{\partial q}\right)\end{aligned}$$
+We now evaluate the above expression at $s=0$. For simplicity of
+notation, let us now suppress dependence on $\mu(0)$. $$\begin{aligned}
+\frac{\partial }{\partial s} f_{s+t}\Big\vert_{s=0} &= \nabla f_t\cdot \left(\frac{\partial H}{\partial p},-\frac{\partial H}{\partial q}\right) \\
+    &= \sum_{i=1}^{n} \frac{\partial f_t}{\partial q_i}  \frac{\partial H}{\partial p_i} - \sum_{i=1}^{n} \frac{\partial f_t}{\partial p_i} \frac{\partial H}{\partial q_i} \\
+    &= \frac{\partial f_t}{\partial q}  \frac{\partial H}{\partial p} - \frac{\partial f_t}{\partial p} \frac{\partial H}{\partial q} \\
+    &=: \left\{ H,f_t \right\}\end{aligned}$$ In the final line, we
+define a new very important operation: $\left\{ \cdot,\cdot \right\}$,
+the *classical Poisson bracket*.
+
+Thus we have shown that the time derivative of an observable is given by
+the Poisson bracket with the Hamiltonian $H$. We state our result as a
+theorem:
+
+Let Hamilton's equations of motions be satisfied for points
+$(p,q)\in\mathscr{M}$.
+$$\frac{d}{dt}(q,p) = \left(\frac{\partial H}{\partial p},-\frac{\partial H}{\partial q}\right)$$
+For each observable $f\in\mathscr{A}_{cl}$, let $f_t=f\circ G_t$ be the
+observable which measures $f$ at a later time $t$. Then $f_t$ will be
+the solution to the following Cauchy problem: $$\left\{\begin{aligned}  
+    \frac{df_t}{dt} &= \left\{ H,f_t \right\} = \frac{\partial H}{\partial p} \frac{\partial f_t}{\partial q} - \frac{\partial H}{\partial q} \frac{\partial f_t}{\partial p} \\ 
+    f_t\Big\vert_{t=0} &= f 
+     \end{aligned} \right.$$
+
+#### The Classical Poisson Bracket
+
+We begin by generically defining the classical Poisson bracket from the
+previous section.
+
+We define a mapping
+$\mathscr{A}_{cl}\times\mathscr{A}_{cl}{\rightarrow}\mathscr{A}_{cl}$
+as follows, letting $f,g\in\mathscr{A}_{cl}$:
+$$\left\{ f,g \right\} := \frac{\partial f}{\partial q}  \frac{\partial g}{\partial p} - \frac{\partial f}{\partial p} \frac{\partial g}{\partial q}$$
+
+We proceed to state and prove some properties of this bracket.
+Throughout this section, let $f,g,h\in \mathscr{A}_{cl}$ and
+$\alpha\in \mathbb{R}$.
+
+##### Skew-Symmetry {#skew-symmetry .unnumbered}
+
+The Poisson bracket is skew-symmetric. $$\begin{aligned}
+\{f,g\} &= \frac{\partial f}{\partial q}  \frac{\partial g}{\partial p} - \frac{\partial f}{\partial p} \frac{\partial g}{\partial q} \\ 
+        &= -\left(\frac{\partial f}{\partial q}\frac{\partial g}{\partial p}-\frac{\partial f}{\partial p}\frac{\partial g}{\partial q}\right)\\ 
+        &= -\left(\frac{\partial g}{\partial p}\frac{\partial f}{\partial q}-\frac{\partial g}{\partial q}\frac{\partial f}{\partial p}\right)\\ 
+        &= -\{ g, f\}\end{aligned}$$
+
+##### Bilinearity {#bilinearity .unnumbered}
+
+The Poisson bracket is linear in both its inputs. $$\begin{aligned}
+\{f,\alpha g+ h\}   &= \frac{\partial f}{\partial p}\frac{\partial (\alpha g +h)}{\partial q}-\frac{\partial f}{\partial q}\frac{\partial (\alpha g +h)}{\partial p} \\
+                    &= \frac{\partial f}{\partial p}\left(\alpha\frac{\partial g}{\partial q}+\frac{\partial h}{\partial q}\right)-\frac{\partial f}{\partial q}\left(\alpha\frac{\partial g}{\partial p}+\frac{\partial h}{\partial p}\right)\\
+                    &= \alpha\left(\frac{\partial f}{\partial p}\frac{\partial g}{\partial q}-\frac{\partial f}{\partial q}\frac{\partial g}{\partial p}\right)+\frac{\partial f}{\partial p}\frac{\partial h}{\partial q}-\frac{\partial f}{\partial q}\frac{\partial h}{\partial p}\\
+                    &= \alpha\{f,g\}+\{f,h\}\\
+                    \\
+\{\alpha f + h,g\}  &= -\{g,\alpha f+h\} \\
+                    &= -\left(\alpha\{g,f\}+\{g,h\}\right)\\
+                    &= \alpha\{f,g\}+\{h,g\}\end{aligned}$$
+
+##### Jacobi Identity {#jacobi-identity .unnumbered}
+
+The Poisson bracket satisfies the Jacobi identity:
+$$\{f,\{g,h\}\}+\{g,\{h,f\}\}+\{h,\{f,g\}\} =0$$
+
+For readability, we shall use subscripts to denote partial derivatives,
+e.g. $\frac{\partial f}{\partial p_j}=f_{p_j}$. Also in what follows, we
+will employ the Einstein summation convention; whenever an index is
+repeated, one interprets the quantity as a sum over $n$ coordinates.
+$$\begin{aligned}
+&\{f,\{g,h\}\}+\{g,\{h,f\}\}+\{h,\{f,g\}\} \\
+    &= \left\{ f,g_{p_j}h_{q_j}- g_{q_j}h_{p_j} \right\} + \left\{ g,h_{p_j}f_{q_j}- h_{q_j}f_{p_j} \right\} + \left\{ h,f_{p_j}g_{q_j}- f_{q_j}g_{p_j} \right\} \\
+    &=   f_{p_k}(g_{p_j}h_{q_j}- g_{p_j}h_{q_j})_{q_k}
+                    - f_{q_k}(g_{p_j}h_{q_j}- g_{p_j}h_{q_j})_{p_k} \\
+        & +  g_{p_k}(h_{p_j}f_{q_j}- h_{p_j}f_{q_j})_{q_k}
+                    - g_{q_k}(h_{p_j}f_{q_j}- h_{p_j}f_{q_j})_{p_k} \\
+        & +  h_{p_k}(f_{p_j}g_{q_j}- f_{p_j}g_{q_j})_{q_k}
+                    - h_{q_k}(f_{p_j}g_{q_j}- f_{p_j}g_{q_j})_{p_k} \\\\
+    &=   f_{p_k}(g_{p_j}h_{q_j})_{q_k}- f_{p_k}(g_{p_j}h_{q_j})_{q_k}
+                    - f_{q_k}(g_{p_j}h_{q_j})_{p_k}+ f_{q_k}(g_{p_j}h_{q_j})_{p_k} \\
+        & +  g_{p_k}(h_{p_j}f_{q_j})_{q_k}- g_{p_k}(h_{p_j}f_{q_j})_{q_k}
+                    - g_{q_k}(h_{p_j}f_{q_j})_{p_k}+ g_{q_k}(h_{p_j}f_{q_j})_{p_k} \\
+        & +  h_{p_k}(f_{p_j}g_{q_j})_{q_k}- h_{p_k}(f_{p_j}g_{q_j})_{q_k}
+                    - h_{q_k}(f_{p_j}g_{q_j})_{p_k}+ h_{q_k}(f_{p_j}g_{q_j})_{p_k} \\\\
+    &=   f_{p_k}g_{p_j q_k} h_{q_j}+ f_{p_k}g_{p_j}h_{q_j q_k}
+                    - f_{p_k}g_{p_j q_k} h_{q_j}- f_{p_k}g_{p_j}h_{q_j q_k}\\
+                    &- f_{q_k}g_{p_j p_k} h_{q_j}- f_{q_k}g_{p_j}h_{q_j p_k}
+                    + f_{q_k}g_{p_j p_k} h_{q_j}+ f_{q_k}g_{p_j}h_{q_j p_k}
+ \\
+        & +  g_{p_k}h_{p_j q_k} f_{q_j}+ g_{p_k}h_{p_j}f_{q_j q_k}
+                    - g_{p_k}h_{p_j q_k} f_{q_j}- g_{p_k}h_{p_j}f_{q_j q_k}\\
+                    &- g_{q_k}h_{p_j p_k} f_{q_j}- g_{q_k}h_{p_j}f_{q_j p_k}
+                    + g_{q_k}h_{p_j p_k} f_{q_j}+ g_{q_k}h_{p_j}f_{q_j p_k}
+ \\
+        & +  h_{p_k}f_{p_j q_k} g_{q_j}+ h_{p_k}f_{p_j}g_{q_j q_k}
+                    - h_{p_k}f_{p_j q_k} g_{q_j}- h_{p_k}f_{p_j}g_{q_j q_k}\\
+                    &- h_{q_k}f_{p_j p_k} g_{q_j}- h_{q_k}f_{p_j}g_{q_j p_k}
+                    + h_{q_k}f_{p_j p_k} g_{q_j}+ h_{q_k}f_{p_j}g_{q_j p_k}
+ \\\\
+    &=    f_{p_k}g_{p_j q_k} h_{q_j}+ f_{p_k}g_{p_j}h_{q_j q_k}
+                                                    - f_{p_k}g_{p_j}h_{q_j q_k}\\
+                                    &- f_{q_k}g_{p_j p_k} h_{q_j}- f_{q_k}g_{p_j}h_{q_j p_k}
+                                    + f_{q_k}g_{p_j p_k} h_{q_j} \\
+        & +   g_{p_k}h_{p_j q_k} f_{q_j}+ g_{p_k}h_{p_j}f_{q_j q_k}
+                                                    - g_{p_k}h_{p_j}f_{q_j q_k}\\
+                                    &- g_{q_k}h_{p_j p_k} f_{q_j}- g_{q_k}h_{p_j}f_{q_j p_k}
+                                    + g_{q_k}h_{p_j p_k} f_{q_j} \\
+        & +   h_{p_k}f_{p_j q_k} g_{q_j}+ h_{p_k}f_{p_j}g_{q_j q_k}
+                                                    - h_{p_k}f_{p_j}g_{q_j q_k}\\
+                                    &- h_{q_k}f_{p_j p_k} g_{q_j}- h_{q_k}f_{p_j}g_{q_j p_k}
+                                    + h_{q_k}f_{p_j p_k} g_{q_j} \\\\
+    &=    f_{p_k}g_{p_j q_k} h_{q_j}+ f_{p_k}g_{p_j}h_{q_j q_k}
+                                                    - f_{p_k}g_{p_j}h_{q_j q_k}
+                                                    - f_{q_k}g_{p_j}h_{q_j p_k}  \\
+        & +   g_{p_k}h_{p_j q_k} f_{q_j}+ g_{p_k}h_{p_j}f_{q_j q_k}
+                                                    - g_{p_k}h_{p_j}f_{q_j q_k}
+                                                    - g_{q_k}h_{p_j}f_{q_j p_k}  \\
+        & +   h_{p_k}f_{p_j q_k} g_{q_j}+ h_{p_k}f_{p_j}g_{q_j q_k}
+                                                    - h_{p_k}f_{p_j}g_{q_j q_k}
+                                                    - h_{q_k}f_{p_j}g_{q_j p_k}  \\\\
+    &=        f_{p_k}g_{p_j}h_{q_j q_k}
+                                        - f_{p_k}g_{p_j}h_{q_j q_k}  \\
+        & +       g_{p_k}h_{p_j}f_{q_j q_k}
+                                        - g_{p_k}h_{p_j}f_{q_j q_k}  \\
+        & +       h_{p_k}f_{p_j}g_{q_j q_k}
+                                        - h_{p_k}f_{p_j}g_{q_j q_k}  \\
+    &=0
+\end{aligned}$$
+
+We call attention to a critical observation which leads to the pairwise
+cancellations above. Let us isolate two terms in the fourth equality:
+the first term $f_{p_k}h_{q_j}g_{p_j q_k}$ and the antepenultimate term
+$-f_{p_j}h_{q_k}g_{p_k q_j}$. Note that we have rearranged the latter
+slightly, employing smoothness to commute the order of partial
+derivatives. Since under our Einstein convention each term is a double
+sum each of $n$ terms, we have the following identity:
+$$\sum_{j,k=1}^{n} f_{p_k}h_{q_j}g_{p_j q_k}=\sum_{j,k=1}^{n} f_{p_j}h_{q_k}g_{p_k q_j}$$
+In other words, we may simply "switch the indices\" $j$ and $k$ to
+obtain that $f_{p_k}h_{q_j}g_{p_j q_k}= f_{p_j}h_{q_k}g_{p_k q_j}$.
+Thus, we have two terms which are identical but with opposite signs.
+Since the lines in the expression cyclically repeat, we have in fact
+three pairs of terms that shall cancel. In this fashion, six terms
+vanish each step. Subsequent equality steps show more pairs that
+disappear, three pairs at a time.
+
+##### Leibniz Rule {#leibniz-rule .unnumbered}
+
+The Poisson bracket satisfies a Leibniz identity. $$\begin{aligned}
+\left\{ f,gh \right\}  &= f_{p_j}(gh)_{q_j}- f_{q_j}(gh)_{p_j}\\
+            &= f_{p_j}g_{q_j}h + f_{p_j}g h_{q_j}- f_{q_j}g_{p_j}h - f_{q_j}g h_{p_j}\\
+            &= f_{p_j}g_{q_j}h - f_{q_j}g_{p_j}h + f_{p_j}h_{q_j}g - f_{q_j}h_{p_j}g\\
+            &= \left\{ f,g \right\}h + \left\{ f,h \right\}g\end{aligned}$$
+
+##### Derivation of the Algebra {#derivation-of-the-algebra .unnumbered}
+
+We note that the above properties imply that the Poisson bracket is a
+derivation of the algebra in the following sense. Let
+$X_f:\mathscr{A}_{cl}{\rightarrow}\mathscr{A}_{cl}$ be the
+vector field, i.e. a first order linear differential operator, given by
+the following: $$\begin{aligned}
+X_f :=& \frac{\partial f}{\partial p}\frac{\partial }{\partial q}-\frac{\partial f}{\partial q}\frac{\partial }{\partial p} \\
+X_f\cdot g =& \left\{ f,g \right\}\end{aligned}$$ Then $X_f$ acts on
+$\mathscr{A}_{cl}$. To say that $X_f$ is a derivation is to assert the
+following identity: $$X_f(hg) = (X_f\cdot g)h+(X_f\cdot h)g$$ We note
+that this identity is equivalent to the Leibniz rule. Indeed:
+$$\begin{aligned}
+\left\{ f,gh \right\} &=  X_f\cdot (gh) \\
+\left\{ f,g \right\}h + g\left\{ f,h \right\}  &= (X_f\cdot g)h + (X_f\cdot h)g\end{aligned}$$
+Therefore, when one equation holds, so too must the other. Note that in
+a noncommutative setting, one must take care with the definitions and
+statement of the identities, but here we shall have no such issues.\
+Given two such derivations $X_f, X_g$ define their commutator in the
+usual fashion: $$=X_f X_g-X_g X_f$$ The following identity of these
+vector fields is equivalent to the Jacobi identity:
+$$= X_{\left\{ f,g \right\}}$$ To see this equivalence, we consider the
+action of $[X_f,X_g]-X_{\left\{ f,g \right\}}$ on $h$ and simplify using
+only the linearity and skew-symmetry properties. $$\begin{aligned}
+([X_f,X_g] - X_{\left\{ f,g \right\}})h &= (X_f X_g  -X_g X_f) h - X_{\left\{ f,g \right\}} h \\
+    &= X_f X_g h - X_g X_f h - X_{\left\{ f,g \right\}} h \\
+    &= X_f \left\{ g,h \right\} - X_g \left\{ f,h \right\} - \left\{ \left\{ f,g \right\},h \right\} \\
+    &= \{f,\{g,h\}\} - \{g,\{f,h\}\} + \{h,\{f,g\}\} \\
+    &= \{f,\{g,h\}\} + \left\{ g,-\left\{ f,h \right\} \right\} + \{h,\{f,g\}\}\\
+    &= \{f,\{g,h\}\}+\{g,\{h,f\}\}+\{h,\{f,g\}\}\end{aligned}$$
+Therefore, when one expression is zero, so too is the other. Note well
+that when given fixed $f,g$ this identity holds for any
+$h\in\mathscr{A}_{cl}$; in the reverse direction of the equivalence,
+this fact is needed to deduce that $[X_f,X_g]=X_{\left\{ f,g \right\}}$
+as operators.
+
+#### Algebraic Properties
+
+Having established this Poisson bracket, we now summarize the following
+facts about this algebra. Firstly, $\mathscr{A}_{cl}$ is a real vector
+space and a commutative algebra with multiplication and addition.
+Together with the classical Poisson bracket, $\mathscr{A}_{cl}$ is
+moreover a Lie algebra, with the Poisson bracket as its Lie product.
+Furthermore, the algebraic product and the Lie product are related via
+the Leibniz rule, viz. the latter is a derivation.
+
+Further, this algebra contains a distinguished element, the Hamiltonian
+$H$, by which the time evolution of any observable is determined via the
+action $X_H$.
+
+### Classical States
+
+#### Measuring a State
+
+#### Pure and Mixed States
+
+#### Convexity of States
+
+#### Axiomatic State
+
+### Classical Dynamics
+
+#### Liouville's Theorem
+
+#### Hamiltonian vs. Liouville Mechanics
+
+Quantum Mechanics
+=================
+
+### The Two-Slit Experiment
+
+#### Feynman's Interpretation
+
+### Quantum Observables
+
+#### The Algebra of Quantum Observables
+
+#### The Quantum Poisson Bracket
+
+### Quantum States
+
+#### States
+
+#### Density Matrices
+
+#### Correspondence
+
+#### Pure and Mixed States
+
+### Quantum Statistics
+
+#### Mean/Expected Values
+
+#### Variance Inequalities
+
+#### Heisenberg Uncertainty Principle
+
+### Quantum Dynamics
+
+#### Heisenberg vs. Schrodinger Pictures
+
+#### Stationary States
+
+### Spectral Calculus
+
+#### Spectra and Eigenstates
+
+#### Unbounded Operators
+
+#### Functional Calculus
+
+#### Projection Valued Measure
+
+### Real Systems
+
+#### Position and Momentum
+
+#### Canonical Commutation Relations
+
+#### Multiplication and the Fourier Transform
+
+  Dictionary   Classical/Statistical     Quantum
+  ------------ ------------------------- ------------------------------------------
+  Observable   Function on phase space   Self-adjoint operator on a Hilbert space
+  State        Element of phase space    Linear functional on the Hilbert space
+
+Quantum analog of Poisson bracket, Heisenberg formulation of quantum
+mechanics (p. 4-5)
+
+# References
+
+-   Richard Feynman, "Space-Time Approach to Non-Relativistic Quantum
+    Mechanics.\" Reviews of Modern Physics, Vol. 20, No. 2, April 1948.
+
+-   Gerald Johnson and Michel Lapidus, *The Feynman Integral and
+    Feynman's Operational Calculus*, Chapter 7. Oxford University
+    Press, 2000.
+
+[^1]: We denote $p^2:=p\cdot p$.
+
+[^2]: These partial derivatives denote gradients, e.g.
+    $\frac{\partial H}{\partial p}=\left(\frac{\partial H}{\partial p_1},\frac{\partial H}{\partial p_2},\frac{\partial H}{\partial p_3}\right)$.
 
 
