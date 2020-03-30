@@ -1,3 +1,7 @@
+---
+title: Resources
+author: Will Hoffer
+---
 ## Utility Websites
 These websites offer powerful tools. 
 
