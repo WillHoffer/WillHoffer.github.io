@@ -16,19 +16,33 @@ header-includes:
 
 Here I provide a list of talks I've given together with links to more information, when available. Feel free to contact me for more information from any of the talks below.
 
-Listings are formatted in the order: program/venue, sponoring institution(s), link, and listing of talk titles.
+Listings are formatted in the order: program/venue, sponoring institution(s), link, and listing of talk title(s).
+
+### Fractal Research Group / Mathematical Physics & Dynamical Systems Seminars
+University of California, Riverside
+<http://math.ucr.edu/~frgmpds/seminars.html>
+
+- *A First Introduction to Resurgence, Part I*, 4/16/20
+- *A First Introduction to Resurgence, Part II*, 5/27/20
+
+### Mathematics of Quantum Mechanics (Math 242)
+University of California, Riverside
+
+- *Deriving the Schrodinger Equation from Feynmann's Path Integral*, 3/13/20
 
 
-### Knots & Graphs Program (Summers 2017, 2018) 
+### Wave Equations and General Relativity Seminar
+University of California, Riverside
 
-Ohio State University <https://people.math.osu.edu/chmutov.1/wor-gr-su18/wor-gr.htm>
- 
-- *Enhanced Kauffman bracket*, 7/7/17
-- *Tricoloring number of links*, 7/21/17
-- *Tricolorings, Keis, and Quandles*, 6/25/18
-- *Two cocycles of quandles and the state sum invariants*, 7/9/18
-- *Cohomology, biquandles, and bracket invariants*, 7/23/18
+- *Calculus on Manifolds, Part I*,  12/03/2019
+- *Calculus on Manifolds, Part II*,  1/07/2020
+- *Introduction to the Physics of Relativity*, 4/13/20
+- *The Einstein Equation Cauchy Problem*, 05/11/20
 
+### UCR Graduate Student Seminar 
+University of California, Riverside
+<http://math.ucr.edu/~gradsem/years/2019-2020/#Hoffer>
+- *Keeping up with the Bernoulli's*, 1/31/20
 
 ### Denman Research Forum (3/29/18)
 Ohio State University <https://ugresearch.osu.edu/Pages/Initiatives-\%20Denman-\%20Accepted\%20Abstracts.aspx> 
@@ -46,6 +60,16 @@ Ohio State University/National Science Foundation <https://ymc.osu.edu/program-s
 James Madison University <http://www.jmu.edu/mathstat/sums/index.shtml> 
 
 - *Combining Biquandle Knot Invariants*
+
+### Knots & Graphs Program (Summers 2017, 2018) 
+
+Ohio State University <https://people.math.osu.edu/chmutov.1/wor-gr-su18/wor-gr.htm>
+ 
+- *Enhanced Kauffman bracket*, 7/7/17
+- *Tricoloring number of links*, 7/21/17
+- *Tricolorings, Keis, and Quandles*, 6/25/18
+- *Two cocycles of quandles and the state sum invariants*, 7/9/18
+- *Cohomology, biquandles, and bracket invariants*, 7/23/18
 
 
 ### Reading Classics Seminar (Spring 2017 - Autumn 2018) 
