@@ -161,8 +161,6 @@ layout: post
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>We denote <span class="math inline">\(p^2:=p\cdot p\)</span>.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>These partial derivatives denote gradients, e.g. <span class="math inline">\(\frac{\partial H}{\partial p}=\left(\frac{\partial H}{\partial p_1},\frac{\partial H}{\partial p_2},\frac{\partial H}{\partial p_3}\right)\)</span>.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 </section>
