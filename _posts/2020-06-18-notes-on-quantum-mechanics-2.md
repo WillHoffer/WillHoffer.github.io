@@ -1,8 +1,8 @@
 ---
-title: "Notes on Quantum Mechanics I"
+title: "Notes on Quantum Mechanics II"
 
 author: "Will Hoffer"
-date: "June 17, 2020"
+date: "June 18, 2020"
 layout: post
 ---
 
