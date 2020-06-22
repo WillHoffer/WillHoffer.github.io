@@ -12,7 +12,7 @@ These websites offer powerful tools.
 ## Software
 These programs range from quite useful to absolutely essential, with a focus on open source or freely available software. 
 
-- [LaTeX](https://www.latex-project.org/get/). $\LaTeX$ is the sine qua non in document creation and academic publications. The easiest way to use the software is to obtain one of the recommended distributions on the site, together with an editor such as [Texmaker](https://www.xm1math.net/texmaker/). 
+- [LaTeX](https://www.latex-project.org/get/). LaTeX is the sine qua non in document creation and academic publications. The easiest way to use the software is to obtain one of the recommended distributions on the site, together with an editor such as [Texmaker](https://www.xm1math.net/texmaker/). 
 
 - [SumatraPDF](https://www.sumatrapdfreader.org/free-pdf-reader.html). A lightweight, open source document viewer for Windows that notably also supports many other document types such as `.djvu` files in addition to the standard `.pdf`. 
 
