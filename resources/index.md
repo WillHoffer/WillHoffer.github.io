@@ -24,14 +24,12 @@ These materials, be they in digital or print, are useful sources of mathematics,
 
 ### Mathematics
 
-#### Complex Analysis
-
-- Lars V. Ahlfors, Complex Analysis, MacGraw Hill.
-- Wilhelm Schlag, A Course in Complex Analysis and Riemann Surfaes, AMS.
-- Wolfgang Ebeling, Functions of Several Complex Variables and Their
-Singularities, AMS.
-
-(The last two books are published in the AMS Series *Graduate  Studies in Mathematics*.)
+| Subject | Author | Title | Publisher/Series | Notes |
+| ------- | ------ | ----- | ---------------- | ----- |
+| Complex Analysis  | Lars V. Ahlfors | *Complex Analysis* | MacGraw Hill | A well-regarded introduction to complex analysis with good geometric treatment of the subject. |
+| | Wilhelm Schlag  | *A Course in Complex Analysis and Riemann Surfaces* | AMS *Graduate  Studies in Mathematics* | |
+| | Wolfgang Ebeling  | *Functions of Several Complex Variables and Their Singularities* | AMS *Graduate  Studies in Mathematics* | An analytic take on several complex variable theory. |
+| | R.&nbsp;Gunning & H.&nbsp;Rossi  | *Analytic Functions of Several Complex Variables* | Prentice Hall | A more cohomological take on several complex variable theory. |
 
 ### Teaching
 
