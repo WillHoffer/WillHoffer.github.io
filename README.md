@@ -1,6 +1,6 @@
 ## About the Website
 
-This website is hosted by Github and the personal website of Will Hoffer.
+This website is the personal website of Will Hoffer, hosted by Github. It contains professional information, an informational blog, and other resources/references. I retain copywrite over written posts, documents, and other academic content, while the website code/structure/theming is in accodance with their respective source licenses.
 
 ### How to Edit the Site
 
