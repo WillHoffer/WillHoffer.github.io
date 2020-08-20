@@ -4,6 +4,7 @@
 src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?
 config=TeX-AMS-MML_HTMLorMML"></script>
   <head>
+    {% include header.html %}
 
     {% if site.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
@@ -41,12 +42,12 @@ config=TeX-AMS-MML_HTMLorMML"></script>
       {{ content }}
 
       <footer class="site-footer">
-        {% if site.github.is_project_page %}
+        {% include footer.html %}
+        
+<!--        {% if site.github.is_project_page %}
           <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
         {% endif %}
-        <span class="site-footer-credits">
-		"Where be his quiddities now, his quillets, his cases, his tenures, and his tricks?" - William Shakespeare, Hamlet
-	</span>
+-->
       </footer>
     </main>
   </body>
