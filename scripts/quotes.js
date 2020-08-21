@@ -7,7 +7,7 @@
   '"God created the integers; all else is the work of man." - Leopold Kronecker',
   '"A theory can\'t be just \'a little indeterministic\', it is like being \'a little pregnant.\'" - Nima Arkani-Hamed',
   '"I trust machines more than professors." - Bruno Buchberger',
-  '"When people ask my wife \'what does your husband do?\', she replies \'He models.\' When they ask, what does he model?, she replies: \'Genes.\'" - Xiao-Li Meng',
+  '"When people ask my wife \'what does your husband do?\', she replies \'He models.\' When they ask, what does he model?,\' she replies: \'Genes.\'" - Xiao-Li Meng',
   '"There are also numbers that are not prime." - Jean Bourgain',
   '"Nature is a good approximation of Mathematics." - Zvi Artstein',
   '"In Mathematics it is always best to cheat." - Herb Wilf', 
