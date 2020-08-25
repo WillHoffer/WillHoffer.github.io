@@ -24,4 +24,4 @@ var randomN = Math.floor(Math.random()*(quotes.length));
 document.getElementById('quoteDisplay').innerHTML = quotes[randomN];
 }
 
-newQuote();
+$(document).ready(newQuote());
