@@ -1,4 +1,4 @@
-  var quotes = [
+var quotes = [
   '"Where be his quiddities now, his quillets, his cases, his tenures, and his tricks?"- William Shakespeare, Hamlet',
   '"My business is circumference." - Emily Dickinson',
   '"It is very difficult to make good mistakes." - Goro Shimura',
@@ -11,10 +11,12 @@
   '"There are also numbers that are not prime." - Jean Bourgain',
   '"Nature is a good approximation of Mathematics." - Zvi Artstein',
   '"In Mathematics it is always best to cheat." - Herb Wilf', 
-  '"I was just sitting on the train, just staring out the window at some cows. It was not the most inspiring subject. When all of a sudden the idea of Harry just appeared in my mind\'s eye." - J. K. Rowling',
+  '"We used the axiom of choice every day, for breakfast." - Michel Lapidus',
   '"We decided that \'trivial\' means \'proved.\' So we joked with the mathematicians: \'We have a new theorem- that mathematicians can prove only trivial theorems, because every theorem that\'s proved is trivial." - Richard Feynman',
   '"Everybody knows that mathematics is about Miracles; only mathematicians have a name for them: Theorems." - Roger Howe',
-  '"The worst thing you can do to a problem is solve it completely." - Daniel Kleitman'
+  '"The worst thing you can do to a problem is solve it completely." - Daniel Kleitman',
+  '"This wouldn\'t be good at making toast. It would make everything toast, once." - Linn van Woerkem',
+  '"A bore is someone who deprives you of solitude without providing you with company." - Oscar Wilde'
 ]
 
 function newQuote() {
@@ -22,3 +24,4 @@ var randomN = Math.floor(Math.random()*(quotes.length));
 document.getElementById('quoteDisplay').innerHTML = quotes[randomN];
 }
 
+newQuote();
