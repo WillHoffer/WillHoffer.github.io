@@ -16,7 +16,8 @@ var quotes = [
   '"Everybody knows that mathematics is about Miracles; only mathematicians have a name for them: Theorems." - Roger Howe',
   '"The worst thing you can do to a problem is solve it completely." - Daniel Kleitman',
   '"This wouldn\'t be good at making toast. It would make everything toast, once." - Linn van Woerkem',
-  '"A bore is someone who deprives you of solitude without providing you with company." - Oscar Wilde'
+  '"A bore is someone who deprives you of solitude without providing you with company." - Oscar Wilde',
+  '"Young man, in mathematics you don\'t understand things. You just get used to them." - John von Neumann'
 ]
 
 function newQuote() {
