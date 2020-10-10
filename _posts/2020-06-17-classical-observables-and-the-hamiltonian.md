@@ -1,5 +1,5 @@
 ---
-title: "Notes on Quantum Mechanics I"
+title: "Classical Observables and the Hamiltonian"
 
 author: "Will Hoffer"
 date: "June 17, 2020"

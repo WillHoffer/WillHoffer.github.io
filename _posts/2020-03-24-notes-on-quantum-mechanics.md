@@ -7,10 +7,8 @@ layout: post
 ---
 
 <script src="{{ site.url }}{{ site.baseurl }}/knitr_files/2020-02-29-quantum-mechanics_files/header-attrs-2.1/header-attrs.js"></script>
-<script src="../_drafts/{{ site.url }}{{ site.baseurl }}/knitr_files/2020-02-29-quantum-mechanics_files/header-attrs-2.1/header-attrs.js"></script>
 
 <section class="main-content">
-<script src="../_drafts/{{ site.url }}{{ site.baseurl }}/knitr_files/2020-02-29-quantum-mechanics_files/header-attrs-2.1/header-attrs.js"></script>
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
 <div id="preface" class="section level3 unnumbered">
@@ -98,7 +96,10 @@ q\\ p
 <div id="jacobi-identity" class="section level5 unnumbered">
 <h5 class="unnumbered">Jacobi Identity</h5>
 <p>The Poisson bracket satisfies the Jacobi identity: <span class="math display">\[\{f,\{g,h\}\}+\{g,\{h,f\}\}+\{h,\{f,g\}\} =0\]</span></p>
-<p>For readability, we shall use subscripts to denote partial derivatives, e.g. <span class="math inline">\(\frac{\partial f}{\partial p_j}=f_{p_j}\)</span>. Also in what follows, we will employ the Einstein summation convention; whenever an index is repeated, one interprets the quantity as a sum over <span class="math inline">\(n\)</span> coordinates. <span class="math display">\[\begin{aligned}
+<details>
+<p><summary>Proof</summary></p>
+<p>For readability, we shall use subscripts to denote partial derivatives, e.g. <span class="math inline">\(\frac{\partial f}{\partial p_j}=f_{p_j}\)</span>. Also in what follows, we will employ the Einstein summation convention; whenever an index is repeated, one interprets the quantity as a sum over <span class="math inline">\(n\)</span> coordinates.</p>
+<p><span class="math display">\[\begin{aligned}
 &amp;\{f,\{g,h\}\}+\{g,\{h,f\}\}+\{h,\{f,g\}\} \\
     &amp;= \left\{ f,g_{p_j}h_{q_j}- g_{q_j}h_{p_j} \right\} + \left\{ g,h_{p_j}f_{q_j}- h_{q_j}f_{p_j} \right\} + \left\{ h,f_{p_j}g_{q_j}- f_{q_j}g_{p_j} \right\} \\
     &amp;=   f_{p_k}(g_{p_j}h_{q_j}- g_{p_j}h_{q_j})_{q_k}
@@ -158,6 +159,7 @@ q\\ p
     &amp;=0
 \end{aligned}\]</span></p>
 <p>We call attention to a critical observation which leads to the pairwise cancellations above. Let us isolate two terms in the fourth equality: the first term <span class="math inline">\(f_{p_k}h_{q_j}g_{p_j q_k}\)</span> and the antepenultimate term <span class="math inline">\(-f_{p_j}h_{q_k}g_{p_k q_j}\)</span>. Note that we have rearranged the latter slightly, employing smoothness to commute the order of partial derivatives. Since under our Einstein convention each term is a double sum each of <span class="math inline">\(n\)</span> terms, we have the following identity: <span class="math display">\[\sum_{j,k=1}^{n} f_{p_k}h_{q_j}g_{p_j q_k}=\sum_{j,k=1}^{n} f_{p_j}h_{q_k}g_{p_k q_j}\]</span> In other words, we may simply "switch the indices" <span class="math inline">\(j\)</span> and <span class="math inline">\(k\)</span> to obtain that <span class="math inline">\(f_{p_k}h_{q_j}g_{p_j q_k}= f_{p_j}h_{q_k}g_{p_k q_j}\)</span>. Thus, we have two terms which are identical but with opposite signs. Since the lines in the expression cyclically repeat, we have in fact three pairs of terms that shall cancel. In this fashion, six terms vanish each step. Subsequent equality steps show more pairs that disappear, three pairs at a time.</p>
+</details>
 </div>
 <div id="leibniz-rule" class="section level5 unnumbered">
 <h5 class="unnumbered">Leibniz Rule</h5>

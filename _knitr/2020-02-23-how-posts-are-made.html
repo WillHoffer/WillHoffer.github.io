@@ -56,8 +56,8 @@
 <h3>Creating &amp; formatting the file</h3>
 <p>Individual posts are created as R Markdown files. If desired, a draft of the page’s contents may first be made in the _drafts directory. Its contents will not show up on the website (publically or in the local preview,) but it may be knitted in the usual fashion of R Studio to be previewed. Note that its formats will not be perfect, but the formatting will be fixed later. Then, the file should be moved or copied to the <code>_knitr</code> directory.</p>
 <p>Once the file is ready to be previewed locally, run the following command in the RStudio console:</p>
-<pre><code>prettyjekyll.FormatPost(choose.dir())</code></pre>
-<p>This command will correctly format the post and create a file markdown under the <code>_posts</code> directory. Note that this command essentially acts as a replacement for the knitting process. Note also that <code>choose.dir()</code> may be replaced with the file directory; this command simply opens up a UI to select the file from the computer.</p>
+<pre><code>prettyjekyll.FormatPost(choose.files())</code></pre>
+<p>This command will correctly format the post and create a file markdown under the <code>_posts</code> directory. Note that this command essentially acts as a replacement for the knitting process. Note also that <code>choose.files()</code> may be replaced with the file directory; this command simply opens up a UI to select the file from the computer.</p>
 <p>Note that as currently configured, these posts will show up on the blog by default. They may of course be moved if they are desired to be elsewhere on the site, but the navigation bar does not update automatically so it should be manually changed. One of the features of the website as currently built is that it uses <a href="https://shopify.github.io/liquid/">Liquid</a> to implement some programmatic options in <code>.html</code> or markdown documents. (Liquid code is how posts are automatically listed.)</p>
 </div>
 <div id="previewing-locally-publishing" class="section level3">

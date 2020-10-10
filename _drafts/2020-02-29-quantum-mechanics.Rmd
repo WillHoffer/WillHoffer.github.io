@@ -31,6 +31,7 @@ Note that these notes are a currently a work in progress. If you would like to s
 Classical Mechanics
 ===================
 
+
 ### Classical Observables
 
 #### The Hamiltonian
@@ -158,6 +159,8 @@ We proceed to state and prove some properties of this bracket.
 Throughout this section, let $f,g,h\in \mathscr{A}_{cl}$ and
 $\alpha\in \mathbb{R}$.
 
+
+
 ##### Skew-Symmetry {#skew-symmetry .unnumbered}
 
 The Poisson bracket is skew-symmetric. $$\begin{aligned}
@@ -183,10 +186,13 @@ The Poisson bracket is linear in both its inputs. $$\begin{aligned}
 The Poisson bracket satisfies the Jacobi identity:
 $$\{f,\{g,h\}\}+\{g,\{h,f\}\}+\{h,\{f,g\}\} =0$$
 
+<details><summary>Proof</summary>
+
 For readability, we shall use subscripts to denote partial derivatives,
 e.g. $\frac{\partial f}{\partial p_j}=f_{p_j}$. Also in what follows, we
 will employ the Einstein summation convention; whenever an index is
 repeated, one interprets the quantity as a sum over $n$ coordinates.
+
 $$\begin{aligned}
 &\{f,\{g,h\}\}+\{g,\{h,f\}\}+\{h,\{f,g\}\} \\
     &= \left\{ f,g_{p_j}h_{q_j}- g_{q_j}h_{p_j} \right\} + \left\{ g,h_{p_j}f_{q_j}- h_{q_j}f_{p_j} \right\} + \left\{ h,f_{p_j}g_{q_j}- f_{q_j}g_{p_j} \right\} \\
@@ -263,6 +269,8 @@ three pairs of terms that shall cancel. In this fashion, six terms
 vanish each step. Subsequent equality steps show more pairs that
 disappear, three pairs at a time.
 
+</details>
+
 ##### Leibniz Rule {#leibniz-rule .unnumbered}
 
 The Poisson bracket satisfies a Leibniz identity. $$\begin{aligned}
@@ -307,6 +315,7 @@ $h\in\mathscr{A}_{cl}$; in the reverse direction of the equivalence,
 this fact is needed to deduce that $[X_f,X_g]=X_{\left\{ f,g \right\}}$
 as operators.
 
+
 #### Algebraic Properties
 
 Having established this Poisson bracket, we now summarize the following
@@ -337,8 +346,11 @@ action $X_H$.
 
 #### Hamiltonian vs. Liouville Mechanics
 
+
+
 Quantum Mechanics
 =================
+
 
 ### The Two-Slit Experiment
 
@@ -392,6 +404,7 @@ Quantum Mechanics
 
 #### Multiplication and the Fourier Transform
 
+
   Dictionary   Classical/Statistical     Quantum
   ------------ ------------------------- ------------------------------------------
   Observable   Function on phase space   Self-adjoint operator on a Hilbert space
@@ -399,6 +412,11 @@ Quantum Mechanics
 
 Quantum analog of Poisson bracket, Heisenberg formulation of quantum
 mechanics (p. 4-5)
+
+
+
+
+
 
 # References
 

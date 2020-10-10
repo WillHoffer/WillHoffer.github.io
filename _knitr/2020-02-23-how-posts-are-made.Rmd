@@ -29,9 +29,9 @@ Individual posts are created as R Markdown files. If desired, a draft of the pag
 
 Once the file is ready to be previewed locally, run the following command in the RStudio console:
 ```
-prettyjekyll.FormatPost(choose.dir())
+prettyjekyll.FormatPost(choose.files())
 ```
-This command will correctly format the post and create a file markdown under the `_posts` directory. Note that this command essentially acts as a replacement for the knitting process. Note also that `choose.dir()` may be replaced with the file directory; this command simply opens up a UI to select the file from the computer.
+This command will correctly format the post and create a file markdown under the `_posts` directory. Note that this command essentially acts as a replacement for the knitting process. Note also that `choose.files()` may be replaced with the file directory; this command simply opens up a UI to select the file from the computer.
 
 Note that as currently configured, these posts will show up on the blog by default. They may of course be moved if they are desired to be elsewhere on the site, but the navigation bar does not update automatically so it should be manually changed. One of the features of the website as currently built is that it uses [Liquid](https://shopify.github.io/liquid/) to implement some programmatic options in `.html` or markdown documents. (Liquid code is how posts are automatically listed.)
 
