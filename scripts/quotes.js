@@ -21,9 +21,34 @@ var quotes = [
   '"If all roads lead to Rome, then the Roman empire is path connected." - Stefano Vidussi'
 ]
 
+var quoteIndex = 0;
+
 function newQuote() {
-var randomN = Math.floor(Math.random()*(quotes.length));
-document.getElementById('quoteDisplay').innerHTML = quotes[randomN];
+  var randomN = Math.floor(Math.random()*(quotes.length));
+  document.getElementById('quoteDisplay').innerHTML = quotes[randomN];
 }
 
-window.onload = newQuote;
+function nextQuote(){
+  if(quoteIndex==quotes.length-1)
+    quoteIndex = 0;
+  else
+    quoteIndex ++;
+  
+  document.getElementById('quoteDisplay').innerHTML = quotes[quoteIndex]
+}
+
+function randomizeOrder(){
+  shuffleArray(quotes)
+}
+
+/* Randomize array in-place using Durstenfeld shuffle algorithm */
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+}
+
+window.onload = randomizeOrder;
