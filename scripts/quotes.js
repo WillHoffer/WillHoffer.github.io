@@ -17,7 +17,8 @@ var quotes = [
   '"The worst thing you can do to a problem is solve it completely." - Daniel Kleitman',
   '"This wouldn\'t be good at making toast. It would make everything toast, once." - Linn van Woerkem',
   '"A bore is someone who deprives you of solitude without providing you with company." - Oscar Wilde',
-  '"Young man, in mathematics you don\'t understand things. You just get used to them." - John von Neumann'
+  '"Young man, in mathematics you don\'t understand things. You just get used to them." - John von Neumann',
+  '"If all roads lead to Rome, then the Roman empire is path connected." - Stefano Vidussi'
 ]
 
 function newQuote() {
