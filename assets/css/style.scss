@@ -1,5 +1,28 @@
 ---
 ---
+
+// Static Color References
+$lightBlue: #4DC8FF;
+$royalBlue: #0300AB;
+$white: #FFFFFF;
+$black: #000000;
+
+html {
+  --lightBlue: #4DC8FF;
+  --royalBlue: #0300AB;
+  --white: #FFFFFF;
+  --black: #000000;
+  
+  --bg-color: var(--white);
+  --section-headings-color: var(--royalBlue);
+}
+
+html[data-theme='dark'] {
+  --bg-color: #FFFFFF;
+  --section-headings-color: #0300AB;
+}
+
+
 /* Default Variables*/
 /*
 
@@ -34,7 +57,7 @@ $hr-border-color: #eff0f1 !default;
 
 $header-bg-color: #4DC8FF;
 $header-bg-color-secondary: #0300AB;
-$section-headings-color: #0300AB;
+$section-headings-color: var(--section-headings-color);
 
 // Remark: must change before the import
 
@@ -57,9 +80,23 @@ nav ul li, footer ul li {
 }
 
 body{
-    background-color: #FFFFFF;
+    background-color: var(--bg-color);
     
 }
+
+
+/*
+.main-content-dark{
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        color: $section-headings-color;
+    }
+}
+*/
 
 /* 
 // This is where one might change the header with the fractal gif (?)
