@@ -52,7 +52,7 @@ html {
   --section-headings-color: var(--royalBlue);
 }
 
-$header-bg-color: var(--lightblue);
+$header-bg-color: var(--lightBlue);
 $header-bg-color-secondary: var(--royalBlue);
 $section-headings-color: var(--section-headings-color);
 
@@ -75,9 +75,29 @@ nav ul li, footer ul li {
     margin-right: 10px;
 }
 
-// Used to change the background color
+// Used to change colors of certain objects
 body{
     background-color: var(--bg-color);
+}
+
+// Custom Button Setup
+.button{
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: rgba(77, 166, 255, 0.9);
+  background-color: rgba(77, 166, 255, 0.01);
+  border-color: rgba(77, 166, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+
+  &:hover {
+    color: rgba(77, 166, 255, 0.8);
+    text-decoration: none;
+    background-color: rgba(77, 166, 255, 0.2);
+    border-color: rgba(77, 166, 255, 0.3);
+  }
 }
 
 
