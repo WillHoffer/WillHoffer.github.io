@@ -41,7 +41,7 @@ $hr-border-color: #eff0f1 !default;
 
 
 /* Custom Variables */ 
-// Remark: must change $vars before the import
+
 html {
   --lightBlue: #4DC8FF;
   --royalBlue: #0300AB;
@@ -52,6 +52,7 @@ html {
   --section-headings-color: var(--royalBlue);
 }
 
+// Remark: must change $vars before the import
 $header-bg-color: var(--lightBlue);
 $header-bg-color-secondary: var(--royalBlue);
 $section-headings-color: var(--section-headings-color);
@@ -59,25 +60,46 @@ $section-headings-color: var(--section-headings-color);
 
 @import "{{ site.theme }}";
 
+//@import "../fonts/cmuserif_boldoblique_macroman/stylesheet.css";
+@import "../fonts/cmuserif_bold_macroman/stylesheet.css";
+@import "../fonts/cmuserif_oblique_macroman/stylesheet.css";
+@import "../fonts/cmuserif_roman_macroman/stylesheet.css";
+
+
 // Custom CSS for formatting the Nav Bar navigation.html
 nav ul, footer ul {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    padding: 0px;
-    list-style: none;
+  font-weight: bold;
+  padding: 0px;
+  list-style: none;
 }
 nav ul li, footer ul li {
-    display: inline;
-    margin-right: 10px;
-    margin-left: 10px;
+  display: inline;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .topnav-right{
-    float: right;
-    margin-right: 10px;
+  float: right;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-// Used to change colors of certain objects
+
+
 body{
-    background-color: var(--bg-color);
+  background-color: var(--bg-color); 
+  font-family:  computerModern, "Times New Roman", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+}
+
+.project-name {
+  //font-family: computerModern;
+  font-style: normal;
+  font-weight: bold;
+}
+    
+.project-tagline {
+  font-style: normal;
+  font-weight: normal;
 }
 
 // Custom Button Setup
