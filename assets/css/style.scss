@@ -47,16 +47,26 @@ html {
   --royalBlue: #0300AB;
   --white: #FFFFFF;
   --black: #000000;
+  --lighterGray: #E0E0E0;
+  --lightGray: #B5B5B5;
+  --darkGray: #171717;
+  --periwinkle: #BB87FF;
+  --linkBlue: #0099E0;
   
-  --bg-color: var(--white);
+  --bg-color: var(--lighterGray);
   --section-headings-color: var(--royalBlue);
+  --body-text-color: var(--darkGray);
+  --body-link-color: var(--linkBlue);
 }
 
 // Remark: must change $vars before the import
+$bg-color: var(--bg-color); // bg-color not part of Cayman Theme
 $header-bg-color: var(--lightBlue);
 $header-bg-color-secondary: var(--royalBlue);
 $section-headings-color: var(--section-headings-color);
-
+$body-text-color: var(--body-text-color);
+$body-link-color: var(--body-link-color);
+$blockquote-text-color: var(--body-text-color);
 
 @import "{{ site.theme }}";
 
@@ -65,8 +75,6 @@ $section-headings-color: var(--section-headings-color);
 @import "../fonts/cmuserif_oblique_macroman/stylesheet.css";
 @import "../fonts/cmuserif_roman_macroman/stylesheet.css";
 
-
-// Custom CSS for formatting the Nav Bar navigation.html
 nav ul, footer ul {
   font-weight: bold;
   padding: 0px;
@@ -77,18 +85,32 @@ nav ul li, footer ul li {
   margin-right: 10px;
   margin-left: 10px;
 }
+.topnav-left{
+  color: var(--section-headings-color);
+}
+
 .topnav-right{
   float: right;
   margin-right: 10px;
   margin-left: 10px;
 }
 
-
-
 body{
-  background-color: var(--bg-color); 
-  font-family:  computerModern, "Times New Roman", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: $bg-color; 
+  font-family:  computerModern, "Open Sans", "Helvetica Neue", "Times New Roman", Helvetica, Arial, sans-serif;
     
+}
+
+.main-content{
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+    color: $section-headings-color;
+  }
 }
 
 .project-name {
@@ -102,23 +124,22 @@ body{
   font-weight: normal;
 }
 
-// Custom Button Setup
 .button{
   display: inline-block;
   margin-bottom: 1rem;
-  color: rgba(77, 166, 255, 0.9);
-  background-color: rgba(77, 166, 255, 0.01);
-  border-color: rgba(77, 166, 255, 0.2);
+  color: $section-headings-color;
+  background-color: $bg-color;
+  border-color: $section-headings-color;
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 
   &:hover {
-    color: rgba(77, 166, 255, 0.8);
+    color: $section-headings-color;
     text-decoration: none;
-    background-color: rgba(77, 166, 255, 0.2);
-    border-color: rgba(77, 166, 255, 0.3);
+    background-color: rgba(100,100,100,0.3);
+    border-color: rgba(100, 100, 100, 0.3);
   }
 }
 
