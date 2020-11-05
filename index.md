@@ -11,7 +11,7 @@ Whether you're here for professional information about me, pedagogical content, 
 Here are some highlights:
 
 - [CV](https://willhoffer.com/cv/): my CV and publications
-- [Talks](https://willhoffer.com/talks/): talk tiles, abstracts, and slides
+- [Talks](https://willhoffer.com/talks/): talk titles, abstracts, and slides
 - [Quidditas](https://willhoffer.com/quidditas/): write-ups on a variety of topics
 
 
