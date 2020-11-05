@@ -16,7 +16,7 @@ Here are some highlights:
 
 
 ## Always Improving...
-There's always more work to be done, so you'll frequently find new gizmos and write-ups. Check back in later, and you will continually find new improvements and more content. If you encounter any issues, please let me know so I can tidy up.
+There's always more work to be done, so you'll frequently find new gizmos and write-ups. Check back in later! If you encounter any issues, please let me know so I can tidy up. Also, I'm always taking quote suggestions, so feel free to contribute.
 
 
 
