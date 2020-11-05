@@ -22,6 +22,7 @@ Listings are formatted in the order: program/venue, sponoring institution(s), li
 University of California, Riverside [Link](http://math.ucr.edu/~frgmpds/seminars.html)
 - *A First Introduction to Resurgence, Part I*, 4/16/20
 - *A First Introduction to Resurgence, Part II*, 5/27/20
+- *Rainbows, Quantum Billiards, and the Birth of Reflections - Stokes Phenomena Exemplified*, 10/22/20
 
 ### Mathematics of Quantum Mechanics (Math 242)
 University of California, Riverside
