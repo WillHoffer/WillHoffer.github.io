@@ -50,7 +50,6 @@ html {
   --lighterGray: #E0E0E0;
   --lightGray: #B5B5B5;
   --darkGray: #171717;
-  --periwinkle: #BB87FF;
   --linkBlue: #0099E0;
   
   --bg-color: var(--lighterGray);
@@ -61,12 +60,22 @@ html {
 
 // Remark: must change $vars before the import
 $bg-color: var(--bg-color); // bg-color not part of Cayman Theme
+
+//$header-heading-color: #fff
 $header-bg-color: var(--lightBlue);
 $header-bg-color-secondary: var(--royalBlue);
+
 $section-headings-color: var(--section-headings-color);
 $body-text-color: var(--body-text-color);
 $body-link-color: var(--body-link-color);
 $blockquote-text-color: var(--body-text-color);
+
+$code-bg-color: var(--bg-color);
+$code-text-color: var(--section-headings-color); //var(--lightBlue);
+
+$border-color: #FFF;//var(--section-headings-color);
+$table-border-color: #519DE8;
+$hr-border-color: var(--section-headings-color); //#4E45FF;
 
 @import "{{ site.theme }}";
 
@@ -156,7 +165,6 @@ img.rounded {
   
 }
 
-
 .page-header{
   background-image: linear-gradient(120deg, rgba(3,0,171,0.5), rgba(77,198,255,0.5)), url("../images/juliaFullCircle_1440_fps60.gif"), url("../images/juliaFullCircle_1440_fps60.gif");
   background-repeat: no-repeat;
@@ -166,5 +174,6 @@ img.rounded {
   //-webkit-transform: scaleX(-1);
   //transform: scaleX(-1);
 }
+
 
 

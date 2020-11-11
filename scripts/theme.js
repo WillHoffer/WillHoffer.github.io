@@ -1,5 +1,5 @@
 
-//var themeIndex=0;
+// Static Variables
 var themes=["light","dark"];
 var lightBlue = "#4DC8FF";
 var royalBlue = "#0300AB";
@@ -16,8 +16,7 @@ function toggleTheme(){
   themeIndex++;
   if(themeIndex==themes.length)
     themeIndex=0;
-  
-  //setTheme(themes[themeIndex]);
+
   setTheme(themeIndex);
 }
 

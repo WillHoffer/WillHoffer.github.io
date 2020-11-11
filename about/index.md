@@ -11,4 +11,3 @@ I call myself an aspiring mathematician and physics enthusiast, which is just th
   - [Arxiv.org Publications](https://arxiv.org/search/math?searchtype=author&query=Hoffer%2C+W)
   - [UCR Profile](https://mathdept.ucr.edu/people/william-hoffer)
   - [Academic.edu](https://ucriverside.academia.edu/WillHoffer)
-  
