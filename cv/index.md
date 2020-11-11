@@ -10,4 +10,4 @@ The June 2020 version of my CV may be found [here](https://willhoffer.com/upload
 
 # Publications
 
-- W. Hoffer, A. Vengal, and V. Winstein, "The Structure of Biquandle Brackets." *Journal of Knot Theory and Its Ramifications*, Vol. 29, Is. 6 (May 2020.)  https://doi.org/10.1142/S021821652050042X
+- W. Hoffer, A. Vengal, and V. Winstein, "The Structure of Biquandle Brackets." *Journal of Knot Theory and Its Ramifications*, Vol. 29, Is. 6 (May 2020.)  [https://doi.org/10.1142/S021821652050042X](https://doi.org/10.1142/S021821652050042X)
