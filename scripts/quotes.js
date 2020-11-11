@@ -38,7 +38,8 @@ function nextQuote(){
 }
 
 function randomizeOrder(){
-  shuffleArray(quotes)
+  shuffleArray(quotes);
+  newQuote();
 }
 
 /* Randomize array in-place using Durstenfeld shuffle algorithm */
@@ -51,4 +52,4 @@ function shuffleArray(array) {
     }
 }
 
-window.onload = randomizeOrder;
+window.onload = randomizeOrder();

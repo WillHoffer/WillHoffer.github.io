@@ -16,13 +16,15 @@ function toggleTheme(){
   if(themeIndex==themes.length)
     themeIndex=0;
   
-  setTheme(themes[themeIndex]);
+  //setTheme(themes[themeIndex]);
+  setTheme(themeIndex);
 }
 
-function setTheme(newTheme){
+function setTheme(newIndex){
   let root = document.documentElement;
+  localStorage.setItem("whThemeIndex",newIndex);
   
-  switch(newTheme){
+  switch(themes[newIndex]){
     case "dark":
       setThemeColors(darkGray,lightBlue,lightGray,darkLink);
       break;
@@ -44,3 +46,14 @@ function setThemeColors(bgColor,headingColor,textColor,linkColor){
   root.style.setProperty('--body-text-color',textColor);
   root.style.setProperty('--body-link-color',linkColor);
 }
+
+function initTheme(){
+  var userTheme = localStorage.getItem("whThemeIndex");
+  
+  if(userTheme === null)
+    localStorage.setItem("whThemeIndex",0);
+  else
+    setTheme(userTheme);
+}
+
+window.onload = initTheme();
