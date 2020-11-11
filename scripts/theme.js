@@ -1,5 +1,5 @@
 
-var themeIndex=0;
+//var themeIndex=0;
 var themes=["light","dark"];
 var lightBlue = "#4DC8FF";
 var royalBlue = "#0300AB";
@@ -12,6 +12,7 @@ var darkLink = "#6866CC";
 var lightLink = "#0099E0";
 
 function toggleTheme(){
+  var themeIndex = localStorage.getItem("whThemeIndex");
   themeIndex++;
   if(themeIndex==themes.length)
     themeIndex=0;
@@ -40,7 +41,6 @@ function setTheme(newIndex){
 function setThemeColors(bgColor,headingColor,textColor,linkColor){
   let root = document.documentElement;
   
-  //document.body.style.backgroundColor=bgColor;
   root.style.setProperty('--bg-color',bgColor);
   root.style.setProperty('--section-headings-color',headingColor);
   root.style.setProperty('--body-text-color',textColor);

@@ -3,13 +3,6 @@ layout: default
 title: "Talks Given"
 description: Will Hoffer
 author: "Will Hoffer"
-output:
-  html_document:
-    toc: yes
-  pdf_document:
-    toc: yes
-header-includes:
-- \usepackage{instrumenta}
 ---
 
 ## Research & Expository Presentations
