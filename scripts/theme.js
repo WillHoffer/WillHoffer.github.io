@@ -109,7 +109,7 @@ function setThemeColors(themeColors){
 function initTheme(){
   var userTheme = localStorage.getItem("whThemeIndex");
   
-  if(userTheme === null)
+  if(userTheme === null || userTheme >= themesColorsArray.length)
     localStorage.setItem("whThemeIndex",0);
   else
     setTheme(userTheme);
