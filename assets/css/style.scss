@@ -56,26 +56,35 @@ html {
   --section-headings-color: var(--royalBlue);
   --body-text-color: var(--darkGray);
   --body-link-color: var(--linkBlue);
+  
+  --primary-color: var(--royalBlue);
+  --secondary-color: var(--lightBlue);
 }
+
+//SCSS needs $vars not HTML vars ??
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
 
 // Remark: must change $vars before the import
 $bg-color: var(--bg-color); // bg-color not part of Cayman Theme
 
 //$header-heading-color: #fff
-$header-bg-color: var(--lightBlue);
-$header-bg-color-secondary: var(--royalBlue);
+// Remark: The primary/secondary flip is deliberate.
+//    (The gradient goes from right to left.)
+$header-bg-color: var(--secondary-color);
+$header-bg-color-secondary: var(--primary-color);
 
-$section-headings-color: var(--section-headings-color);
+$section-headings-color: var(--primary-color);
 $body-text-color: var(--body-text-color);
 $body-link-color: var(--body-link-color);
 $blockquote-text-color: var(--body-text-color);
 
 $code-bg-color: var(--bg-color);
-$code-text-color: var(--section-headings-color); //var(--lightBlue);
+$code-text-color: var(--primary-color); //var(--lightBlue);
 
 $border-color: #FFF;//var(--section-headings-color);
 $table-border-color: #519DE8;
-$hr-border-color: var(--section-headings-color); //#4E45FF;
+$hr-border-color: var(--primary-color); //#4E45FF;
 
 @import "{{ site.theme }}";
 
@@ -95,7 +104,7 @@ nav ul li, footer ul li {
   margin-left: 10px;
 }
 .topnav-left{
-  color: var(--section-headings-color);
+  color: var(--primary-color);
 }
 
 .topnav-right{
@@ -166,13 +175,20 @@ img.rounded {
 }
 
 .page-header{
-  background-image: linear-gradient(120deg, rgba(3,0,171,0.5), rgba(77,198,255,0.5)), url("../images/juliaFullCircle_1440_fps60.gif"), url("../images/juliaFullCircle_1440_fps60.gif");
+  $colorRB: #0300AB; // Does not work inside rgba()
+  $colorLB: #4DC8FF; //  to use var()'s
+  
+  background-image: 
+    linear-gradient(
+      120deg, 
+      rgba($colorRB,0.5), 
+      rgba($colorLB,0.5)
+    ),
+    url("../images/juliaFullCircle_1440_fps60.gif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  
-  //-webkit-transform: scaleX(-1);
-  //transform: scaleX(-1);
+
 }
 
 
