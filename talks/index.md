@@ -11,6 +11,10 @@ Here I provide a list of talks I've given together with links to more informatio
 
 Listings are formatted in the order: program/venue, sponoring institution(s), link, and listing of talk title(s).
 
+### Functional Analysis and Mathematical Physics Seminar
+California State University, Fresno [Link](https://www.fresnostate.edu/csm/math/colloquia-seminars/famp.html)
+- [*From Rainbows to Resurgence: Asymptotics of the Airy Function*](https://willhoffer.com/uploads/media/default/From_Rainbows_to_Resurgence.pdf)
+
 ### Fractal Research Group / Mathematical Physics & Dynamical Systems Seminars
 University of California, Riverside [Link](http://math.ucr.edu/~frgmpds/seminars.html)
 - *A First Introduction to Resurgence, Part I*, 4/16/20
