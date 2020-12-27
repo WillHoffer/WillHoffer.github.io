@@ -20,6 +20,7 @@ University of California, Riverside [Link](http://math.ucr.edu/~frgmpds/seminars
 - *A First Introduction to Resurgence, Part I*, 4/16/20
 - [*A First Introduction to Resurgence, Part II*](https://willhoffer.com/uploads/media/default/Intro_to_Resurgence_2.pdf), 5/27/20 
 - [*Rainbows, Quantum Billiards, and the Birth of Reflections - Stokes Phenomena Exemplified*](https://willhoffer.com/uploads/media/default/Stokes_Phenomena_Exemplified_Presentation.pdf), 10/22/20
+- [*Rainbows, Quantum Billiards, and the Birth of Reflections - Segue into Resurgence*](https://willhoffer.com/uploads/media/default/Segue_into_Resurgence_Presentation.pdf), 11/12/20
 
 ### Mathematics of Quantum Mechanics (Math 242)
 University of California, Riverside
