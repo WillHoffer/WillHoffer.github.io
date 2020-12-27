@@ -1,6 +1,14 @@
 ## About the Website
 
-This website is the personal website of Will Hoffer, hosted by Github. It contains professional information, an informational blog, and other resources/references. I retain copywrite over written posts, documents, and other academic content.
+This website is the personal website of Will Hoffer, hosted via Github pages. It contains professional information, an informational blog, talk notes, and other resources/references. 
+
+## Copyright & Unofficial License
+We retain all rights to academic, pedagogical, and all other personally created content on the website. Readers are more than welcome, and encouraged, to engage with the content themselves for personal and educational purposes. If you reproduce or improve upon any content, please provide reasonable citation and keep the content accessible.
+
+Other content not created by me remains in accordance with respective license provisions (e.g. creative commons, MIT, and/or fair use.) If there are any issues found, please bring them to our attention so that they may be rectified; we are not aware of any at this time.
+
+## Technical Information
+The following information describes how to edit and create website content.
 
 ### How to Edit the Site
 
