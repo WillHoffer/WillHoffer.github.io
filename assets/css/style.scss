@@ -174,6 +174,15 @@ img.rounded {
   
 }
 
+img.portrait {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 25%;
+  border-radius: 50%;
+  border: 5px solid #FFF;
+}
+
 .page-header{
   $colorRB: #0300AB; // Does not work inside rgba()
   $colorLB: #4DC8FF; //  to use var()'s
