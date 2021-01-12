@@ -3,17 +3,46 @@ layout: default
 title: Quidditas
 description: The Archive of Posts
 ---
+<h2>Navigation</h2>
+<ul>
+  <li><a href="#Sorted-Chronologically">Posts sorted chronologically</a></li>
+  <li><a href="#Sorted-by-Topic">Posts sorted by topic</a></li>
+</ul>
+
 <h2>What is Quidditas?</h2>
-  <p>Quidditas is the name I’ve given to my personal blog. My main goal is to post about interesting topics, create educational material, and talk about my current research. So, its content will generally cover topics I encounter in my studies of mathematical physics, both classical results and modern happenings.</p>
+<p>Quidditas is the name I’ve given to my personal blog. My main goal is to post about interesting topics, create educational material, and talk about my current research. So, its content will generally cover topics I encounter in my studies of mathematical physics, both classical results and modern happenings.</p>
 
-  <p>Additionally, you can also find tutorials and references that I’ve written about making this website. The first post details how I create posts for the website, and I have since created a lot of customization. Future plans include detailing how one might set up their own website from scratch.</p>
+<p>Additionally, you can also find tutorials and references that I’ve written about making this website. The first post details how I create posts for the website, and I have since created a lot of customization. Future plans include detailing how one might set up their own website from scratch.</p>
 
-  <p>The word “quidditas” itself is Latin, with its English analog being the word quiddity. It has a rather odd definition: quidditas is the answer to the question “What is the thing?” (as can, for instance, be seen on <a href="http://www.archives.nd.edu/cgi-bin/wordz.pl?keyword=quidditas">William Whitaker’s Words</a>.) In simpler terms, it specifies the essence of the topic. I chose it partly because I love the parallel to a seminar at my undergraduate institution called “What is?” and partly because the word itself has a lovely little linguistic flair.</p>
+<p>The word “quidditas” itself is Latin, with its English analog being the word quiddity. It has a rather odd definition: quidditas is the answer to the question “What is the thing?” (as can, for instance, be seen on <a href="http://www.archives.nd.edu/cgi-bin/wordz.pl?keyword=quidditas">William Whitaker’s Words</a>.) In simpler terms, it specifies the essence of the topic. I chose it partly because I love the parallel to a seminar at my undergraduate institution called “What is?” and partly because the word itself has a lovely little linguistic flair.</p>
 
-<h2>In Chronological Order:</h2>
-	<ul class="posts">
+<h2 id="Sorted-Chronologically">Sorted Chronologically</h2>
+<!--<details>
+  <summary>Click to View.</summary>/-->
+    <ul class="posts">
+  	  {% for post in site.posts %}
+  	    {% if post.path contains 'quidditas' %}
+  	      <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+  	    {% endif %}
+  	  {% endfor %}
+    </ul>
+<!--</details>/-->
 
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+<h2 id="Sorted-by-Topic">Sorted by Tag</h2>
+<!--<details>
+  <summary>Click to View Tags.</summary>/-->
+  {% for tag in site.tags %}
+    {% assign t = tag | first %}
+    {% assign posts = tag | last %}
+    
+    {{ t | downcase}}
+    <ul>
+      {% for post in posts %}
+        {% if post.tags contains t %}
+          <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endfor %}
+<!--</details>/-->
+	
