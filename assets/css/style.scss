@@ -113,6 +113,11 @@ nav ul li, footer ul li {
   margin-left: 10px;
 }
 
+.centered{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body{
   background-color: $bg-color; 
   font-family:  computerModern, "Open Sans", "Helvetica Neue", "Times New Roman", Helvetica, Arial, sans-serif;
