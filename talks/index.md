@@ -15,6 +15,7 @@ Listings are formatted in the order: program/venue, sponoring institution(s), li
 California State University, Fresno [Link](https://www.fresnostate.edu/csm/math/colloquia-seminars/famp.html)
 - [*From Rainbows to Resurgence: Asymptotics of the Airy Function*](https://willhoffer.com/uploads/media/default/From_Rainbows_to_Resurgence.pdf)
 
+
 ### Fractal Research Group / Mathematical Physics & Dynamical Systems Seminars
 University of California, Riverside [Link](http://math.ucr.edu/~frgmpds/seminars.html)
 - *A First Introduction to Resurgence, Part I*, 4/16/20
@@ -22,9 +23,17 @@ University of California, Riverside [Link](http://math.ucr.edu/~frgmpds/seminars
 - [*Rainbows, Quantum Billiards, and the Birth of Reflections - Stokes Phenomena Exemplified*](https://willhoffer.com/uploads/media/default/Stokes_Phenomena_Exemplified_Presentation.pdf), 10/22/20
 - [*Rainbows, Quantum Billiards, and the Birth of Reflections - Segue into Resurgence*](https://willhoffer.com/uploads/media/default/Segue_into_Resurgence_Presentation.pdf), 11/12/20
 
+
+### UCR Graduate Student Seminar 
+University of California, Riverside [Link](https://ams-at-ucr.github.io/gradsem/years/)
+- *Keeping up with the Bernoulli's* [Abstract](http://math.ucr.edu/~gradsem/years/2019-2020/#Hoffer), 1/31/20
+- [*Resurgence & Fractals*, (Slides)](https://willhoffer.com/uploads/docs/presentations/Oral Exam Presentation - First Draft.pdf) [Abstract](https://ams-at-ucr.github.io/gradsem/years/2020-2021/), 1/15/20
+
+
 ### Mathematics of Quantum Mechanics (Math 242)
 University of California, Riverside
 - *Deriving the Schrodinger Equation from Feynmann's Path Integral*, 3/13/20
+
 
 ### Wave Equations and General Relativity Seminar
 University of California, Riverside
@@ -33,9 +42,6 @@ University of California, Riverside
 - *Introduction to the Physics of Relativity*, 4/13/20
 - *The Einstein Equation Cauchy Problem*, 05/11/20
 
-### UCR Graduate Student Seminar 
-University of California, Riverside [Link](http://math.ucr.edu/~gradsem/years/2019-2020/#Hoffer)
-- *Keeping up with the Bernoulli's*, 1/31/20
 
 ### Denman Research Forum (3/29/18)
 Ohio State University [Link](https://ugresearch.osu.edu/Pages/Initiatives-\%20Denman-\%20Accepted\%20Abstracts.aspx)
