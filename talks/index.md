@@ -27,10 +27,10 @@ University of California, Riverside [Link](http://math.ucr.edu/~frgmpds/seminars
 ### UCR Graduate Student Seminar 
 University of California, Riverside [Link](https://ams-at-ucr.github.io/gradsem/years/)
 - *Keeping up with the Bernoulli's* [Abstract](http://math.ucr.edu/~gradsem/years/2019-2020/#Hoffer), 1/31/20
-- [*Resurgence & Fractals*, (Slides)](https://willhoffer.com/uploads/docs/presentations/Oral Exam Presentation - First Draft.pdf) [Abstract](https://ams-at-ucr.github.io/gradsem/years/2020-2021/), 1/15/20
+- [*Resurgence & Fractals*, (Slides)](https://willhoffer.com/uploads/docs/presentations/Oral Exam Presentation - First Draft.pdf) [Abstract](https://ams-at-ucr.github.io/gradsem/years/2020-2021/), 1/15/21
 
 
-### Mathematics of Quantum Mechanics (Math 242)
+### Mathematics of Quantum Mechanics
 University of California, Riverside
 - *Deriving the Schrodinger Equation from Feynmann's Path Integral*, 3/13/20
 
