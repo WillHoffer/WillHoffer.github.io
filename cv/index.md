@@ -6,14 +6,14 @@ description: Curriculum Vitae
 
 ## Curriculum Vitae
 
-My two-page CV, updated January 2021. View online below, or follow [this link](https://willhoffer.com/uploads/docs/personal/Curriculum%20Vitae%20of%20Will%20Hoffer,%20January%202021.pdf). 
+My two-page CV, updated February 2021. View online below, or follow [this link](https://willhoffer.com/uploads/docs/personal/Curriculum%20Vitae%20of%20Will%20Hoffer,%20February%202021.pdf). 
 
 You can find more info below and elsewhere on my website.
 
-<iframe src="https://willhoffer.com/uploads/docs/personal/Curriculum%20Vitae%20of%20Will%20Hoffer,%20January%202021.pdf" width="100%" height="900">
+<iframe src="https://willhoffer.com/uploads/docs/personal/Curriculum%20Vitae%20of%20Will%20Hoffer,%20February%202021.pdf" width="100%" height="900">
 </iframe>
 
-The June 2020 version of my CV may be found [here](https://willhoffer.com/uploads/media/default/Curriculum%20Vitae%20of%20Will%20Hoffer%2C%20August%202020%20(Online).pdf). Contact me via email for the most up-to-date version of my CV.
+Contact me via email for the most up-to-date version of my CV, or for more tailored information.
 
 ## Publications
 
