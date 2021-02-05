@@ -17,7 +17,7 @@ The June 2020 version of my CV may be found [here](https://willhoffer.com/upload
 
 ## Publications
 
-Google does not allow their pages to be embedded, so check out my full Google Scholar profile [here](https://scholar.google.com/citations?hl=en&user=kaJEJSoAAAAJ).
+Check out my full Google Scholar profile [here](https://scholar.google.com/citations?hl=en&user=kaJEJSoAAAAJ).
 
 <!--
 <iframe src="https://scholar.google.com/citations?user=kaJEJSoAAAAJ&hl=en&authuser=1" width="100%" height="500">
