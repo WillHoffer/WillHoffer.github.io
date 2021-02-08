@@ -18,31 +18,26 @@ description: The Archive of Posts
 
 <h2 id="Sorted-Chronologically">Sorted Chronologically</h2>
 <!--<details>
-  <summary>Click to View.</summary>/-->
-    <ul class="posts">
-  	  {% for post in site.posts %}
-  	    {% if post.path contains 'quidditas' %}
-  	      <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-  	    {% endif %}
-  	  {% endfor %}
-    </ul>
+<summary>Click to View.</summary>/-->
+<ul class="posts">
+{% for post in site.posts %} {% if post.path contains 'quidditas' %}
+  <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+{% endif %}{% endfor %}
+</ul>
 <!--</details>/-->
 
 <h2 id="Sorted-by-Topic">Sorted by Tag</h2>
 <!--<details>
-  <summary>Click to View Tags.</summary>/-->
-  {% for tag in site.tags %}
-    {% assign t = tag | first %}
-    {% assign posts = tag | last %}
-    
-    {{ t | downcase}}
-    <ul>
-      {% for post in posts %}
-        {% if post.tags contains t %}
-          <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  {% endfor %}
+<summary>Click to View Tags.</summary>/-->
+{% for tag in site.tags %} {% assign t = tag | first %} {% assign posts = tag | last %} 
+<!-- Start tag list-->
+{{ t | downcase}}
+<ul>
+{% for post in posts %} {% if post.tags contains t %}
+  <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+{% endif %} {% endfor %}
+</ul>
+<!-- End tag list -->
+{% endfor %}
 <!--</details>/-->
 	
