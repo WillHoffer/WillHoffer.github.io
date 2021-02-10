@@ -2,7 +2,7 @@
     font-family: computerModern;
     src: url('cmunrm-webfont.eot');
     src: url('cmunrm-webfont.eot?#iefix') format('embedded-opentype'),
-         url('cmunrm-webfont.woff2') format('woff2'),
+         /*url('cmunrm-webfont.woff2') format('woff2'),*/
          url('cmunrm-webfont.woff') format('woff'),
          url('cmunrm-webfont.ttf') format('truetype'),
          url('cmunrm-webfont.svg#cmu_serifroman') format('svg');
