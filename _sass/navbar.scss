@@ -1,0 +1,25 @@
+nav ul, footer ul {
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+  list-style-type: none;
+  overflow: auto;
+}
+
+nav ul li a {
+  display: block;
+  text-align: center;
+  padding: 0px 0px;
+  margin: 10px 10px;
+}
+
+.topnav-left{
+  color: var(--primary-color);
+  float: left;
+}
+
+.topnav-right{
+  float: right;
+}

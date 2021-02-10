@@ -1,0 +1,84 @@
+/* Color References
+
+lightBlue:    #4DC8FF
+royalBlue:    #0300AB
+white:        #FFFFFF
+black:        #000000
+
+*/
+
+/* Default Variables*/
+/*
+
+// Breakpoints
+$large-breakpoint: 64em !default;
+$medium-breakpoint: 42em !default;
+
+// Headers
+$header-heading-color: #fff !default;           // White
+$header-bg-color: #159957 !default;             // Green
+$header-bg-color-secondary: #155799 !default;   // Blue
+
+// Text
+$section-headings-color: #159957 !default;      // Green
+$body-text-color: #606c71 !default;
+$body-link-color: #1e6bb8 !default;
+$blockquote-text-color: #819198 !default;
+
+// Code
+$code-bg-color: #f3f6fa !default;
+$code-text-color: #567482 !default;
+
+// Borders
+$border-color: #dce6f0 !default;
+$table-border-color: #e9ebec !default;
+$hr-border-color: #eff0f1 !default;
+
+*/
+
+
+/* Custom Variables */ 
+
+html {
+    --lightBlue: #4DC8FF;
+    --royalBlue: #0300AB;
+    --white: #FFFFFF;
+    --black: #000000;
+    --lighterGray: #E0E0E0;
+    --lightGray: #B5B5B5;
+    --darkGray: #171717;
+    --linkBlue: #0099E0;
+    
+    --bg-color: var(--lighterGray);
+    --section-headings-color: var(--royalBlue);
+    --body-text-color: var(--darkGray);
+    --body-link-color: var(--linkBlue);
+    
+    --primary-color: var(--royalBlue);
+    --secondary-color: var(--lightBlue);
+  }
+  
+  //SCSS needs $vars not HTML vars ??
+  $primary-color: var(--primary-color);
+  $secondary-color: var(--secondary-color);
+  
+  // Remark: must change $vars before the import
+  $bg-color: var(--bg-color); // bg-color not part of Cayman Theme
+  
+  //$header-heading-color: #fff
+  // Remark: The primary/secondary flip is deliberate.
+  //    (The gradient goes from right to left.)
+  $header-bg-color: var(--secondary-color);
+  $header-bg-color-secondary: var(--primary-color);
+  
+  $section-headings-color: var(--primary-color);
+  $body-text-color: var(--body-text-color);
+  $body-link-color: var(--body-link-color);
+  $blockquote-text-color: var(--body-text-color);
+  
+  $code-bg-color: var(--bg-color);
+  $code-text-color: var(--primary-color); //var(--lightBlue);
+  
+  $border-color: #FFF;//var(--section-headings-color);
+  $table-border-color: #519DE8;
+  $hr-border-color: var(--primary-color); //#4E45FF;
