@@ -52,4 +52,4 @@ function shuffleArray(array) {
     }
 }
 
-window.onload = randomizeOrder();
+document.onload = randomizeOrder();
