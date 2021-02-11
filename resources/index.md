@@ -1,6 +1,7 @@
 ---
 title: Resources
 author: Will Hoffer
+description: Useful Links & References
 ---
 ## Utility Websites
 These websites offer powerful tools. 
