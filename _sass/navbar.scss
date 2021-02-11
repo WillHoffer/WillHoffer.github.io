@@ -2,10 +2,20 @@ nav ul, footer ul {
   font-weight: bold;
   padding: 0;
   margin: 0;
-  margin-right: 10px;
-  margin-left: 10px;
   list-style-type: none;
   overflow: auto;
+}
+
+@include large { 
+  // If the screen is large, the nav-bar becomes fixed at the top.
+  nav ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $bg-color;
+    border: 1px solid $bg-color;
+    z-index: 9999;
+  }
 }
 
 nav ul li a {
