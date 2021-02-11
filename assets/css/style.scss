@@ -26,9 +26,18 @@ body{
   font-family:  computerModern, "Open Sans", "Helvetica Neue", "Times New Roman", Helvetica, Arial, sans-serif;
 }
 
+.raised {
+  border: 3px outset rgba(0,0,0,0.1);
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+  -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+
 .main-content{
   max-width: 64rem;
   padding: 2rem 1rem;
+  background-color: $bg-color;
   
   h1,
   h2,

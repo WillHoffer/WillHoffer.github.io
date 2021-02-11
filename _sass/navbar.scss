@@ -15,6 +15,17 @@ nav ul, footer ul {
     background-color: $bg-color;
     border: 1px solid $bg-color;
     z-index: 9999;
+
+    //Border bottom shadow
+    border-bottom: 3px outset rgba(0,0,0,0.1);
+    //border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+  }
+
+  #mainHeader{
+    margin-top: 50px;
   }
 }
 
