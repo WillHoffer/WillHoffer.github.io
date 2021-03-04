@@ -18,7 +18,16 @@ var quotes = [
   '"This wouldn\'t be good at making toast. It would make everything toast, once." - Linn van Woerkem',
   '"A bore is someone who deprives you of solitude without providing you with company." - Oscar Wilde',
   '"Young man, in mathematics you don\'t understand things. You just get used to them." - John von Neumann',
-  '"If all roads lead to Rome, then the Roman empire is path connected." - Stefano Vidussi'
+  '"If all roads lead to Rome, then the Roman empire is path connected." - Stefano Vidussi',
+  '"A manifold with boundary is like a pig with five heads. Unless we say a pig has five heads, you can assume it has only one." - John Baez',
+  '"We use gothic letters for Lie algebras. I have a theory that this is because while the Romans were roaming around and building aqueducts, the Goths were studying Lie algebras." - John Baez',
+  '"A Lie algebra is a slide rule for a Lie group." - John Baez',
+  '"Thank god life is not totally ordered! We are all the best at something, like being ourselves." - John Baez, after being compared by students to Richard Borcherds, who was also teaching a class on Lie groups',
+  '"You can have nine fourths as much blood and gore in your video games because you use quaternions instead of real three by three matrices." - John Baez',
+  '"If you want cool wiggly stuff, you shouldn\'t be doing linear algebra. Everything sort of looks like lines." - John Baez',
+  '"When I was a kid— that is, up to the age of fourty..." - John Baez',
+  '"A matrix is a thing born to act on a vector. It came out of the womb asking for vectors to act on." - John Baez',
+  '"Coming back down to Earch— or what passes for it, to math grad students..." - John Baez'
 ]
 
 var quoteIndex = 0;

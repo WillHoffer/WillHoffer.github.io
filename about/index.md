@@ -13,7 +13,7 @@ description: About the Author
 
 
 ## Who am I?
-I call myself an aspiring mathematician and physics enthusiast, which is just a fancy way of saying I am a graduate student interested in mathematical physics. I am enrolled in the mathematics PhD program at the University of California, Riverside.
+I call myself an aspiring mathematician and physics enthusiast, which is just a fancy way of saying I am a graduate student interested in mathematical physics. I am a second year student enrolled in the mathematics PhD program at the University of California, Riverside. I passed my oral examination in February of 2021 and will be a PhD candidate effective the end of that academic year.
 
 Currently, I am very interested in the phenomenon of resurgence, and how we might better understand fractals using its tools and techniques. We can study fractals by understanding how their geometric oscillations reverberate in the ambient space around them-- what we call a fractal drum, or sometimes a fractal harp. These oscillations are realized as complex dimensions, and my current research project is to better understand the formulae that express geometric and spectral qualities of the fractal using these complex dimensions.
 

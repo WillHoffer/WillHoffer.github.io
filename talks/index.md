@@ -22,12 +22,13 @@ University of California, Riverside [Link](http://math.ucr.edu/~frgmpds/seminars
 - [*A First Introduction to Resurgence, Part II*](https://willhoffer.com/uploads/media/default/Intro_to_Resurgence_2.pdf), 5/27/20 
 - [*Rainbows, Quantum Billiards, and the Birth of Reflections - Stokes Phenomena Exemplified*](https://willhoffer.com/uploads/media/default/Stokes_Phenomena_Exemplified_Presentation.pdf), 10/22/20
 - [*Rainbows, Quantum Billiards, and the Birth of Reflections - Segue into Resurgence*](https://willhoffer.com/uploads/media/default/Segue_into_Resurgence_Presentation.pdf), 11/12/20
+- [*Resurgence in Fractal Geometry*](https://willhoffer.com/uploads/docs/presentations/2021-02-22%20-%20Resurgence%20in%20Fractal%20Geometry.pdf), 1/28/21, 2/11/21, & 2/18/21 (Leading to my Oral Examination on 2/22/21)
 
 
 ### UCR Graduate Student Seminar 
 University of California, Riverside [Link](https://ams-at-ucr.github.io/gradsem/years/)
 - *Keeping up with the Bernoulli's* [Abstract](http://math.ucr.edu/~gradsem/years/2019-2020/#Hoffer), 1/31/20
-- [*Resurgence & Fractals*, (Slides)](https://willhoffer.com/uploads/docs/presentations/Oral Exam Presentation - First Draft.pdf) [Abstract](https://ams-at-ucr.github.io/gradsem/years/2020-2021/), 1/15/21
+- [*Resurgence & Fractals*, (Slides)](https://willhoffer.com/uploads/docs/presentations/Oral%20Exam%20Presentation%20-%20First%20Draft.pdf) [Abstract](https://ams-at-ucr.github.io/gradsem/years/2020-2021/), 1/15/21
 
 
 ### Mathematics of Quantum Mechanics
