@@ -4,7 +4,7 @@ title: Will Hoffer
 description: About the Author
 ---
 
-<img src="https://willhoffer.com/uploads/media/images/Will_Hoffer_Ocean_Pic_(Square).jpg" class="portrait">
+<img src="https://willhoffer.com/uploads/media/images/Will_Hoffer_SF_Exploratorium_Balcony_(Square).jpg" class="portrait">
 
 ## Mathematical Research:
 - Graduate student at the [University of California, Riverside](https://mathdept.ucr.edu/)
