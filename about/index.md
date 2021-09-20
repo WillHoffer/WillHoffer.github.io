@@ -23,7 +23,7 @@ I find myself humbled by the historical legacy I have stumbled into and by the g
 ## Commitment to Hospitality & Diversity  
 I believe that mathematics ought to be shared with and be open to everyone, both for its own beauty and for the utility it brings to society and science. Moreover, I would want each mathematician's unique identity to be not merely welcomed, but also celebrated! I focus on an individual, because there are many ways to combinatorially mix together the different aspects of a person-- their personality, gender, race, ethnicity, home country, field of interest, and the many more things I cannot fit into a single list. Anyways, I think this has become a long way of saying that I want you to be welcome on the site here, and that I encourage you to share that same respect with others here and elsewhere. 
 
-Have a wonderful day! 🏳️‍🌈🏳️‍⚧️ ✊🏿 ♀️
+Have a wonderful day! 🏳️‍🌈
 
 ## Other Web Locales
   - [Arxiv.org Publications](https://arxiv.org/search/math?searchtype=author&query=Hoffer%2C+W)
