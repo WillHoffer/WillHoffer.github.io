@@ -26,6 +26,10 @@ body{
   font-family:  computerModern, "Open Sans", "Helvetica Neue", "Times New Roman", Helvetica, Arial, sans-serif;
 }
 
+a {
+  color: $body-link-color-2;
+}
+
 @include large {
   .raised {
     border: 3px outset rgba(0,0,0,0.1);
