@@ -6,7 +6,7 @@ description: Curriculum Vitae
 
 ## Curriculum Vitae
 
-My two-page CV, updated Fall 2021. View online below, or follow [this link](https://willhoffer.com/uploads/docs/personal/2021-09-29%20-%20Curriculum%20Vitae%20of%20Will%20Hoffer%20(One%20Page).pdf). 
+My one-page (front and back) CV, updated Fall 2021. View online below, or follow [this link](https://willhoffer.com/uploads/docs/personal/2021-09-29%20-%20Curriculum%20Vitae%20of%20Will%20Hoffer%20(One%20Page).pdf). 
 
 You can find more info below and elsewhere on my website.
 
