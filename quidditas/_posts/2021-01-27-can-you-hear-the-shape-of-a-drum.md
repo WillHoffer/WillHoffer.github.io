@@ -21,7 +21,13 @@ Weyl would go on to prove the theorem two years later, using Hilbert's newly dev
 In essence, the theorem states that you can hear the size of the drum, i.e. $|\Omega|$.
 </div> 
 
-In general though, you can't fully hear the shape of a drum. As it turns out, there are drums with different shapes but the same spectra. 
+In general though, you can't fully hear the shape of a drum. As it turns out, there are drums with different shapes but the same spectra. The following distinct shapes both have the same frequencies:
+
+<center>
+<img    src="https://upload.wikimedia.org/wikipedia/commons/0/01/Isospectral_drums.svg"
+        alt="Image by Jitse Niesen, from Wikimedia Commons; the example was discovered by Gordon, Webb, and Wolpert.">
+</center>
+
 
 ## Further Exposition:
  - <http://www.math.ubc.ca/~feldman/m606/spect.pdf>

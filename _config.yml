@@ -3,7 +3,7 @@ title: Will Hoffer
 description: Mathematical Physicist & Fractal Geometer
 theme: jekyll-theme-cayman
 markdown: kramdown
-permalink: /:year/:month/:title
+permalink: /:year-:month-:day/:title/
 
 google_analytics: UA-159371398-1
 

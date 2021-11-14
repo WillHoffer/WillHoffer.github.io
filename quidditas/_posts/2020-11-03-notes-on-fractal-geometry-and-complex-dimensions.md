@@ -25,7 +25,8 @@ tags:
 <div id="references" class="section level1">
 <h1>References</h1>
 <ul>
-<li>FGCD</li>
+<li> 
+<a href="https://link.springer.com/book/10.1007/978-0-387-35208-4"><i>Fractal Geometry, Complex Dimensions, and Zeta Functions: Geometry and Spectra of Fractal Strings,</i> by Michel L. Lapidus and Machiel van Frankenhuijsen</a></li>
 </ul>
 </div>
 </section>
