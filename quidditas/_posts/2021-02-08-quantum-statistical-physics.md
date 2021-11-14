@@ -1,7 +1,7 @@
 ---
 title: "Quantum Statistical Physics"
 tags: 
-    - mathphys
+    - math-physics
 ---
 
 ## Introduction

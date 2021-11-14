@@ -5,7 +5,7 @@ author: "Will Hoffer"
 date: "March 24, 2020"
 layout: post
 tags:
-- mathphys
+- math-physics
 ---
 
 <script src="{{ site.url }}{{ site.baseurl }}/knitr_files/2020-02-29-quantum-mechanics_files/header-attrs-2.1/header-attrs.js"></script>
