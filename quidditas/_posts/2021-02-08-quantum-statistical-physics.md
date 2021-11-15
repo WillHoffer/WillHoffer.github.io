@@ -1,5 +1,6 @@
 ---
 title: "Quantum Statistical Physics"
+author: "Will Hoffer"
 tags: 
     - math-physics
 ---
