@@ -1,5 +1,5 @@
 ---
-title: "How Posts Are Made"
+title: "How to Make a Post with R Markdown"
 
 author: "Will Hoffer"
 date: "February 29, 2020"
