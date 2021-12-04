@@ -68,7 +68,7 @@ $$ g(s) = \sum_{n=1}^\infty b_n e^{-\lambda_n s} $$
 
 Further, we have that abscissa of convergence $\sc=x_0$ and abscissa of absolute convergence $\sc=x_1$. 
 
-<blockquote>
+<blockquote markdown=block>
 
 #### Proof 
 
@@ -108,7 +108,7 @@ Note that the absolute convergence for real valued $s$ is automatic from converg
 
 For any real number $x_0$, there is a classical Dirichlet series $g$ whose abscissa of convergence and of absolute convergence coincide and equal this number: $\sac=\sc=x_0$.
 
-<blockquote>
+<blockquote markdown=block>
 
 #### Proof 
 
