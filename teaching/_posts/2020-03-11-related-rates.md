@@ -4,6 +4,8 @@ title: "Related Rates"
 author: "Will Hoffer"
 date: "March 11, 2020"
 layout: post
+tags:
+- calculus
 ---
 
 <script src="{{ site.url }}{{ site.baseurl }}/knitr_files/2020-03-11-Related-Rates_files/header-attrs-2.1/header-attrs.js"></script>

@@ -7,6 +7,8 @@ output:                    # DO NOT CHANGE
     theme: cayman          # DO NOT CHANGE
     highlight: github      # DO NOT CHANGE
 header-includes: \usepackage{instrumenta}
+tags:
+- complex-analysis
 ---
 
 ## Multiplication and Rotation
