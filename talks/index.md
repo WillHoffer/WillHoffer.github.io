@@ -11,6 +11,10 @@ Here I provide a list of talks I've given together with links to more informatio
 
 Listings are formatted in the order: program/venue, sponoring institution(s), link, and listing of talk title(s).
 
+### 7th Cornell Fractals Conference
+- *Tube Formulae for Generalized von Koch Fractals* [Slides](https://willhoffer.com/uploads/docs/presentations/2022-06-05%20-%20(Annotated)%20Tube%20Formulae%20for%20GKFs.pdf)
+
+
 ### American Mathematical Society, Western Sectional Meeting (May 2021)
 Special Session for Research in Mathematics by Early Career Graduate Students [Program by Day](https://www.ams.org/meetings/sectional/2282_program_saturday.html#%202282:SS8A)
 - [*On resurgent analysis of explicit formulae in fractal geometry*](https://www.ams.org/amsmtgs/2282_abstracts/1167-51-151.pdf)
