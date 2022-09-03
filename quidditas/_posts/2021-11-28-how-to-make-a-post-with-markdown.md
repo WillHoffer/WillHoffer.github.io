@@ -12,7 +12,7 @@ This article is a simplified version of a previous post about using R Markdown. 
 
 ## How To Make a Text Post
 
-Make a new file in a directory on your website such as `yourGitHubRepoName.io/posts` and save it as a markdown file, say `YYYY-MM-DD-title.md`. 
+Make a new file in a directory on your website such as `yourRepoName.github.io/posts` and save it as a markdown file, say `YYYY-MM-DD-title.md`. 
 
 Add the following text to the new file:
 

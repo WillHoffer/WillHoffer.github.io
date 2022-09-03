@@ -4,7 +4,7 @@ title: Will Hoffer
 description: About the Author
 ---
 
-<img src="https://raw.githubusercontent.com/WillHoffer/WillHoffer.github.io/main/uploads/media/images/Will_Hoffer_SF_Exploratorium_Balcony_(Square).jpg" class="portrait">
+<img src="https://raw.githubusercontent.com/WillHoffer/WillHoffer.github.io/main/uploads/media/images/Will_Hoffer_December_2021.jpg" class="portrait">
 <p style="text-align: center;">Pronouns: he/him</p>
 
 ## Mathematical Research:

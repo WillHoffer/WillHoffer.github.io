@@ -107,6 +107,13 @@ img.portrait {
   border: 5px solid #FFF;
 }
 
+img.centered {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 25%;
+}
+
 details > summary {
   padding: 4px;
   margin-bottom: 10px;
