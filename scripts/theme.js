@@ -115,4 +115,4 @@ function initTheme(){
     setTheme(userTheme);
 }
 
-window.onload = initTheme();
+window.onload += initTheme();

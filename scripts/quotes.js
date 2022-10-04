@@ -35,7 +35,13 @@ var quoteIndex = 0;
 
 function newQuote() {
   var randomN = Math.floor(Math.random()*(quotes.length));
-  document.getElementById('quoteDisplay').innerHTML = quotes[randomN];
+  elem = document.getElementById('quoteDisplay');
+  if(elem !== null){
+    elem.innerHTML = quotes[randomN];
+  }
+  else{
+    //console.log("Document element with id \'quoteDisplay\' not found.");
+  }
 }
 
 function nextQuote(){
@@ -62,4 +68,4 @@ function shuffleArray(array) {
     }
 }
 
-document.onload = randomizeOrder();
+document.onload += randomizeOrder();
