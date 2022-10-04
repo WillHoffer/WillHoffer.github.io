@@ -8,15 +8,7 @@ description: Mathematical Physicist & Fractal Geometer
 ## Welcome to my Personal Website! 
 Whether you're here for professional information about me, pedagogical content, or just the pretty pictures, I hope you have a wonderful visit. 
 
-## Contact Me
-If you're looking to reach me, here's my email:
-
-<div id="email-goes-here"></div>
-<noscript><span style="unicode-bidi:bidi-override;direction:rtl;">moc.reffohlliw@htam</span></noscript>
-
 {% include emailObfuscator.html %}
-  
-You can also right-click to copy the email address. 
 
 ## My Blog: Quidditas
 Quidditas is the name I’ve given to my personal blog. [Check it out!](https://willhoffer.com/quidditas/)
