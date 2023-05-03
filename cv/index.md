@@ -10,8 +10,11 @@ Below you will find my full CV, updated in Spring 2023. View online below, or fo
 
 You may also find more info below and elsewhere on my website.
 
-<iframe src="https:\\willhoffer.com\uploads\docs\personal\2023-05-03-Curriculum-Vitae-of-Will-Hoffer.pdf" width="100%" height="900">
-</iframe>
+<details>
+    <summary>Expand to see CV Preview</summary>
+    <iframe src="https:\\willhoffer.com\uploads\docs\personal\2023-05-03-Curriculum-Vitae-of-Will-Hoffer.pdf" width="100%" height="900">
+    </iframe>
+</details>
 
 Contact me via email for the most up-to-date version of my CV, or for a tailored resume.
 
