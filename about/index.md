@@ -4,7 +4,7 @@ title: Will Hoffer
 description: About the Author
 ---
 
-<img src="https://raw.githubusercontent.com/WillHoffer/WillHoffer.github.io/main/uploads/media/images/Will_Hoffer_December_2021.jpg" class="portrait">
+<img src="https://willhoffer.com/uploads/media/images/Will_Hoffer_AMS_Photo_Jan23_Square.jpg" class="portrait">
 <p style="text-align: center;">Pronouns: he/him</p>
 
 ## Contact Me
