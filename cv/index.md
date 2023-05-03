@@ -6,11 +6,11 @@ description: Curriculum Vitae
 
 ## Curriculum Vitae
 
-Below you will find my full CV, updated in Winter of 2022. View online below, or follow [this link](https://willhoffer.com/uploads/docs/personal/2022-02-08%20-%20Curriculum%20Vitae%20of%20Will%20Hoffer%20(Full).pdf).
+Below you will find my full CV, updated in Spring 2023. View online below, or follow [this link](https:\\willhoffer.com\uploads\docs\personal\2023-05-03-Curriculum-Vitae-of-Will-Hoffer.pdf).
 
 You may also find more info below and elsewhere on my website.
 
-<iframe src="https://willhoffer.com/uploads/docs/personal/2022-02-08%20-%20Curriculum%20Vitae%20of%20Will%20Hoffer%20(Full).pdf" width="100%" height="900">
+<iframe src="https:\\willhoffer.com\uploads\docs\personal\2023-05-03-Curriculum-Vitae-of-Will-Hoffer.pdf" width="100%" height="900">
 </iframe>
 
 Contact me via email for the most up-to-date version of my CV, or for a tailored resume.
