@@ -27,7 +27,7 @@ var quotes = [
   '"If you want cool wiggly stuff, you shouldn\'t be doing linear algebra. Everything sort of looks like lines." - John Baez',
   '"When I was a kid— that is, up to the age of fourty..." - John Baez',
   '"A matrix is a thing born to act on a vector. It came out of the womb asking for vectors to act on." - John Baez',
-  '"Coming back down to Earch— or what passes for it, to math grad students..." - John Baez',
+  '"Coming back down to Earth— or what passes for it, to math grad students..." - John Baez',
   '"Determining where mathematics ends, and science begins, is as difficult, and as pointless, as mapping the edge of the morning mist." - Peter Atkins'
 ]
 
