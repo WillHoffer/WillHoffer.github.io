@@ -3,7 +3,7 @@ title: "How to install Sage on Windows"
 
 tags:
 - tutorial
-- SciComp
+- sci-comp
 ---
 
 # What is Sage?
