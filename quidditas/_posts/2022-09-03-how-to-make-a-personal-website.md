@@ -3,6 +3,7 @@ title: "How to make a Personal Website"
 
 tags:
 - website
+- tutorial
 ---
 
 ## Introduction

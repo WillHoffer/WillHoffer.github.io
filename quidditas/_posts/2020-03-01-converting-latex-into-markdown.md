@@ -7,6 +7,7 @@ layout: post
 tags:
 - website
 - typesetting
+- tutorial
 ---
 
 <script src="{{ site.url }}{{ site.baseurl }}/knitr_files/2020-03-01-drafting-in-latex_files/header-attrs-2.1/header-attrs.js"></script>

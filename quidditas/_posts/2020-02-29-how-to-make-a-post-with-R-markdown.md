@@ -6,6 +6,7 @@ date: "February 29, 2020"
 layout: post
 tags: 
 - website
+- tutorial
 ---
 
 <script src="{{ site.url }}{{ site.baseurl }}/knitr_files/2020-02-23-how-posts-are-made_files/header-attrs-2.1/header-attrs.js"></script>

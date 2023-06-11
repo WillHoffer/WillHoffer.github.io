@@ -3,6 +3,7 @@ title: "Previewing Your Webpage Locally"
 
 tags:
 - website
+- tutorial 
 ---
 
 ## Setup

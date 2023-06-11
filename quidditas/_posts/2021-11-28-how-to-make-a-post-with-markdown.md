@@ -3,6 +3,7 @@ title: "How to Make a Post with Markdown"
 
 tags:
 - website
+- tutorial
 ---
 
 ## Introduction
