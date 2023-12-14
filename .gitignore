@@ -4,5 +4,5 @@
 _site/
 .sass-cache/
 .Rprofile
-.code-workspace
+*.code-workspace
 WillHoffer.github.io.Rproj
