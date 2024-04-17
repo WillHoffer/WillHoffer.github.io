@@ -4,7 +4,7 @@ title: Will Hoffer
 description: Curriculum Vitae
 ---
 
-{% assign cv_link = "https://www.willhoffer.com/uploads/docs/personal/2024-04-17 - CV of Will Hoffer.pdf" %}
+{% assign cv_link = "https://willhoffer.com/uploads/docs/personal/2024-04-17%20-%20CV%20of%20Will%20Hoffer.pdf" %}
 
 ## Curriculum Vitae
 
