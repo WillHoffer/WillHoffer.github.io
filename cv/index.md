@@ -4,7 +4,7 @@ title: Will Hoffer
 description: Curriculum Vitae
 ---
 
-{% assign cv_link = "https://github.com/WillHoffer/WillHoffer.github.io/blob/ee8b497aaeb5170638fb436ff04651cdcd503aee/uploads/docs/personal/2024-04-17%20-%20CV%20of%20Will%20Hoffer.pdf" %}
+{% assign cv_link = "https://www.willhoffer.com/uploads/docs/personal/2024-04-17 - CV of Will Hoffer.pdf" %}
 
 ## Curriculum Vitae
 
@@ -14,7 +14,7 @@ You may also find more info below and elsewhere on my website.
 
 <details>
     <summary>Expand to see CV Preview</summary>
-    <iframe src={{cv_link}} width="100%" height="900">
+    <iframe src="{{cv_link}}" width="100%" height="900">
     </iframe>
 </details>
 
