@@ -8,7 +8,7 @@ description: Curriculum Vitae
 
 ## Curriculum Vitae
 
-Below you will find my full CV, updated in Spring 2023. View online below, or follow [this link]({{cv_link}}).
+Below you will find my full CV, updated in April 2024. View online below, or follow [this link]({{cv_link}}).
 
 You may also find more info below and elsewhere on my website.
 
