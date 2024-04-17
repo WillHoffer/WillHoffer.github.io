@@ -4,15 +4,17 @@ title: Will Hoffer
 description: Curriculum Vitae
 ---
 
+{% assign cv_link = "https://github.com/WillHoffer/WillHoffer.github.io/blob/ee8b497aaeb5170638fb436ff04651cdcd503aee/uploads/docs/personal/2024-04-17%20-%20CV%20of%20Will%20Hoffer.pdf" %}
+
 ## Curriculum Vitae
 
-Below you will find my full CV, updated in Spring 2023. View online below, or follow [this link](https:\\willhoffer.com\uploads\docs\personal\2023-05-03-Curriculum-Vitae-of-Will-Hoffer.pdf).
+Below you will find my full CV, updated in Spring 2023. View online below, or follow [this link]({{cv_link}}).
 
 You may also find more info below and elsewhere on my website.
 
 <details>
     <summary>Expand to see CV Preview</summary>
-    <iframe src="https:\\willhoffer.com\uploads\docs\personal\2023-05-03-Curriculum-Vitae-of-Will-Hoffer.pdf" width="100%" height="900">
+    <iframe src={{cv_link}} width="100%" height="900">
     </iframe>
 </details>
 
