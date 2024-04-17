@@ -2,19 +2,18 @@
 layout: default
 title: Will Hoffer
 description: Curriculum Vitae
+cv_link: https://willhoffer.com/uploads/docs/personal/2024-04-17%20-%20CV%20of%20Will%20Hoffer.pdf
 ---
-
-{% assign cv_link = "https://willhoffer.com/uploads/docs/personal/2024-04-17%20-%20CV%20of%20Will%20Hoffer.pdf" %}
 
 ## Curriculum Vitae
 
-Below you will find my full CV, updated in April 2024. View online below, or follow [this link]({{cv_link}}).
+Below you will find my full CV, updated in April 2024. View online below, or follow [this link]({{page.cv_link}}).
 
 You may also find more info below and elsewhere on my website.
 
 <details>
     <summary>Expand to see CV Preview</summary>
-    <iframe src="{{cv_link}}" width="100%" height="900">
+    <iframe src={{page.cv_link}} width="100%" height="900">
     </iframe>
 </details>
 
