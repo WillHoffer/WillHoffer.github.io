@@ -13,7 +13,7 @@ You may also find more info below and elsewhere on my website.
 
 <details>
     <summary>Expand to see CV Preview</summary>
-    <iframe src={{page.cv_link}} width="100%" height="900">
+    <iframe src="{{page.cv_link}}" width="100%" height="900">
     </iframe>
 </details>
 
