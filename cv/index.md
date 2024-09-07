@@ -28,8 +28,9 @@ Check out my full Google Scholar profile [here](https://scholar.google.com/citat
 </iframe>
 -->
 
-### Journal Publications:
+### Peer-Reviewed Publications:
 
+- Will Hoffer, "Tube formulae for generalized von Koch fractals through scaling functional equations." *J. Fractal Geom.* (2024), published online first. [https://doi.org/10.4171/jfg/155](https://doi.org/10.4171/jfg/155)
 - W. Hoffer, A. Vengal, and V. Winstein, "The Structure of Biquandle Brackets." *Journal of Knot Theory and Its Ramifications*, Vol. 29, Is. 6 (May 2020.)  [https://doi.org/10.1142/S021821652050042X](https://doi.org/10.1142/S021821652050042X)
 
 
