@@ -2,17 +2,18 @@
 layout: default
 title: Will Hoffer
 description: Curriculum Vitae
+cv_link: https://willhoffer.com/uploads/docs/personal/2024-04-17%20-%20CV%20of%20Will%20Hoffer.pdf
 ---
 
 ## Curriculum Vitae
 
-Below you will find my full CV, updated in Spring 2023. View online below, or follow [this link](https:\\willhoffer.com\uploads\docs\personal\2023-05-03-Curriculum-Vitae-of-Will-Hoffer.pdf).
+Below you will find my full CV, updated in April 2024. View online below, or follow [this link]({{page.cv_link}}).
 
 You may also find more info below and elsewhere on my website.
 
 <details>
     <summary>Expand to see CV Preview</summary>
-    <iframe src="https:\\willhoffer.com\uploads\docs\personal\2023-05-03-Curriculum-Vitae-of-Will-Hoffer.pdf" width="100%" height="900">
+    <iframe src="{{page.cv_link}}" width="100%" height="900">
     </iframe>
 </details>
 
@@ -27,8 +28,9 @@ Check out my full Google Scholar profile [here](https://scholar.google.com/citat
 </iframe>
 -->
 
-### Journal Publications:
+### Peer-Reviewed Publications:
 
+- Will Hoffer, "Tube formulae for generalized von Koch fractals through scaling functional equations." *J. Fractal Geom.* (2024), published online first. [https://doi.org/10.4171/jfg/155](https://doi.org/10.4171/jfg/155)
 - W. Hoffer, A. Vengal, and V. Winstein, "The Structure of Biquandle Brackets." *Journal of Knot Theory and Its Ramifications*, Vol. 29, Is. 6 (May 2020.)  [https://doi.org/10.1142/S021821652050042X](https://doi.org/10.1142/S021821652050042X)
 
 
