@@ -2,12 +2,12 @@
 layout: default
 title: Will Hoffer
 description: Curriculum Vitae
-cv_link: https://willhoffer.com/uploads/docs/personal/2024-04-17%20-%20CV%20of%20Will%20Hoffer.pdf
+cv_link: https://willhoffer.com/uploads/docs/personal/2024-06-24_CV_of_Will_Hoffer.pdf
 ---
 
 ## Curriculum Vitae
 
-Below you will find my full CV, updated in April 2024. View online below, or follow [this link]({{page.cv_link}}).
+Below you will find my full CV, updated in June 2024. View online below, or follow [this link]({{page.cv_link}}).
 
 You may also find more info below and elsewhere on my website.
 
