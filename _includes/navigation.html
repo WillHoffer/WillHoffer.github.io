@@ -10,6 +10,21 @@
     <li><a class="topnav-left" href="/teaching">Teaching</a></li>
     <li><a class="topnav-right"><button class="button" onclick="toggleTheme()">Toggle Theme</button></a></li>
     <li><a class="topnav-right"><button class="button" onclick="toggleBackground()">Toggle Animation</button></a></li>
+    <li>
+      <a class="topnav-right">
+        <div class="dropdown">
+          <button class="button">Select Theme</button>
+          <div class="dropdown-content">
+            <button class="button" onclick="toggleTheme()">Toggle Theme</button>
+            <button class="button" onclick="toggleTheme()">Toggle Theme</button>
+            <button class="button" onclick="toggleTheme()">Toggle Theme</button>
+          </div>
+        </div> 
+      </a>
+    </li>
+    <li>
+      <div id="theme-selector-container"></div>
+    </li>
   </ul>
 </nav>
 <!-- Must include the scripts "theme.js" and "background.js" at end of page. -->

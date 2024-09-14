@@ -17,6 +17,7 @@ var lightBluePurple = "#8DA6DF";
 var lighterBlue = "#A2D8FB";
 
 var lightColors={
+  themeName   : "lightColors",
   background  : lighterGray,
   primary     : royalBlue,
   text        : "black",
@@ -24,6 +25,7 @@ var lightColors={
 };
 
 var darkColors={
+  themeName   : "darkColors",
   background  : darkGray,
   primary     : lightBlue,
   text        : lightGray,
@@ -31,6 +33,7 @@ var darkColors={
 };
 
 var riverside={
+  themeName   : "riverside",
   background  : "#003DA5",
   primary     : "#FFB71B",
   text        : "white",
@@ -38,6 +41,7 @@ var riverside={
 };
 
 var blackWhite={
+  themeName   : "blackWhite",
   background  : "white", 
   primary     : "black", 
   text        : "black", 
@@ -45,6 +49,7 @@ var blackWhite={
 };
 
 var fractalPic={
+  themeName   : "fractalPic",
   background  : "#14336B",
   primary     : "#80AF79",
   text        : lighterGray,
@@ -52,6 +57,7 @@ var fractalPic={
 };
 
 var ohioState={
+  themeName   : "ohioState",
   background  : lighterGray, 
   primary     : "#BB0000", 
   text        : "#2A2A2A", 
@@ -59,19 +65,20 @@ var ohioState={
 }; 
 
 var lightFractalPic={
+  themeName   : "lightFractalPic",
   background  : lightBluePurple,
   primary     : russianViolet, 
   text        : "black",
   links       : "#570C7D"
 };
 
-var themesColorsArray = 
+var themesArray = 
   [lightColors,darkColors,riverside,fractalPic,blackWhite,ohioState,lightFractalPic];
 
 function toggleTheme(){
   var themeIndex = localStorage.getItem("whThemeIndex");
   themeIndex++;
-  if(themeIndex==themesColorsArray.length)
+  if(themeIndex==themesArray.length)
     themeIndex=0;
 
   setTheme(themeIndex);
@@ -94,7 +101,7 @@ function setTheme(newIndex){
       setThemeColors(lightColors);
   }
   */
-  setThemeColors(themesColorsArray[newIndex]);
+  setThemeColors(themesArray[newIndex]);
 }
 
 function setThemeColors(themeColors){
@@ -109,10 +116,59 @@ function setThemeColors(themeColors){
 function initTheme(){
   var userTheme = localStorage.getItem("whThemeIndex");
   
-  if(userTheme === null || userTheme >= themesColorsArray.length)
+  if(userTheme === null || userTheme >= themesArray.length)
     localStorage.setItem("whThemeIndex",0);
   else
     setTheme(userTheme);
 }
 
-window.onload += initTheme();
+// Function to create the <select> tag and place it in the specified DOM element
+function createThemeSelector(selectorId, labelText) {
+  // Get the target DOM element where the dropdown will be placed
+  const targetElement = document.getElementById(selectorId);
+  
+  if (!targetElement) {
+      console.error(`Element with id '${selectorId}' not found.`);
+      return;
+  }
+
+  // Create a label element
+  const label = document.createElement('label');
+  label.innerHTML = labelText;
+  label.setAttribute('for', 'themeSelector');
+
+  // Create a <select> element
+  const select = document.createElement('select');
+  select.id = 'themeSelector';  // Set an id for the select element
+
+  // Add a default option
+  const defaultOption = document.createElement('option');
+  defaultOption.text = 'Pick Theme';
+  defaultOption.disabled = true;
+  defaultOption.selected = true;
+  select.appendChild(defaultOption);
+
+  // Loop through the array and create an <option> for each theme color
+  themesArray.forEach(theme => {
+      const option = document.createElement('option');
+      option.value = themesArray.indexOf(theme);
+      option.text = theme.themeName;
+      select.appendChild(option);
+  });
+
+  // Add an event listener to call setThemeColors() when an option is selected
+  select.addEventListener('change', function() {
+      const selectedColor = select.value;
+      setThemeColors(selectedColor);
+  });
+
+  // Append the label and the select to the target DOM element
+  targetElement.appendChild(label);
+  targetElement.appendChild(select);
+}
+
+window.onload += function() {
+  initTheme();
+  createThemeSelector('theme-selector-container', 'Choose Theme');
+  console.log("Loaded");
+};
