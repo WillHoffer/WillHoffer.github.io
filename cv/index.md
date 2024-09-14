@@ -19,14 +19,12 @@ You may also find more info below and elsewhere on my website.
 
 Contact me via email for the most up-to-date version of my CV, or for a tailored resume.
 
-## Publications
+## Research & Publications
 
-Check out my full Google Scholar profile [here](https://scholar.google.com/citations?hl=en&user=kaJEJSoAAAAJ).
-
-<!--
-<iframe src="https://scholar.google.com/citations?user=kaJEJSoAAAAJ&hl=en&authuser=1" width="100%" height="500">
-</iframe>
--->
+Research profiles:
+- [ORC ID](https://orcid.org/my-orcid?orcid=0000-0002-1825-4477)
+- [Google Scholar](https://scholar.google.com/citations?hl=en&user=kaJEJSoAAAAJ)
+- [MathSciNet](https://mathscinet.ams.org/mathscinet/author?authorId=1393194)
 
 ### Peer-Reviewed Publications:
 
