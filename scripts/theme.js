@@ -79,7 +79,7 @@ var themesArray = [lightColors, darkColors, riverside, fractalPic, blackWhite, o
 
 // Switch the theme, toggling through the themes array in order
 function toggleTheme() {
-    var themeIndex = localStorage.getItem("whThemeIndex");
+    var themeIndex = localStorage.getItem("themeSelector");
     themeIndex++;
     if (themeIndex === themesArray.length)
         themeIndex = 0;
@@ -91,15 +91,16 @@ function toggleTheme() {
 function setTheme(newIndex) {
     // if (newIndex === null || newIndex === NaN || newIndex >= themesArray.length || newIndex < 0 ) {
     //     console.log("Invalid index; setting to default theme.");
-    //     localStorage.setItem("whThemeIndex", 0);
+    //     localStorage.setItem("themeSelector", 0);
     //     setThemeColors(themesArray[0]);
     // } else {
-    //     localStorage.setItem("whThemeIndex", newIndex);
+    //     localStorage.setItem("themeSelector", newIndex);
     //     setThemeColors(themesArray[newIndex]);
     //     console.log("Changed theme.");
     // }
 
-    localStorage.setItem("whThemeIndex",newIndex);
+    localStorage.setItem("themeSelector",newIndex);
+
     //setThemeColors(themesArray[newIndex]);
     setDataTheme(themesArray[newIndex]);
 }
@@ -119,15 +120,20 @@ function setThemeColors(themeColors) {
 
 // Load the current theme from local data or set to the default theme
 function initTheme() {
-    var userTheme = localStorage.getItem("whThemeIndex");
+    var userTheme = localStorage.getItem("themeSelector");
+    var select = document.getElementById("themeSelector");
 
     // Check for invalid data
     if (userTheme === null || userTheme === NaN || userTheme <0 || userTheme >= themesArray.length){
         console.log("Invalid user theme index; resetting to default.");
-        localStorage.setItem("whThemeIndex", 0);
+        localStorage.setItem("themeSelector", 0);
+        select.value = 0;
         setTheme(0);
-    } else 
+    } else {
+        var select = document.getElementById("themeSelector");
+        select.value = userTheme;
         setTheme(userTheme);
+    } 
 }
 
 // Function to create the <select> tag and place it in the specified DOM element
