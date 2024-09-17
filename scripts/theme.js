@@ -226,8 +226,13 @@ function printTheme(theme) {
 //     populateThemeSelector("themeSelector");
 // };
 
-document.addEventListener("load", function(){ 
+document.addEventListener("DOMContentLoaded", function(){ 
     initTheme();
     //createThemeSelector('theme-selector-container', '');
-    populateThemeSelector("themeSelector"); 
+    //populateThemeSelector("themeSelector"); 
+    const select = document.getElementById("themeSelector");
+    select.addEventListener('change', function () {
+        const selectedColor = select.value;
+        setTheme(selectedColor);
+    });
 });
