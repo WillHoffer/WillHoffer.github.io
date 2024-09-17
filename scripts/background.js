@@ -20,11 +20,15 @@ function initBackgroundState(){
     var isBackgroundDynamic = localStorage.getItem("isBackgroundDynamic");
         
     if(isBackgroundDynamic == null){
-        localStorage.setItem("isBackgroundDynamic",1);
+        localStorage.setItem("isBackgroundDynamic",0);
     }
 
     setBackgroundDynamics(isBackgroundDynamic);
 }
 
 // To be run on load of script
-document.onload += initBackgroundState();
+//document.onload += initBackgroundState();
+
+document.addEventListener("load", function(){ 
+    initBackgroundState();
+});

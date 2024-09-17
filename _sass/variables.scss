@@ -39,7 +39,7 @@ $hr-border-color: #eff0f1 !default;
 
 /* Custom Variables */ 
 
-html {
+:root {
     --lightBlue: #4DC8FF;
     --royalBlue: #0300AB;
     --white: #FFFFFF;
@@ -56,34 +56,89 @@ html {
     
     --primary-color: var(--royalBlue);
     --secondary-color: var(--lightBlue);
-  }
-  
-  //SCSS needs $vars not HTML vars ??
-  $primary-color: var(--primary-color);
-  $secondary-color: var(--secondary-color);
-  
-  // Remark: must change $vars before the import
-  $bg-color: var(--bg-color); // bg-color not part of Cayman Theme
-  
-  //$header-heading-color: #fff
-  // Remark: The primary/secondary flip is deliberate.
-  //    (The gradient goes from right to left.)
-  $header-bg-color: var(--secondary-color);
-  $header-bg-color-secondary: var(--primary-color);
-  
-  $section-headings-color: var(--primary-color);
-  $body-text-color: var(--body-text-color);
+}
 
-  //$body-link-color: var(--body-link-color);
-  // N.B: Somewhere, $body-link-color gets inverted and this causes an error in the latest github-pages gem update
-  $body-link-color-2: var(--body-link-color);
 
-  $blockquote-text-color: var(--body-text-color);
+[data-theme="Light Mode"] {
+  --bg-color: #E0E0E0;
+  --primary-color: #0300AB;
+  --body-text-color: black;
+  --body-link-color:#0645AD;
+}
+
+[data-theme="Dark Mode"] {
+  --bg-color: #171717;
+  --primary-color: #4DC8FF;
+  --body-text-color: #B5B5B5;
+  --body-link-color:#6866CC;
+}
+
+[data-theme="Riverside"] {
+  --bg-color: #003DA5;
+  --primary-color: #FFB71B;
+  --body-text-color: white;
+  --body-link-color:#4DC8FF;
+}
+
+[data-theme="Fractal Dark"] {
+  --bg-color: #14336B;
+  --primary-color: #80AF79;
+  --body-text-color: #E0E0E0;
+  --body-link-color:#A6E3FF;
+}
+
+[data-theme="Monochrome"] {
+  --bg-color: white;
+  --primary-color: black;
+  --body-text-color: black;
+  --body-link-color:#0645AD;
+}
+
+[data-theme="Ohio State"] {
+  --bg-color: #E0E0E0;
+  --primary-color: #BB0000;
+  --body-text-color: #2A2A2A;
+  --body-link-color:#BB0000;
+}
+
+[data-theme="Fractal Light"] {
+  --bg-color: #8DA6DF;
+  --primary-color: #34113F;
+  --body-text-color: black;
+  --body-link-color:#570C7D;
+}
+
+
+
+
+
   
-  
-  $code-bg-color: var(--bg-color);
-  $code-text-color: var(--primary-color); //var(--lightBlue);
-  
-  $border-color: #FFF;//var(--section-headings-color);
-  $table-border-color: #519DE8;
-  $hr-border-color: var(--primary-color); //#4E45FF;
+//SCSS needs $vars not HTML vars ??
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+
+// Remark: must change $vars before the import
+$bg-color: var(--bg-color); // bg-color not part of Cayman Theme
+
+//$header-heading-color: #fff
+// Remark: The primary/secondary flip is deliberate.
+//    (The gradient goes from right to left.)
+$header-bg-color: var(--secondary-color);
+$header-bg-color-secondary: var(--primary-color);
+
+$section-headings-color: var(--primary-color);
+$body-text-color: var(--body-text-color);
+
+//$body-link-color: var(--body-link-color);
+// N.B: Somewhere, $body-link-color gets inverted and this causes an error in the latest github-pages gem update
+$body-link-color-2: var(--body-link-color);
+
+$blockquote-text-color: var(--body-text-color);
+
+
+$code-bg-color: var(--bg-color);
+$code-text-color: var(--primary-color); //var(--lightBlue);
+
+$border-color: #FFF;//var(--section-headings-color);
+$table-border-color: #519DE8;
+$hr-border-color: var(--primary-color); //#4E45FF;

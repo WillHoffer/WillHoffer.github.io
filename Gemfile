@@ -6,8 +6,8 @@ gem "jekyll-theme-cayman"
 
 # To silence compile warnings. 
 # Seems like they're leaving ruby default in 3.5 but used for Jekyll
-gem "fiddle"
-gem "ostruct"
+# gem "fiddle"
+# gem "ostruct"
 
 group :jekyll_plugins do
   # Nicely format compiled HTML

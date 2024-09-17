@@ -100,12 +100,17 @@ function setTheme(newIndex) {
     // }
 
     localStorage.setItem("whThemeIndex",newIndex);
-    setThemeColors(themesArray[newIndex]);
+    //setThemeColors(themesArray[newIndex]);
+    setDataTheme(themesArray[newIndex]);
+}
+
+function setDataTheme(theme) {
+    document.body.setAttribute("data-theme",theme.themeName);
 }
 
 // Set the document colors to the theme's colors
 function setThemeColors(themeColors) {
-    let root = document.documentElement;
+    let root = document.documentElement;   
     root.style.setProperty('--bg-color',        themeColors.background);
     root.style.setProperty('--primary-color',   themeColors.primary);
     root.style.setProperty('--body-text-color', themeColors.text);
@@ -120,7 +125,7 @@ function initTheme() {
     if (userTheme === null || userTheme === NaN || userTheme <0 || userTheme >= themesArray.length){
         console.log("Invalid user theme index; resetting to default.");
         localStorage.setItem("whThemeIndex", 0);
-        //setTheme(0);
+        setTheme(0);
     } else 
         setTheme(userTheme);
 }
@@ -163,7 +168,6 @@ function createThemeSelector(selectorId, labelText) {
     // Add an event listener to call setThemeColors() when an option is selected
     select.addEventListener('change', function () {
         const selectedColor = select.value;
-        console.log(selectedColor);
         setTheme(selectedColor);
     });
 
@@ -200,16 +204,30 @@ function populateThemeSelector(selectorId) {
     // Add an event listener to call setThemeColors() when an option is selected
     select.addEventListener('change', function () {
         const selectedColor = select.value;
-        console.log(selectedColor);
         setTheme(selectedColor);
     });
 
 }
 
-window.onload = function () {
-    console.log("Begin loading.");
+// Use to compile a theme into CSS 
+function printTheme(theme) {
+    console.log("[data-theme=\""+theme.themeName+"\"] {\n",
+        "\t--bg-color: "+theme.background+";\n",
+        "\t--primary-color: "+theme.primary+";\n",
+        "\t--body-text-color: "+theme.text+";\n",
+        "\t--body-link-color:"+theme.links+";\n",
+        "}\n"
+    );
+}
+
+// window.onload = function () {
+//     initTheme();
+//     //createThemeSelector('theme-selector-container', '');
+//     populateThemeSelector("themeSelector");
+// };
+
+document.addEventListener("load", function(){ 
     initTheme();
     //createThemeSelector('theme-selector-container', '');
-    populateThemeSelector("themeSelector");
-    console.log("Finished loading.");
-};
+    populateThemeSelector("themeSelector"); 
+});

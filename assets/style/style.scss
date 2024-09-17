@@ -15,6 +15,7 @@
 @import "navbar";
 @import "headerBackground";
 
+
 // Unsorted custom changes
 .centered{
     margin-left: auto;
@@ -78,13 +79,22 @@ a {
     transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 }
 
-.button{
+.button {
   &:hover {
     color: $section-headings-color;
     text-decoration: none;
     background-color: rgba(100,100,100,0.3);
     border-color: rgba(100, 100, 100, 0.3);
   }
+}
+
+.selector {
+    &:hover {
+        color: $section-headings-color;
+        text-decoration: none;
+        background-color: rgba(100,100,100,0.3);
+        border-color: rgba(100, 100, 100, 0.3);
+      }
 }
 
 img.rounded {
