@@ -58,14 +58,13 @@ a {
     background-color: $bg-color;
     margin-bottom: 25vh;
     
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h1, h2, h3, h4, h5, h6 {
         font-weight: bold;
         color: $section-headings-color;
+    }
+
+    li {
+        list-style-position: inside;
     }
 }
 
