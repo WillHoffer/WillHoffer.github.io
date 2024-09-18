@@ -6,16 +6,16 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: $body-text-color;
-    //background-color: white;
 
+    background-color: white;
 }
 
 .mainBackground {
     // $variables that point to var(--variable) won't work in the rgba() command
-    $colorRB: #0300ab;
-    $colorLB: #4dc8ff;
+    // $colorRB: #0300ab;
+    // $colorLB: #4dc8ff;
 
-    //background-color: #0300ab;
+    background-color: white;
 
     background-image: linear-gradient(90deg, rgba($colorRB, 0.5), rgba($colorLB, 0.5));
     background-attachment: fixed;
