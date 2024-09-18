@@ -4,6 +4,7 @@ nav ul, footer ul {
   margin: 0;
   list-style-type: none;
   overflow: auto;
+  background-color: $bg-color;
 }
 
 @include large { 
