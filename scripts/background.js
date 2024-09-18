@@ -18,6 +18,7 @@ function setBackgroundDynamics(isBackgroundDynamic){
 
 function initBackgroundState(){
     var isBackgroundDynamic = localStorage.getItem("isBackgroundDynamic");
+    console.log(isBackgroundDynamic);
         
     if(isBackgroundDynamic == null){
         localStorage.setItem("isBackgroundDynamic",0);
@@ -29,6 +30,6 @@ function initBackgroundState(){
 // To be run on load of script
 //document.onload += initBackgroundState();
 
-document.addEventListener("load", function(){ 
+document.addEventListener("DOMContentLoaded", function(){ 
     initBackgroundState();
 });
