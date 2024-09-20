@@ -1,51 +1,33 @@
-.page-header {
-    $colorRB: #0300ab; // Does not work inside rgba()
-    $colorLB: #4dc8ff; //  to use var()'s
+// Joint settings for dynamic and static header
+.page-header, .page-header-static {
+    @include large {
+        padding: 5rem 6rem;
+    }
 
+    @include medium {
+        padding: 3rem 4rem;
+    }
+
+    @include small {
+        padding: 2rem 1rem;
+    }
+
+    margin-top: 0;
+    color: $header-heading-color;
+    text-align: center;
+}
+
+// Dynamic only
+.page-header {
     background-image: linear-gradient(90deg, rgba($colorRB, 0.5), rgba($colorLB, 0.5)),
         url("../images/juliaCircle.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-
-    color: $header-heading-color;
-    text-align: center;
-    // background-color: $header-bg-color;
-    // background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
-
-    @include large {
-        padding: 5rem 6rem;
-    }
-
-    @include medium {
-        padding: 3rem 4rem;
-    }
-
-    @include small {
-        padding: 2rem 1rem;
-    }
 }
 
+// Static only
 .page-header-static {
-    $colorRB: #0300ab; // Does not work inside rgba()
-    $colorLB: #4dc8ff; //  to use var()'s
-
-    color: $header-heading-color;
-    text-align: center;
-    //background-color: $header-bg-color;
-
-    @include large {
-        padding: 5rem 6rem;
-    }
-
-    @include medium {
-        padding: 3rem 4rem;
-    }
-
-    @include small {
-        padding: 2rem 1rem;
-    }
-
     background-image:
         linear-gradient(
             90deg,

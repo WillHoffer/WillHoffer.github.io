@@ -1,48 +1,77 @@
-nav ul, footer ul {
-  font-weight: bold;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  overflow: auto;
-  background-color: $bg-color;
-}
 
-@include large { 
-  // If the screen is large, the nav-bar becomes fixed at the top.
-  nav ul {
-    position: fixed;
-    top: 0;
-    width: 100%;
+// .topnav {
+//     display: flex;
+//     flex-wrap: wrap;
+//     min-height: 48px;
+//     width: 100%;
+// }
+
+
+nav {
     background-color: $bg-color;
-    border: 1px solid $bg-color;
-    z-index: 9999;
+    height: 45px;
+    margin: 0;
 
-    //Border bottom shadow
-    border-bottom: 3px outset rgba(0,0,0,0.1);
-    //border-radius: 5px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
-    -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
-  }
+    // A nav bar will put space between multiple containers
+    //  - For two lists, this left/right justifies the first/second, respectively
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    ul {
+        font-weight: bold;
+        padding: 0;
+        margin: 0px 5px;
+        list-style-type: none;
+        overflow: auto;
+        //background-color: $bg-color;
 
-  #mainHeader{
-    margin-top: 50px;
-  }
+        // Within a single nav bar list, items are evenly spaced
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    ul li a {
+        //display: inline-block;
+        color: $section-headings-color;
+        text-align: center;
+        padding: 0px 0px;
+        margin: 10px 10px;
+        //display: inline;
+    }
 }
 
-nav ul li a {
-  display: block;
-  text-align: center;
-  padding: 0px 0px;
-  margin: 10px 10px;
+.top-right {
+    margin: 10px 5px;
 }
 
-.topnav-left{
-  color: var(--primary-color);
-  float: left;
-}
+@include large {
+    // If the screen is large, the nav-bar becomes fixed at the top.
 
-.topnav-right{
-  color: var(--primary-color);
-  float: right;
+    // nav ul li a {
+    //     color: white;
+    // }
+
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: $bg-color;
+        border: 0px solid $bg-color;
+        z-index: 9999;
+
+        //Border bottom shadow
+        border-bottom: 3px outset rgba(0, 0, 0, 0.1);
+        //border-radius: 5px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+        -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    #mainHeader {
+        margin-top: 0;
+    }
 }

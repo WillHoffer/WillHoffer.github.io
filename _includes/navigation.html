@@ -1,15 +1,20 @@
 <!-- Begin Nav Bar -->
-<nav>
+<nav class="topnav">
   <ul>
-    <li><a class="topnav-left" href="/">Home</a></li>
-    <li><a class="topnav-left" href="/about">About</a></li>
-    <li><a class="topnav-left" href="/cv">CV</a></li>
-    <li><a class="topnav-left" href="/talks">Talks</a></li>
-    <li><a class="topnav-left" href="/resources">Resources</a></li>
-    <li><a class="topnav-left" href="/quidditas">Quidditas</a></li>
-    <li><a class="topnav-left" href="/teaching">Teaching</a></li>
-    <li>
-      <a class="topnav-right">
+    <li><a class="left top" href="/">Home</a></li>
+    <li><a class="left top" href="/about">About</a></li>
+    <li><a class="left top" href="/cv">CV</a></li>
+    <li><a class="left top" href="/talks">Talks</a></li>
+    <li><a class="left top" href="/resources">Resources</a></li>
+    <li><a class="left top" href="/quidditas">Quidditas</a></li>
+    <li><a class="left top" href="/teaching">Teaching</a></li>
+  </ul>
+  <ul>
+    <!-- Requires the scripts "theme.js" and "background.js". -->
+    <li class="top-right">
+      <button class="button" onclick="toggleBackground()">Toggle Animation</button>
+    </li>
+    <li class="top-right">
         <div id="theme-selector-container"></div>
         <label for="themeSelector"></label>
         <select id="themeSelector" class="selector">
@@ -22,11 +27,7 @@
           <!-- <option value="5">Ohio State</option> -->
           <option value="6">Periwinkle</option>
         </select>
-      </a>
     </li>
-    <!-- <li><a class="topnav-right"><button class="button" onclick="toggleTheme()">Toggle Theme</button></a></li> -->
-    <li><a class="topnav-right"><button class="button" onclick="toggleBackground()">Toggle Animation</button></a></li>
   </ul>
 </nav>
-<!-- Must include the scripts "theme.js" and "background.js" at end of page. -->
 <!-- End Nav Bar -->

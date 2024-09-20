@@ -1,18 +1,14 @@
 <script src="/scripts/quotes.js"></script>
 
-<span class="site-footer-credits">
-  <div id="quoteDisplay" onload="nextQuote()">
-    Click a button below to view a random quote!
-  </div>
-  <br>
-  <div>
-    <center>
-      <button class="button" onclick="nextQuote()">Next Quote</button>
-      <button class="button" onclick="randomizeOrder()">Randomize Order</button>
-      <button class="button" onclick="newQuote()">Random Quote</button>
-    </center>
-  </div>
-</span>
+<div id="quoteDisplay" onload="nextQuote()">
+  Click a button below to view a random quote! (Javascript required.)
+</div>
+<br>
+<ul>
+  <li id="next-quote"><button class="button" onclick="nextQuote()">Next Quote</button></li>
+  <li id="randomize-order"><button class="button" onclick="randomizeOrder()">Randomize Order</button></li>
+  <li id="random-quote"><button class="button" onclick="newQuote()">Random Quote</button></li>
+</ul>
 
 <script>
   nextQuote();

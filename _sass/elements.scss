@@ -13,11 +13,26 @@ a {
     margin-right: auto;
 }
 
+.top {
+    color: $section-headings-color;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
 .button,
 .selector {
     display: inline-block;
-    margin-bottom: 0;
+    margin-left: 2px;
+    margin-right: 2px;
+    //margin-bottom: 0;
     color: $section-headings-color;
+    text-decoration: bold;
     background-color: $bg-color;
     border-color: $section-headings-color;
     border-style: solid;
@@ -27,42 +42,43 @@ a {
         color 0.2s,
         background-color 0.2s,
         border-color 0.2s;
-    min-height: 1.8em;
+    
+    height: 1.8em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     text-align: center;
+    font-size: 0.9rem;
 
     @include large {
         //padding: 0.75rem 1rem;
+        //font-size: 0.9rem;
     }
     
     @include medium {
         //padding: 0.6rem 0.9rem;
-        font-size: 0.9rem;
+        //font-size: 0.9rem;
     }
     
     @include small {
-        display: block;
-        width: 100%;
+        //display: block;
+        //width: 100%;
         //padding: 0.75rem;
-        font-size: 0.9rem;
+        //font-size: 0.9rem;
     
-        + .button {
-            margin-top: 1rem;
-            margin-left: 0;
-        }
+        // + .button {
+        //     margin-top: 1rem;
+        //     margin-left: 0;
+        // }
     }
 }
 
 .button {
     &:hover {
         color: $section-headings-color;
-        text-decoration: none;
+        text-decoration: bold;
         background-color: rgba(100, 100, 100, 0.3);
         border-color: rgba(100, 100, 100, 0.3);
-    }
-
-    // Adds a margin to a second button immediately following another
-    + .button {
-        margin-left: 1rem;
     }
 }
 
@@ -132,3 +148,22 @@ details > summary {
 //   margin: 0;
 //   box-shadow: 1px 1px 2px #bbbbbb;
 // }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
