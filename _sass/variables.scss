@@ -127,10 +127,8 @@ $header-bg-color-secondary: var(--primary-color);
 
 $section-headings-color: var(--primary-color);
 $body-text-color: var(--body-text-color);
+$body-link-color: var(--body-link-color);
 
-//$body-link-color: var(--body-link-color);
-// N.B: Somewhere, $body-link-color gets inverted and this causes an error in the latest github-pages gem update
-$body-link-color-2: var(--body-link-color);
 
 $blockquote-text-color: var(--body-text-color);
 

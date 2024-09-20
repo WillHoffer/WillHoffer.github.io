@@ -1,31 +1,24 @@
 
-// .topnav {
-//     display: flex;
-//     flex-wrap: wrap;
-//     min-height: 48px;
-//     width: 100%;
-// }
-
-
+// Styling for the navigation bar at the top
 nav {
     background-color: $bg-color;
     height: 45px;
     margin: 0;
 
-    // A nav bar will put space between multiple containers
-    //  - For two lists, this left/right justifies the first/second, respectively
+    // The main bar fills the space in between the blocks 
+    // With two elements, this left and right justifies them
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     
+    // Styling of the list blocks in the nav bar
     ul {
         font-weight: bold;
         padding: 0;
         margin: 0px 5px;
         list-style-type: none;
         overflow: auto;
-        //background-color: $bg-color;
 
         // Within a single nav bar list, items are evenly spaced
         display: flex;
@@ -34,27 +27,25 @@ nav {
         align-items: center;
     }
 
+    // Styling of the links
     ul li a {
-        //display: inline-block;
         color: $section-headings-color;
         text-align: center;
         padding: 0px 0px;
         margin: 10px 10px;
-        //display: inline;
     }
 }
 
+// Margins of the top right buttons
 .top-right {
     margin: 10px 5px;
 }
 
+
+// Screen settings for the large window size
 @include large {
-    // If the screen is large, the nav-bar becomes fixed at the top.
 
-    // nav ul li a {
-    //     color: white;
-    // }
-
+    // Display the pages list and hide the menu dropdown
     #pages-list{
         display: flex;
     }
@@ -63,6 +54,7 @@ nav {
         display: none;
     }
 
+    // Fix the navigation bar at the top of the screen
     nav {
         position: fixed;
         top: 0;
@@ -79,12 +71,9 @@ nav {
         -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
     }
 
-    #mainHeader {
-        margin-top: 0;
-    }
 }
 
-// When the screen is medium or small, display a menu dropdown 
+// Three bars that form the menu icon in the topleft corner
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 3px;
@@ -96,31 +85,24 @@ nav {
     transition: 0.4s;
 }
 
+// Styling for the wrapper holding the menu (and dropdown)
 #pages-dropdown {
     cursor: pointer;
-    // padding: 5px;
-    padding: 10px 15px;
+    padding: 0px 5px;
     margin: 0px 10px;
-    // margin-right: auto;
-    //width: 100px;
-
-    
 }
 
+// Styling the menu icon container
 #navMenu {
     margin: 0px;
-    padding: 5px 15px;
+    // The left margin (15px) is currently chosen to align with the dropdown content
+    padding: 5px 15px; 
 }
 
+// Styling of the pages list which displays on hovering over the topleft menu
 #pages-list-dropdown {
-    //left: -15px; // = left padding + left margin of #pages-dropdown
-    //width: 130px;
     margin: 0;
     padding: 0;
-   // width: 120px;
-
-    //display: block;
-    
 
     ul {
         margin: 0;
@@ -135,14 +117,7 @@ nav {
     }
 }
 
-#pages-dropdown:hover #pages-list-dropdown {
-    display: block;
-
-    ul li {
-        display: block;
-    }
-}
-
+// When the screen is medium, display the menu dropdown 
 @include medium {
     #pages-list {
         display: none;
@@ -153,6 +128,7 @@ nav {
     }
 }
 
+// When the screen is small, display the menu dropdown 
 @include small {
     #pages-list {
         display: none;

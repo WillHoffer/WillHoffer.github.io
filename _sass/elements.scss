@@ -1,6 +1,8 @@
+// Styling of general elements
+
+// Links
 a {
-    color: $body-link-color-2;
-    //color: $body-link-color;
+    color: $body-link-color;
     text-decoration: none;
 
     &:hover {
@@ -8,13 +10,10 @@ a {
     }
 }
 
+// Positioning classes
 .centered {
     margin-left: auto;
     margin-right: auto;
-}
-
-.top {
-    color: $section-headings-color;
 }
 
 .left{
@@ -25,6 +24,7 @@ a {
     float: right;
 }
 
+// Buttons and option selectors
 .button,
 .selector {
     display: inline-block;
@@ -50,57 +50,25 @@ a {
     text-align: center;
     font-size: 0.9rem;
 
-    @include large {
-        //padding: 0.75rem 1rem;
-        //font-size: 0.9rem;
-    }
-    
-    @include medium {
-        //padding: 0.6rem 0.9rem;
-        //font-size: 0.9rem;
-    }
-    
-    @include small {
-        //display: block;
-        //width: 100%;
-        //padding: 0.75rem;
-        //font-size: 0.9rem;
-    
-        // + .button {
-        //     margin-top: 1rem;
-        //     margin-left: 0;
-        // }
-    }
 }
 
-.button {
+// Shared hover styling
+.button, .selector {
     &:hover {
         color: $section-headings-color;
         text-decoration: bold;
-        background-color: rgba(100, 100, 100, 0.3);
         border-color: rgba(100, 100, 100, 0.3);
     }
 }
 
-.selector {
-    // padding: 0.2em;
-    // padding-left: 0.5em;
-    // padding-bottom: 0.2em;
-    // padding-top: 0.3em;
-
+// The button's background must be updated individually
+.button {
     &:hover {
-        color: $section-headings-color;
-        text-decoration: none;
-        //background-color: rgba(100, 100, 100, 0.7);
-        border-color: rgba(100, 100, 100, 0.3);
-
-        // color: $bg-color;
-        // text-decoration: none;
-        // background-color: $section-headings-color;
-        // border-color: rgba(100, 100, 100, 0.3);
+        background-color: rgba(100, 100, 100, 0.3);
     }
 }
 
+// Image styling
 img.rounded {
     display: block;
     margin-left: auto;
@@ -129,6 +97,7 @@ img.centered {
     width: 25%;
 }
 
+// Details styling
 details > summary {
     padding: 0.5em;
     margin-bottom: 0.5em;
@@ -149,10 +118,12 @@ details > summary {
 //   box-shadow: 1px 1px 2px #bbbbbb;
 // }
 
+// Dropdown menu styling
 .dropdown {
     position: relative;
 }
 
+// Content to be displayed only on hovering of parent
 .dropdown-content {
     display: none;
     position: absolute;
@@ -162,6 +133,7 @@ details > summary {
     z-index: 9001;
 }
 
+// Display the content on hover
 .dropdown:hover .dropdown-content {
     display: block;
 }
