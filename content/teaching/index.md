@@ -5,17 +5,10 @@ author: "Will Hoffer"
 description: Online Class Resources
 ---
 
-<h2>Overview</h2>
-<p>Here, you can find teaching materials I've made for courses, online interactive tools, and some explanatory posts on important topics.</p>
+## Overview
+Here, you can find some teaching materials I've made for courses, online interactive tools, and some explanatory posts on important topics.
 
-
-<h2>Course Webpages</h2>
-<p>The following are webpages for courses that I have been the primary instructor.</p>
-{% for post in site.posts %}
-	{% if post.tags contains "course-webpage" %}
-		<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	{% endif %} 
-{% endfor %}
+If you are a current student, go to the course Canvas page. Nowadays, I post information there directly instead of using this website.
 
 
 <h2 id="Sorted-by-Topic">All Pages, Sorted by Tag</h2>
