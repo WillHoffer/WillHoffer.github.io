@@ -4,14 +4,16 @@ title: Will Hoffer
 description: About the Author
 ---
 
-<img src="https://willhoffer.com/uploads/media/images/Will_Hoffer_AMS_Photo_Jan23_Square.jpg" class="portrait">
-<p style="text-align: center;">Pronouns: he/him</p>
+<img src="https://willhoffer.com/assets/images/Will_Hoffer_AMS_Photo_Jan23_Square.jpg" class="portrait">
+<p class="centered">Pronouns: he/him</p>
 
 ## Contact Me
 If you're looking to reach me, here's my email:
 
-{% include emailObfuscator.html %}
-  
+<div class="centered">
+    {% include emailObfuscator.html %}
+</div>
+
 You can also right-click to copy the email address. 
 
 ## Mathematical Research:
@@ -20,7 +22,7 @@ You can also right-click to copy the email address.
 - My thesis project involves using resurgent asymptotics to study explicit formulae in fractal & spectral geometry, analytic number theory, and mathematical physics.
 
 ## Who am I?
-I am a mathematical physicist, geometer, and analyist. I am a currently a graduate student and PhD candidate at the University of California, Riverside. I passed my oral examination in February of 2021, and I both obtained my masters degree and advanced to candidacy in the spring of 2021.
+I am a mathematical physicist, geometer, and analyst. I am a currently a graduate student and PhD candidate at the University of California, Riverside. I passed my oral examination in February of 2021, and I both obtained my masters degree and advanced to candidacy in the spring of 2021.
 
 Currently, I am very interested in the phenomenon of resurgence, and how we might better understand fractals using its tools and techniques. We can study fractals by understanding how their geometric oscillations reverberate in the ambient space around them-- what we call a fractal drum, or sometimes a fractal harp. These oscillations are realized as complex dimensions, and my current research project is to better understand the formulae that express geometric and spectral qualities of the fractal using these complex dimensions.
 
@@ -32,7 +34,7 @@ I believe that mathematics ought to be shared with and be open to everyone, both
 Have a wonderful day! 🏳️‍🌈
 
 ## Other Web Locales
-  - [Arxiv.org Publications](https://arxiv.org/search/math?searchtype=author&query=Hoffer%2C+W)
+  - [arXiv.org Publications](https://arxiv.org/search/math?searchtype=author&query=Hoffer%2C+W)
   - [Google Scholar Profile](https://scholar.google.com/citations?user=kaJEJSoAAAAJ&hl=en&authuser=1)
   - [UC Riverside Profile](https://mathdept.ucr.edu/people/william-hoffer)
   - [Academia.edu](https://ucriverside.academia.edu/WillHoffer)
