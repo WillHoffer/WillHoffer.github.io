@@ -34,23 +34,13 @@ My [Curriculum Vitae](https://willhoffer.com/content/cv/) is also hosted on the 
     <img src="/assets\images\fractals\juliaSetNo719.png"        class="rounded" style="width: 10vw; height: 10vw; display: inline-block; padding: 1em;">
 </div>
 
-## My Blog: Quidditas
+## My Blog, Quidditas
 Quidditas is the name I’ve given to my personal blog. I write about mathematics, web design, and whatever other quiddities come to mind. [Check it out!](https://willhoffer.com/content/quidditas/)
 
 <div class="centered">
     <img src="/assets\images\fractals\juliaCircle.gif" class="rounded" style="width: 30vw; height: 30vw;">
 </div>
 
-<!-- <img src="/assets\images\fractals\K_3,0.33,6.png">
-    <img src="/assets\images\fractals\K_4,0.25,6.png">
-    <img src="/assets\images\fractals\K_5,0.20,6.png">
-    <img src="/assets\images\fractals\K_6,0.30,6.png">
-    <img src="/assets\images\fractals\KC_3,0.33,6.png">
-    <img src="/assets\images\fractals\KC_4,0.25,6.png">
-    <img src="/assets\images\fractals\juliaSetNo719.png">
-    <img src="/assets\images\fractals\juliaSetNo678_square.png">
-    <img src="/assets\images\fractals\juliaSet630.png">
-    <img src="/assets\images\fractals\juliaCircle.gif">
-    <img src="/assets\images\fractals\Inner_Nbd_of_K_4,0.20,4_eps=0.05.png">
-    <img src="/assets\images\fractals\Inner_Nbd_of_K_3,0.20,4_eps=0.05.png"> -->
+## Footer Quotes
 
+Lastly, you'll find amusing quotes in the footer, inspired by collections like that of [Doron Zeilberger's quote collection](https://sites.math.rutgers.edu/~zeilberg/quotes.html). Some are from professors or colleagues and others are from great people. Feel free to suggest additions to the quote book! 
