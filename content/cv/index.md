@@ -34,4 +34,4 @@ Research profiles:
 
 ## Seminar and Conference Presentations
 
-See my talks page [here](https://willhoffer.com/talks).
+I have a list of talks and presentations I have given on my site <a href="/content/talks">here</a>. The most up-to-date list is in my CV, however I do have clickable links to some slides and abstracts on this page.

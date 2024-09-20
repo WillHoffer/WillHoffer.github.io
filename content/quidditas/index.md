@@ -25,11 +25,13 @@ The title is an homage to a seminar at my alma mater entitled the <i>What is...?
 <details>
 <summary>Click to View.</summary>
 <div style="overflow:auto; max-height: 75vh">
-<ul class="posts">
-{% for post in site.posts %} {% if post.path contains 'quidditas' %}
-  <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-{% endif %}{% endfor %}
-</ul>
+	<ul class="posts">
+		{% for post in site.posts %} {% if post.path contains 'quidditas' %}
+			<li>
+				<span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+			</li>
+		{% endif %}{% endfor %}
+	</ul>
 </div>
 </details>
 	
@@ -48,7 +50,6 @@ Here is a list of all pages, but sorted by topics. The topic names are in alphab
 		{%- endfor -%}
 	{%- endcapture -%}
 	{% assign tagList = list | remove_first: "^" | split: "^" | uniq | sort %}
-
 	<!-- For each tag with posts in the category, list the corresponding posts in the category -->
 	{% for tagName in tagList %}
 	<li><span class="tag">{{ tagName }}</span>
@@ -63,3 +64,6 @@ Here is a list of all pages, but sorted by topics. The topic names are in alphab
 	{% endfor %}
 </div>
 </details>
+
+## Teaching Notes
+See <a href="/content/teaching">this page</a> for posts regarding course I have taught.
