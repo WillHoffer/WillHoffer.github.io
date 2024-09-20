@@ -4,7 +4,7 @@ title: Will Hoffer
 description: About the Author
 ---
 
-<img src="https://willhoffer.com/assets/images/Will_Hoffer_AMS_Photo_Jan23_Square.jpg" class="portrait">
+<img src="/assets/images/Will_Hoffer_AMS_Photo_Jan23_Square.jpg" class="portrait">
 <p class="centered">Pronouns: he/him</p>
 
 ## Contact Me
