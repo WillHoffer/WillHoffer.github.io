@@ -18,7 +18,7 @@ function setBackgroundDynamics(isBackgroundDynamic){
 
 function initBackgroundState(){
     var isBackgroundDynamic = localStorage.getItem("isBackgroundDynamic");
-    console.log(isBackgroundDynamic);
+    //console.log(isBackgroundDynamic);
         
     if(isBackgroundDynamic == null){
         localStorage.setItem("isBackgroundDynamic",0);

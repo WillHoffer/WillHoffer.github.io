@@ -22,7 +22,7 @@ var lightColors = {
     themeName: "Light Mode",
     background: lighterGray,
     primary: royalBlue,
-    text: "black",
+    text: "#000000",
     links: wikiLinkBlue
 };
 
@@ -38,20 +38,20 @@ var riverside = {
     themeName: "Riverside",
     background: "#003DA5",
     primary: "#FFB71B",
-    text: "white",
+    text: "#FFFFFF",
     links: lightBlue
 };
 
 var blackWhite = {
     themeName: "Monochrome",
-    background: "white",
-    primary: "black",
-    text: "black",
+    background: "#ffffff",
+    primary: "#000000",
+    text: "#000000",
     links: wikiLinkBlue
 };
 
-var fractalPic = {
-    themeName: "Fractal Dark",
+var ocean = {
+    themeName: "Ocean",
     background: "#14336B",
     primary: "#80AF79",
     text: lighterGray,
@@ -66,16 +66,16 @@ var ohioState = {
     links: "#BB0000"
 };
 
-var lightFractalPic = {
-    themeName: "Fractal Light",
+var periwinkle = {
+    themeName: "Periwinkle",
     background: lightBluePurple,
     primary: russianViolet,
-    text: "black",
+    text: "#000000",
     links: "#570C7D"
 };
 
 // A list of all the possible themes
-var themesArray = [lightColors, darkColors, riverside, fractalPic, blackWhite, ohioState, lightFractalPic];
+var themesArray = [lightColors, darkColors, ocean, periwinkle, riverside, ohioState, blackWhite];
 
 // Switch the theme, toggling through the themes array in order
 function toggleTheme() {
@@ -199,13 +199,19 @@ function populateThemeSelector(selectorId) {
     defaultOption.selected = true;
     select.appendChild(defaultOption);
 
+    var str = "";
+
     // Loop through the array and create an <option> for each theme color
     themesArray.forEach(theme => {
         const option = document.createElement('option');
         option.value = themesArray.indexOf(theme);
         option.text = theme.themeName;
         select.appendChild(option);
+        str += printTheme(theme);
+        console.log(str);
     });
+
+    console.log(str);
 
     // Add an event listener to call setThemeColors() when an option is selected
     select.addEventListener('change', function () {
@@ -217,14 +223,43 @@ function populateThemeSelector(selectorId) {
 
 // Use to compile a theme into CSS 
 function printTheme(theme) {
-    console.log("[data-theme=\""+theme.themeName+"\"] {\n",
-        "\t--bg-color: "+theme.background+";\n",
-        "\t--primary-color: "+theme.primary+";\n",
-        "\t--body-text-color: "+theme.text+";\n",
-        "\t--body-link-color:"+theme.links+";\n",
-        "}\n"
-    );
+    console.log(hexToRGB(theme.background).r);
+    return "[data-theme=\""     +theme.themeName  +"\"] {\n"+
+        "\t--bg-color: "        
+            +hexToRGB(theme.background).r.toString()+","
+            +hexToRGB(theme.background).g.toString()+","
+            +hexToRGB(theme.background).b.toString()+";\n"
+        +"\t--primary-color: "
+            +hexToRGB(theme.primary).r.toString()+","
+            +hexToRGB(theme.primary).g.toString()+","
+            +hexToRGB(theme.primary).b.toString()+";\n"
+        +"\t--body-text-color: " 
+            +hexToRGB(theme.text).r.toString()+","
+            +hexToRGB(theme.text).g.toString()+","
+            +hexToRGB(theme.text).b.toString()+";\n"
+        +"\t--body-link-color:"  
+            +hexToRGB(theme.links).r.toString()+","
+            +hexToRGB(theme.links).g.toString()+","
+            +hexToRGB(theme.links).b.toString()+";\n"
+        +"}\n\n";
+
+    // console.log("[data-theme=\""+theme.themeName+"\"] {\n",
+    //     "\t--bg-color: "+theme.background+";\n",
+    //     "\t--primary-color: "+theme.primary+";\n",
+    //     "\t--body-text-color: "+theme.text+";\n",
+    //     "\t--body-link-color:"+theme.links+";\n",
+    //     "}\n"
+    // );
 }
+
+function hexToRGB(hex) {
+    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? {
+      r: parseInt(result[1], 16),
+      g: parseInt(result[2], 16),
+      b: parseInt(result[3], 16)
+    } : null;
+  }
 
 // window.onload = function () {
 //     initTheme();

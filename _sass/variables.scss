@@ -9,17 +9,19 @@ black:        #000000
 
 /* Default Variables*/
 
-// Breakpoints
+// Breakpoints for large/medium/small
 $large-breakpoint: 64em !default;
 $medium-breakpoint: 42em !default;
 
 // Headers
-$header-heading-color: #fff !default;           // White
-$header-bg-color: #159957 !default;             // Green
-$header-bg-color-secondary: #155799 !default;   // Blue
+$title-color: #fff !default;                    // White
+$section-headings-color: #0300AB !default;      // Royal Blue
+
+// Background gradient colors
+$gradient-color-left: #0300ab !default;
+$gradient-color-right: #4dc8ff !default;
 
 // Text
-$section-headings-color: #159957 !default;      // Green
 $body-text-color: #606c71 !default;
 $body-link-color: #1e6bb8 !default;
 $blockquote-text-color: #819198 !default;
@@ -57,85 +59,149 @@ $hr-border-color: #eff0f1 !default;
     --secondary-color: var(--lightBlue);
 }
 
-$colorRB: #0300ab;
-$colorLB: #4dc8ff;
 
+
+
+// Data themes generated from javascript themes.js
+// Hardcodes the themes into CSS, with the script only changing the data-theme value
+
+// [data-theme="Light Mode"] {
+//   --bg-color: #E0E0E0;
+//   --primary-color: #0300AB;
+//   --body-text-color: black;
+//   --body-link-color:#0645AD;
+// }
+
+// [data-theme="Dark Mode"] {
+//   --bg-color: #171717;
+//   --primary-color: #4DC8FF;
+//   --body-text-color: #B5B5B5;
+//   --body-link-color:#6866CC;
+// }
+
+// [data-theme="Riverside"] {
+//   --bg-color: #003DA5;
+//   --primary-color: #FFB71B;
+//   --body-text-color: white;
+//   --body-link-color:#4DC8FF;
+// }
+
+// [data-theme="Fractal Dark"] {
+//   --bg-color: #14336B;
+//   --primary-color: #80AF79;
+//   --body-text-color: #E0E0E0;
+//   --body-link-color:#A6E3FF;
+// }
+
+// [data-theme="Monochrome"] {
+//   --bg-color: #ffffff;
+//   --primary-color: #000000;
+//   --body-text-color: #000000;
+//   --body-link-color:#0645AD;
+// }
+
+// [data-theme="Ohio State"] {
+//   --bg-color: #E0E0E0;
+//   --primary-color: #BB0000;
+//   --body-text-color: #2A2A2A;
+//   --body-link-color:#BB0000;
+// }
+
+// [data-theme="Fractal Light"] {
+//   --bg-color: #8DA6DF;
+//   --primary-color: #34113F;
+//   --body-text-color: #000000;
+//   --body-link-color:#570C7D;
+// }
 
 [data-theme="Light Mode"] {
-  --bg-color: #E0E0E0;
-  --primary-color: #0300AB;
-  --body-text-color: black;
-  --body-link-color:#0645AD;
+	--bg-color: 224,224,224;
+	--primary-color: 3,0,171;
+    --secondary-color: 77,200,255;
+	--body-text-color: 0,0,0;
+	--body-link-color:6,69,173;
 }
 
 [data-theme="Dark Mode"] {
-  --bg-color: #171717;
-  --primary-color: #4DC8FF;
-  --body-text-color: #B5B5B5;
-  --body-link-color:#6866CC;
+	--bg-color: 23,23,23;
+	--primary-color: 77,200,255;
+    --secondary-color: 13,0,255;
+	--body-text-color: 181,181,181;
+	--body-link-color:104,102,204;
 }
 
 [data-theme="Riverside"] {
-  --bg-color: #003DA5;
-  --primary-color: #FFB71B;
-  --body-text-color: white;
-  --body-link-color:#4DC8FF;
+	--bg-color: 0,61,165;//51,100,183; 
+	--primary-color: 255,183,27;
+    --secondary-color: 0,0,200;
+	--body-text-color: 255,255,255;
+	--body-link-color: 201,242,39;
 }
 
-[data-theme="Fractal Dark"] {
-  --bg-color: #14336B;
-  --primary-color: #80AF79;
-  --body-text-color: #E0E0E0;
-  --body-link-color:#A6E3FF;
+[data-theme="Ocean"] {
+	--bg-color: 20,51,107;
+	--primary-color: 128,175,121;
+    --secondary-color: 0,156,91;
+	--body-text-color: 224,224,224;
+	--body-link-color:166,227,255;
 }
 
 [data-theme="Monochrome"] {
-  --bg-color: white;
-  --primary-color: black;
-  --body-text-color: black;
-  --body-link-color:#0645AD;
+	--bg-color: 255,255,255;
+	--primary-color: 0,0,0;
+    --secondary-color: 255,255,255;
+	--body-text-color: 0,0,0;
+	--body-link-color:6,69,173;
 }
 
 [data-theme="Ohio State"] {
-  --bg-color: #E0E0E0;
-  --primary-color: #BB0000;
-  --body-text-color: #2A2A2A;
-  --body-link-color:#BB0000;
+	--bg-color: 134,142,146;
+	--primary-color: 112,7,28;
+    --secondary-color: 62,0,78;
+	--body-text-color: 0,0,0;
+	--body-link-color:255,255,255;
 }
 
-[data-theme="Fractal Light"] {
-  --bg-color: #8DA6DF;
-  --primary-color: #34113F;
-  --body-text-color: black;
-  --body-link-color:#570C7D;
+[data-theme="Periwinkle"] {
+	--bg-color: 141,166,223;
+	--primary-color: 52,17,63;
+    --secondary-color: 84,0,153;
+	--body-text-color: 0,0,0;
+	--body-link-color:87,12,125;
 }
 
 
   
 //SCSS needs $vars not HTML vars ??
-$primary-color: var(--primary-color);
-$secondary-color: var(--secondary-color);
+$primary-color: rgb(var(--primary-color));
+$secondary-color: rgb(var(--secondary-color));
 
 // Remark: must change $vars before the import
-$bg-color: var(--bg-color); // bg-color not part of Cayman Theme
+$bg-color: rgb(var(--bg-color)); // bg-color not part of Cayman Theme
 
 //$header-heading-color: #fff
 // Remark: The primary/secondary flip is deliberate.
 //    (The gradient goes from right to left.)
-$header-bg-color: var(--secondary-color);
-$header-bg-color-secondary: var(--primary-color);
+$header-bg-color: rgb(var(--secondary-color));
+$header-bg-color-secondary: rgb(var(--primary-color));
 
-$section-headings-color: var(--primary-color);
-$body-text-color: var(--body-text-color);
-$body-link-color: var(--body-link-color);
-
-
-$blockquote-text-color: var(--body-text-color);
+$section-headings-color:    rgb(var(--primary-color)  );
+$body-text-color:           rgb(var(--body-text-color));
+$body-link-color:           rgb(var(--body-link-color));
 
 
-$code-bg-color: var(--bg-color);
-$code-text-color: var(--primary-color); //var(--lightBlue);
+$blockquote-text-color: rgb(var(--body-text-color));
+
+
+$code-bg-color:     rgb(var(--bg-color)     );
+$code-text-color:   rgb(var(--primary-color)); //var(--lightBlue);
 
 $border-color: #FFF;//var(--section-headings-color);
 $table-border-color: #519DE8;
-$hr-border-color: var(--primary-color); //#4E45FF;
+
+$hr-border-color: rgb(var(--primary-color)); //#4E45FF;
+
+$gradient-color-left: var(--primary-color);
+$gradient-color-right: var(--secondary-color);
+//$gradient-color-right: var(--bg-color);
+
