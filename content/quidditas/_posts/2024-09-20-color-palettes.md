@@ -2,7 +2,7 @@
 title: Color Palettes
 
 tags:
-- tutorial
+- resource
 - website
 ---
 
@@ -16,7 +16,6 @@ If the variety of themes was no indication, I really enjoy designing color palet
 - [Using variables to create linear gradients](https://stackoverflow.com/questions/29591465/use-css-variables-with-rgba-for-gradient-transparency)
 - [RGBA Picker](https://rgbacolorpicker.com/)
 - [RGB-Hex Converter](https://rgbcolorcode.com/color/converter/)
-
 
 
 ## Useful Resources
