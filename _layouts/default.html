@@ -10,24 +10,13 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', '{{ site.google_analytics }}');
   </script>
   <!-- End Google Analytics -->
   {% endif %}
 
   <!-- Hide initially to prevent FOUC -->
-  <style>html{visibility: hidden; opacity:0;}</style>
-  <!-- <style>
-    header {
-      background-image: 
-      linear-gradient(
-        90deg,
-        rgba(#817fd5,1), 
-        rgba(#a5e2ff,1)
-      );
-    }
-  </style> -->
+  <style>html{visibility: hidden; opacity: 0;}</style>
   
   <meta charset="UTF-8">
 
@@ -39,8 +28,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
   <link rel="preload" as="script" href="/scripts/theme.js">
-  <link rel="preload" as="style"  href="{{ '/assets/style/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  <!-- <link rel="preload" as="image" href="/assets/images/fractals/juliaCircle.gif"> -->
+  <!-- <link rel="preload" as="style"  href="{{ '/assets/style/style.css?v=' | append: site.github.build_revision | relative_url }}"> -->
+  <link rel="preload" as="image" href="/assets/images/fractals/juliaCircle.gif">
   <!-- <link rel="preload" as="image" href="/assets/images/fractals/juliaSet630.png"> -->
   <link rel="stylesheet" href="{{ '/assets/style/style.css?v=' | append: site.github.build_revision | relative_url }}">
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
