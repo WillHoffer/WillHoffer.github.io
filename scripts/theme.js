@@ -14,10 +14,10 @@ function initTheme() {
     // Check for invalid data
     if (themesNames.indexOf(userTheme) === -1){
         console.log("Invalid user theme; resetting to default.");
-        userTheme = "Light Mode";
-        localStorage.setItem("themeName", userTheme);   
+        userTheme = "Light Mode";   
     }
     select.value = userTheme;
+    localStorage.setItem("themeName", userTheme); 
     document.body.setAttribute("data-theme",userTheme);
 }
 
@@ -27,5 +27,6 @@ document.addEventListener("DOMContentLoaded", function(){
     var select = document.getElementById("themeSelector");
     select.addEventListener('change', function () {
         document.body.setAttribute("data-theme",select.value);
+        localStorage.setItem("themeName", select.value); 
     });
 });
