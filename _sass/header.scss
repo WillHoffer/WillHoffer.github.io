@@ -24,13 +24,36 @@
 
 // Dynamic header settings
 .page-header {
-    background-image: 
+    @include large {
+        background-image: 
         linear-gradient(
             90deg, 
             rgba($gradient-color-left, 0.5), 
             rgba($gradient-color-right, 0.5)
         ),
-        url("../images/fractals/juliaCircle.webp");
+        url("../images/fractals/JuliaCircle_1920x1080.webp");
+    }
+
+    @include medium {
+        background-image: 
+        linear-gradient(
+            90deg, 
+            rgba($gradient-color-left, 0.5), 
+            rgba($gradient-color-right, 0.5)
+        ),
+        url("../images/fractals/JuliaCircle_960x540.webp");
+    }
+
+    @include small {
+        background-image: 
+        linear-gradient(
+            90deg, 
+            rgba($gradient-color-left, 0.5), 
+            rgba($gradient-color-right, 0.5)
+        ),
+        url("../images/fractals/JuliaCircle_640x360.webp");
+    }
+    
 }
 
 // Header settings
@@ -42,7 +65,7 @@
             rgba($gradient-color-left, 0.5),
             rgba($gradient-color-right, 0.5)
         ),
-        url("../images/fractals/juliaSet630.png");
+        url("../images/fractals/JuliaSet630_1920x1080.webp");
     }
 
     @include medium {
@@ -52,7 +75,7 @@
             rgba($gradient-color-left, 0.5),
             rgba($gradient-color-right, 0.5)
         ),
-        url("../images/fractals/juliaSet630.png");
+        url("../images/fractals/JuliaSet630_960x540.webp");
     }
 
     @include small {
@@ -62,7 +85,7 @@
             rgba($gradient-color-left, 0.5),
             rgba($gradient-color-right, 0.5)
         ),
-        url("../images/fractals/juliaSet630_640x366.png");
+        url("../images/fractals/JuliaSet630_640x360.webp");
     }
 }
 

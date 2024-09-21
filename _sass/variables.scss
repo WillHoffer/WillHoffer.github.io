@@ -10,8 +10,8 @@ black:        #000000
 /* Default Variables*/
 
 // Breakpoints for large/medium/small
-$large-breakpoint: 64em !default; // = 1024px @16px font
-$medium-breakpoint: 40em !default; // = 640px @16px font
+$large-breakpoint:  960px !default; // = 60em @16px font
+$medium-breakpoint: 640px !default; // = 40em @16px font
 
 // Headers
 $title-color: #fff !default;                    // White
