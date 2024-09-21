@@ -1,11 +1,13 @@
 // The purpose of this script is to add support for dynamic/static background toggling
+// Todo: instead of 0 and 1, change to storing true/false
 
+// Called by the toggle animation button
 function toggleBackground() {
-    var isBackgroundDynamic = localStorage.getItem("isBackgroundDynamic");
-
-    setBackgroundDynamics(1-isBackgroundDynamic);
+    setBackgroundDynamics(1-localStorage.getItem("isBackgroundDynamic"));
 }
 
+// Change the background state
+// Optional change: edit the displayed button name
 function setBackgroundDynamics(isBackgroundDynamic){
     if(isBackgroundDynamic == 1){ //Yes, it's dynamic
         document.getElementById("mainHeader").className = "page-header";
@@ -16,20 +18,20 @@ function setBackgroundDynamics(isBackgroundDynamic){
     }
 }
 
+// Check for valid data, then set dynamic/static state
 function initBackgroundState(){
     var isBackgroundDynamic = localStorage.getItem("isBackgroundDynamic");
     //console.log(isBackgroundDynamic);
         
-    if(isBackgroundDynamic == null){
+    if(!(isBackgroundDynamic === 0 || isBackgroundDynamic === 1) ){
         localStorage.setItem("isBackgroundDynamic",0);
+        isBackgroundDynamic = 0;
     }
 
     setBackgroundDynamics(isBackgroundDynamic);
 }
 
-// To be run on load of script
-//document.onload += initBackgroundState();
-
+// On load, determine whether the background should be animated or not
 document.addEventListener("DOMContentLoaded", function(){ 
     initBackgroundState();
 });
