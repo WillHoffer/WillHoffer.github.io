@@ -21,9 +21,8 @@ function setBackgroundDynamics(isBackgroundDynamic){
 // Check for valid data, then set dynamic/static state
 function initBackgroundState(){
     var isBackgroundDynamic = localStorage.getItem("isBackgroundDynamic");
-    //console.log(isBackgroundDynamic);
         
-    if(!(isBackgroundDynamic === 0 || isBackgroundDynamic === 1) ){
+    if(!(isBackgroundDynamic === "0" || isBackgroundDynamic === "1") ){
         localStorage.setItem("isBackgroundDynamic",0);
         isBackgroundDynamic = 0;
     }
