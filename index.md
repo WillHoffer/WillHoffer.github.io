@@ -10,11 +10,13 @@ description: Mathematical Physicist & Fractal Geometer
 ## Welcome to my Personal Website! 
 Whether you're here for professional information about me, pedagogical content, or just the pretty pictures, I hope you have a wonderful visit. 
 
-<div class="centered">
-    <img src="/assets\images\fractals\K_3,0.33,6.png" style="width: 10vw;">
-    <img src="/assets\images\fractals\K_4,0.25,6.png" style="width: 10vw;">
-    <img src="/assets\images\fractals\K_5,0.20,6.png" style="width: 10vw;">
+<div class="flex-row">
+    <img src="/assets\images\fractals\K_3,0.33,6.png" alt="The von Koch snowflake"> 
+    <img src="/assets\images\fractals\K_4,0.25,6.png" alt="The 'squareflake' fractal">
+    <img src="/assets\images\fractals\K_5,0.20,6.png" alt="The 'pentaflake' fractal">
 </div>
+
+<!-- style="width: 25vw; max-width: 20em;" -->
 
 You can change the website theme or toggle the background information with the buttons at the top right. Navigation links are available at the top left.
 
@@ -27,11 +29,11 @@ If you have an opportunity you wish to share, if you're interested in collaborat
 
 My [Curriculum Vitae](https://willhoffer.com/content/cv/) is also hosted on the website.
 
-
-<div class="centered">
-    <img src="/assets\images\fractals\juliaSet630.png"          class="rounded" style="width: 10vw; height: 10vw; display: inline-block; padding: 1em;">
-    <img src="/assets\images\fractals\juliaSetNo678_square.png" class="rounded" style="width: 10vw; height: 10vw; display: inline-block; padding: 1em;">
-    <img src="/assets\images\fractals\juliaSetNo719.png"        class="rounded" style="width: 10vw; height: 10vw; display: inline-block; padding: 1em;">
+<!-- style="width: 10vw; height: 10vw; display: inline-block; padding: 1em;" -->
+<div class="flex-row">
+    <img src="/assets\images\fractals\juliaSet630.png"          class="rounded" style="aspect-ratio: 1/1; height: 100%;" alt="A Julia set fractal">
+    <img src="/assets\images\fractals\juliaSetNo678_square.png" class="rounded" style="aspect-ratio: 1/1; height: 100%;" alt="A Julia set fractal">
+    <img src="/assets\images\fractals\juliaSetNo719.png"        class="rounded" style="aspect-ratio: 1/1; height: 100%;" alt="A Julia set fractal">
 </div>
 
 ## My Blog, Quidditas
