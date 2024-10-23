@@ -1,11 +1,11 @@
 name: Will Hoffer
 title: Will Hoffer
 description: Mathematical Physicist & Fractal Geometer
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman
 markdown: kramdown
 permalink: /:year-:month-:day/:title/
 
-google_analytics: UA-159371398-1
+google_analytics: G-FSQVSFDKR6
 
 footer-links:
   email: math@willhoffer.com

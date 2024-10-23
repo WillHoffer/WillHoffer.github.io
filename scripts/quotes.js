@@ -68,4 +68,7 @@ function shuffleArray(array) {
     }
 }
 
-document.onload += randomizeOrder();
+document.addEventListener("DOMContentLoaded", function(){ 
+  randomizeOrder();
+  nextQuote();
+});

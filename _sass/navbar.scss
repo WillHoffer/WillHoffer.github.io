@@ -1,46 +1,141 @@
-nav ul, footer ul {
-  font-weight: bold;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  overflow: auto;
-}
 
-@include large { 
-  // If the screen is large, the nav-bar becomes fixed at the top.
-  nav ul {
-    position: fixed;
-    top: 0;
-    width: 100%;
+// Styling for the navigation bar at the top
+nav {
     background-color: $bg-color;
-    border: 1px solid $bg-color;
-    z-index: 9999;
+    height: 45px;
+    margin: 0;
 
-    //Border bottom shadow
-    border-bottom: 3px outset rgba(0,0,0,0.1);
-    //border-radius: 5px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
-    -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
-  }
+    // The main bar fills the space in between the blocks 
+    // With two elements, this left and right justifies them
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    // Styling of the list blocks in the nav bar
+    ul {
+        font-weight: bold;
+        padding: 0;
+        margin: 0px 5px;
+        list-style-type: none;
+        overflow: auto;
 
-  #mainHeader{
-    margin-top: 50px;
-  }
+        // Within a single nav bar list, items are evenly spaced
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    // Styling of the links
+    ul li a {
+        color: $section-headings-color;
+        text-align: center;
+        padding: 0px 0px;
+        margin: 10px 10px;
+    }
 }
 
-nav ul li a {
-  display: block;
-  text-align: center;
-  padding: 0px 0px;
-  margin: 10px 10px;
+// Margins of the top right buttons
+.top-right {
+    margin: 10px 5px;
 }
 
-.topnav-left{
-  color: var(--primary-color);
-  float: left;
+
+// Screen settings for the large window size
+@include large {
+
+    // Display the pages list and hide the menu dropdown
+    #pages-list{
+        display: flex;
+    }
+
+    #pages-dropdown {
+        display: none;
+    }
+
+    // Fix the navigation bar at the top of the screen
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: $bg-color;
+        border: 0px solid $bg-color;
+        z-index: 9999;
+
+        //Border bottom shadow
+        border-bottom: 3px outset rgba(0, 0, 0, 0.1);
+        //border-radius: 5px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+        -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    }
+
 }
 
-.topnav-right{
-  float: right;
+// Three bars that form the menu icon in the topleft corner
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: $section-headings-color;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    transition: 0.4s;
 }
+
+// Styling for the wrapper holding the menu (and dropdown)
+#pages-dropdown {
+    cursor: pointer;
+    padding: 0px 5px;
+    margin: 0px 10px;
+}
+
+// Styling the menu icon container
+#navMenu {
+    margin: 0px;
+    // The left margin (15px) is currently chosen to align with the dropdown content
+    padding: 5px 15px; 
+}
+
+// Styling of the pages list which displays on hovering over the topleft menu
+#pages-list-dropdown {
+    margin: 0;
+    padding: 0;
+
+    ul {
+        margin: 0;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        display: block;
+
+        li a {
+            margin: 5px 15px;
+        }
+    }
+}
+
+// When the screen is medium, display the menu dropdown 
+@include medium {
+    #pages-list {
+        display: none;
+    }
+
+    #pages-dropdown {
+        display: block;
+    }
+}
+
+// When the screen is small, display the menu dropdown 
+@include small {
+    #pages-list {
+        display: none;
+    }
+
+    #pages-dropdown {
+        display: block;
+    }
+}
+

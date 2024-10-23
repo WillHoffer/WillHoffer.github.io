@@ -1,0 +1,158 @@
+// Styling of general elements
+
+// Links
+a {
+    color: $body-link-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// Positioning classes
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+// Buttons and option selectors
+.button,
+.selector {
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+    //margin-bottom: 0;
+    color: $section-headings-color;
+    text-decoration: bold;
+    background-color: $bg-color;
+    border-color: $section-headings-color;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    transition:
+        color 0.2s,
+        background-color 0.2s,
+        border-color 0.2s;
+    
+    height: 1.8em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 0.9rem;
+
+}
+
+// Shared hover styling
+.button, .selector {
+    &:hover {
+        color: $section-headings-color;
+        text-decoration: bold;
+        border-color: rgba(100, 100, 100, 0.3);
+    }
+}
+
+// The button's background must be updated individually
+.button {
+    &:hover {
+        background-color: rgba(100, 100, 100, 0.3);
+    }
+}
+
+// Image styling
+img.rounded {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 1;
+}
+
+img.portrait {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 25%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+img.centered {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 25%;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    img {
+        flex: 1 1 auto;
+        display: inline-flex;
+        justify-content: space-evenly;
+        align-items: center;
+        max-width: 20em;
+        width: 10vw;
+        padding: 5px;
+    }
+    
+}
+
+// Details styling
+details > summary {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    width: auto; //
+    border-color: $section-headings-color;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+// details > p {
+//   padding: 4px;
+//   margin: 0;
+//   box-shadow: 1px 1px 2px #bbbbbb;
+// }
+
+// Dropdown menu styling
+.dropdown {
+    position: relative;
+}
+
+// Content to be displayed only on hovering of parent
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $bg-color;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px 10px;
+    z-index: 9001;
+}
+
+// Display the content on hover
+.dropdown:hover .dropdown-content {
+    display: block;
+}

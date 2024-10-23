@@ -1,0 +1,60 @@
+
+// Footer at the end of the main tag
+.site-footer {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: solid 1px $hr-border-color;
+
+    @include large {
+        font-size: 1rem;
+    }
+
+    @include medium {
+        font-size: 1rem;
+    }
+
+    @include small {
+        font-size: 0.9rem;
+    }
+}
+
+// Styling of list used for the buttons in the footer
+footer ul {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: auto;
+    background-color: $bg-color;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        // The margin of the first ul is altered, so set the padding instead
+        margin: 0;
+        padding: 5px 5px;
+    }
+
+    @include small {
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+
+        // Show only the #next-quote button on small screens
+        #random-quote,
+        #randomize-order {
+            display: none;
+        }
+    }
+}
+
+// Style the block which holds the quotes in the footer
+#quoteDisplay {
+    text-align: left;
+    min-height: 5em;
+    margin-left: 48px;
+    margin-right: 48px;
+}

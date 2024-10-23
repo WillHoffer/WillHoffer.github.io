@@ -6,3 +6,4 @@ _site/
 .Rprofile
 *.code-workspace
 WillHoffer.github.io.Rproj
+*.code-workspace

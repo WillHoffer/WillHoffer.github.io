@@ -1,19 +1,57 @@
 <!-- Begin Nav Bar -->
-<nav>
+<nav class="topnav">
+  <!-- For large screens -->
+  <div id="pages-list">
+    <ul>
+      <li><a class="left" href="/">Home</a></li>
+      <li><a class="left" href="/content/about">About</a></li>
+      <li><a class="left" href="/content/cv">CV</a></li>
+      <li><a class="left" href="/content/quidditas">Quidditas</a></li>
+      <!-- <li><a class="left" href="/content/talks">Talks</a></li> -->
+      <li><a class="left" href="/content/resources">Resources</a></li>
+      <!-- <li><a class="left" href="/content/teaching">Teaching</a></li> -->
+      <li><a class="left" href="/content/gallery">Gallery</a></li>
+    </ul>
+  </div>
+  <!-- For small and medium screens -->
+  <div id="pages-dropdown" class="dropdown">
+    <div id="navMenu">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <div id="pages-list-dropdown" class="dropdown-content">
+      <ul>
+        <li><a class="left" href="/">Home</a></li>
+        <li><a class="left" href="/content/about">About</a></li>
+        <li><a class="left" href="/content/cv">CV</a></li>
+        <li><a class="left" href="/content/quidditas">Quidditas</a></li>
+        <!-- <li><a class="left" href="/content/talks">Talks</a></li> -->
+        <li><a class="left" href="/content/resources">Resources</a></li>
+        <!-- <li><a class="left" href="/content/teaching">Teaching</a></li> -->
+        <li><a class="left" href="/content/gallery">Gallery</a></li>
+      </ul>
+    </div>
+  </div>
   <ul>
-    <li><a class="topnav-left" href="/">Home</a></li>
-    <li><a class="topnav-left" href="/about">About</a></li>
-    <li><a class="topnav-left" href="/cv">CV</a></li>
-    <li><a class="topnav-left" href="/talks">Talks</a></li>
-    <li><a class="topnav-left" href="/resources">Resources</a></li>
-    <li><a class="topnav-left" href="/quidditas">Quidditas</a></li>
-    <li><a class="topnav-left" href="/teaching">Teaching</a></li>
-    <li><a class="topnav-right"><button class="button" onclick="toggleTheme()">Toggle Theme</button></a></li>
-    <li><a class="topnav-right"><button class="button" onclick="toggleBackground()">Toggle Animation</button></a></li>
+    <!-- Requires the scripts "theme.js" and "background.js". -->
+    <li class="top-right">
+      <button class="button" onclick="toggleBackground()">Toggle Animation</button>
+    </li>
+    <li class="top-right">
+        <div id="theme-selector-container"></div>
+        <label for="themeSelector"></label>
+        <select id="themeSelector" class="selector">
+          <option disabled="">Pick Theme</option>
+          <option value="Light Mode">Light Mode</option>
+          <option value="Dark Mode">Dark Mode</option>
+          <option value="Ocean">Ocean</option>
+          <option value="Periwinkle">Periwinkle</option>
+          <option value="Riverside">Riverside</option>
+          <option value="Ohio State">Ohio State</option>
+          <option value="Monochrome">Monochrome</option>
+        </select>
+    </li>
   </ul>
 </nav>
-<!-- Must include these scripts at end of page.
-<script src="/scripts/theme.js"></script>
-<script src="/scripts/background.js"></script>
--->
 <!-- End Nav Bar -->

@@ -1,0 +1,53 @@
+---
+---
+
+// Inherited from Jekyll Cayman
+@import "normalize";
+@import "rouge-github";
+
+// Site variables
+@import "variables";
+
+@mixin large {
+    @media screen and (min-width: #{$large-breakpoint}) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media screen and (max-width: #{$medium-breakpoint}) {
+        @content;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+// Styling of website
+@import "body";
+@import "header";
+@import "navbar";
+@import "elements";
+@import "footer";
+
+// Fonts
+//@import "../fonts/cmuserif_boldoblique_macroman/stylesheet.css";
+@import "../fonts/cmuserif_bold_macroman/stylesheet.css";
+@import "../fonts/cmuserif_oblique_macroman/stylesheet.css";
+@import "../fonts/cmuserif_roman_macroman/stylesheet.css";
+
+// Unhide the html as part of preventing FOUC (flash of unstyled content)
+html {
+    visibility: visible;
+    opacity: 1;
+
+    //transition: opacity 1s ease-out;
+
+}
