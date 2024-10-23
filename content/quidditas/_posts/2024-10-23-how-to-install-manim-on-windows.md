@@ -71,6 +71,6 @@ class SquareToCircle(Scene):
 ```
 If you've done everything correctly, you should get the scene:
 <video width="640" height="480" controls>
-  <source src="movie.mp4" type="video/mp4">
+  <source src="assets\videos\SquareToCircle.mp4" type="video/mp4">
 If you see this, the video is not displayed correctly.
 </video> 
