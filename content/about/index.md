@@ -19,12 +19,12 @@ You can also right-click to copy the email address.
 ## Mathematical Research:
 - Graduate Student/PhD Candidate at the [University of California, Riverside](https://mathdept.ucr.edu/)
 - Advisor: [Dr. Michel L. Lapidus](http://math.ucr.edu/~lapidus/)
-- My thesis project involves using resurgent asymptotics to study explicit formulae in fractal & spectral geometry, analytic number theory, and mathematical physics.
+- My research covers mathematical physics, fractal geometry, asymptotic analysis, and analytic number theory. I study the interplay of geometric and spectral oscillations using the theory of complex dimensions and fractal zeta functions. 
 
 ## Who am I?
-I am a mathematical physicist, geometer, and analyst. I am a currently a graduate student and PhD candidate at the University of California, Riverside. I passed my oral examination in February of 2021, and I both obtained my masters degree and advanced to candidacy in the spring of 2021.
+I am a mathematical physicist, geometer, and analyst. I am a currently a graduate student and PhD candidate at the University of California, Riverside. I passed my oral examination in February of 2021, and I both obtained my masters degree and advanced to candidacy in the spring of 2021. I will graduate and defend my dissertation in June 2025.
 
-Currently, I am very interested in the phenomenon of resurgence, and how we might better understand fractals using its tools and techniques. We can study fractals by understanding how their geometric oscillations reverberate in the ambient space around them-- what we call a fractal drum, or sometimes a fractal harp. These oscillations are realized as complex dimensions, and my current research project is to better understand the formulae that express geometric and spectral qualities of the fractal using these complex dimensions.
+Currently, I am very interested in the phenomenon of resurgence, a branch of asymptotic analysis, and how we might better understand fractals using its tools and techniques. We can study fractals by understanding how their geometric oscillations reverberate in the ambient space around them-- using structures called fractal drums and harps. These oscillations are described by complex dimensions, and my current research project is to better understand the formulae that express geometric and spectral qualities of the fractal using these complex dimensions. I expect the tools of resurgence theory to be vital in the study of more complicated, dynamical fractals like Julia sets and the Mandelbrot set. 
 
 I find myself humbled by the historical legacy I have stumbled into and by the great kindness and support I have been shown along the way. I am committed to paying this forward in my contributions to mathematics and physics, in my teaching, mentoring, and service, and in my daily life. 
 
@@ -34,8 +34,8 @@ I believe that mathematics ought to be shared with and be open to everyone, both
 Have a wonderful day! 🏳️‍🌈
 
 ## Other Web Locales
-  - [arXiv.org Publications](https://arxiv.org/search/math?searchtype=author&query=Hoffer%2C+W)
-  - [Google Scholar Profile](https://scholar.google.com/citations?user=kaJEJSoAAAAJ&hl=en&authuser=1)
-  - [UC Riverside Profile](https://mathdept.ucr.edu/people/william-hoffer)
+  - [arXiv.org](https://arxiv.org/search/math?searchtype=author&query=Hoffer%2C+W)
+  - [Google Scholar](https://scholar.google.com/citations?user=kaJEJSoAAAAJ&hl=en&authuser=1)
+  - [University of California, Riverside](https://mathdept.ucr.edu/people/william-hoffer)
   - [Academia.edu](https://ucriverside.academia.edu/WillHoffer)
   - [Linkedin](https://www.linkedin.com/in/will-hoffer-80844a204/)
