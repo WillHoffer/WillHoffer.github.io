@@ -7,7 +7,7 @@ cv_link: https://willhoffer.com/uploads/docs/personal/2025-05-26-CV_of_Will_Hoff
 
 ## Curriculum Vitae
 
-Below you will find my full CV, updated in June 2024. View online below, or follow [this link]({{page.cv_link}}).
+Below you will find my full CV. View online below, or follow [this link]({{page.cv_link}}).
 
 You may also find more info below and elsewhere on my website.
 
