@@ -2,7 +2,7 @@
 layout: default
 title: Will Hoffer
 description: Curriculum Vitae
-cv_link: https://willhoffer.com/uploads/docs/personal/2025-05-26-CV_of_Will_Hoffer.pdf
+cv_link: https://willhoffer.com/uploads/docs/personal/2026-10-19-CV_of_William_Hoffer.pdf
 ---
 
 ## Curriculum Vitae
